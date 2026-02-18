@@ -1,7 +1,7 @@
 title: "Meu Nome | Blog"
 theme: minima
 baseurl: "" # Mantenha vazio se estiver no seu-usuario.github.io
-permalink: /blog/:title/
+permalink: /articles/:title/
 
 # Isso garante que o Jekyll ignore pastas que não interessam
 exclude:
