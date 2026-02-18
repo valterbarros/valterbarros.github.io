@@ -4,7 +4,7 @@ baseurl: "" # Mantenha vazio se estiver no seu-usuario.github.io
 permalink: /articles/:title/
 commonmark:
   options: ["SMART"]
-minima:
+default:
   skin: dark
 
 # Isso garante que o Jekyll ignore pastas que não interessam
