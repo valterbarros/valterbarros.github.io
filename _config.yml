@@ -3,3 +3,10 @@ theme: minima
 baseurl: "" # Mantenha vazio se estiver no seu-usuario.github.io
 permalink: /blog/:title/
 
+# Isso garante que o Jekyll ignore pastas que não interessam
+exclude:
+  - node_modules
+  - .sass-cache
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
