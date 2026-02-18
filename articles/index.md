@@ -5,7 +5,6 @@ title: Meu Blog
 
 ## Posts Recentes
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>Meu Blog</title>
