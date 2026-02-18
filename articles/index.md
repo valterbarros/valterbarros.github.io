@@ -1,5 +1,5 @@
 ---
-layout: minima
+layout: default
 title: Meu Blog
 ---
 
