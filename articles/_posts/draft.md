@@ -15,27 +15,31 @@ Ideias:
 ## O ambiente modificavel da area de tecnologia
 
 Quando comecei minha carreira eu trabalhava com, jquery, js, ruby on rails, me lembro que na epoca eu precisava tocar numa serie de tecnologias e linguagens diferentes
-como sql, css, scss, cofeescript. E sempre era dificil manter o nivel de qualidade em todas elas. Acredito que esse seja o cenario normal para qualquer dev.
-Olhando anos depois disso muito tecnologia nova nasceu e morreu, atualmente eu trabalho com vue.js, ruby on rails, e nossa a coisa mudou muito de cenario, praticamente tive que reaprender tudo
+como sql, css, scss, cofeescript. E sempre era dificil manter o nivel de qualidade em todas elas. Acredito que esse seja o cenario normal para qualquer dev. Desde então novas tecnologias surgiram e outras morreram, atualmente eu trabalho com vue.js, ruby on rails, e nossa a coisa mudou muito de cenario, praticamente tive que reaprender tudo
 
-Com certeza se eu me mantivesse nessa mesma stack de anos atrás eu teria muita dificuldade em encontrar emprego e me manter em algum, sem me atualizar apenas me mantendo na mesma
+Com certeza se eu me mantivesse nessa mesma stack de anos atrás eu teria muita dificuldade em encontrar emprego e me manter em algum, sem me atualizar apenas me mantendo na mesma, existe emprego hoje para jquery? provavelmente não muitos.
 
-Em alguns momentos essa mudança constante é muito complicada e desgastante pois, como seres humanos vamos sempre buscar algum conforto, o que é chamado hoje de "zona de conforto",
-para os coachs isso é algo que uma pessoa deve ter aversão e sempre procurar estar desconfortavel. Não concordo com essa ideia inclusive a psicologia moderna também não, e talvez essa ideia possa ser
-a causa de muito burnout que vemos hoje em dia. Acredito que devemos nos desafiar porem respeitando os limites
+Em alguns momentos essa mudança constante é muito complicada e desgastante pois, como seres humanos vamos sempre buscar algum conforto, o que é chamado hoje de "zona de conforto", para os coachs isso é algo que uma pessoa deve ter aversão e sempre procurar estar desconfortavel se desafiando e encontrando novos limites ainda não cruzados. Não concordo com essa ideia inclusive a psicologia moderna também não, e talvez essa ideia possa ser a causa de muito burnout que vemos hoje em dia. Acredito que devemos nos desafiar porem respeitando os limites
 
 ### Projeto Legado
 
-Mas claro na area de tech isso pega um pouco mais pois, sempre vão ter novas linguagens de programação e novas tecnologias surgindo, e isso nos faz ter que algumas vezes correr atrás para aprender
-por isso trabalhar com projetos legados é um perigo, basicamente o projeto roda, os clientes estão acostumados, tem bugs mas são ignorados "se ninguem reclama deixa quieto ai",
-vulerabilidades tbm são "se ninguem invadiu ate hoje ninguem vai mais".
-bibliotecas a anos sem atualizar muitas vezes por falta de confiança da equipe de mexer e quebrar algo que já está estavel rodando em produção. E dessa forma vão utilizando versões antigas e com sintaxe
-completamente deprecated e afundando cada vez mais esse projeto e criando uma dissonancia em relação ao mercado externo, e afasta o dev cada vez mais de se capacitar.
+Na area de tech isso pega um pouco mais pois, sempre vão ter novas tecnologias surgindo, e mesmo as que já existem continuam diariamente evoluindo, e isso nos faz ter que correr atrás para aprender. Isso me leva ao ponto principal que quero falar: trabalhar com projetos legados é um perigo, basicamente o projeto roda, os clientes estão acostumados, tem bugs mas são ignorados "se ninguem reclama deixa quieto ai", vulerabilidades também são ignoradas "se ninguem invadiu ate hoje ninguem vai mais". Bibliotecas a anos sem atualização muitas vezes por falta de confiança da equipe de mexer e quebrar algo que já está estavel rodando em produção. E dessa forma vão utilizando versões antigas e com sintaxe completamente deprecated e afundando cada vez mais esse projeto e criando uma dissonancia em relação ao mercado externo, e afasta o dev cada vez mais de se capacitar.
 
-Para a empresa isso quer dizer que novos usuários vão ter dificuldade para utilizar o sistema justamente por não estarem acostumados com os bugs considerados "normais",
-dessa forma a empresa não consegue agregar receita, alem de diminuir a confiança do usuário se vc n consegue nem apresentar as informações sem bugs e errors imagina como vai tratar meus dados. Além de que essa empresa vai ter devs menos capacitados utilizando tecnologias antigas e muitas vezes a anos desaconselhada pela comunidade no geral.
+> Porem não sou o cara do hype, se uma determinada lib atende bem o sistema e consegue resolver os problemas, não vejo necessidade de fazer alguma troca, até pq existe um custo em trocar, correr o risco de quebrar em prod, ou de lá na frente essa lib deixar de ser mantida. Infelizmente essas mudanças de "agua para water" é algo que acontece muito no mundo frontend onde ferramentas para fazer exatamente a mesma coisa são criadas a todo momento, com pretesto de serem mais rapidas ou com uma sintaxe melhor, porem na grande maioria é apenas mais do mesmo. E isso não acontece apenas no frontend, muitas ideias hoje da tecnologia foram criadas a anos, e hoje são relançadas como algo novo.
+
+Para a empresa isso quer dizer que novos usuários vão ter dificuldade para utilizar o sistema justamente por não estarem acostumados com os bugs considerados "normais", dessa forma a empresa não consegue agregar receita, alem de diminuir a confiança do usuário, essa empresa também vai ter dificuldade em fechar contratos com empresas grandes que geralmente tendem a se preocupar mais com segurança e ter baixa tolerancia a problemas de segurança como bibliotecas desatualizadas. Além de que essa empresa vai ter devs menos capacitados utilizando tecnologias antigas e muitas vezes a anos desaconselhada pela comunidade no geral.
 
 Para o dev quer dizer que ele é suficiente para essa empresa(e talvez apenas isso mesmo) e em alguns casos ele acaba sendo indispensavel, mas será que ele consegue se realocar em outra empresa caso precise? Sera que ele consegue passar em uma entrevista apenas com esses conhecimentos "legados".
+
+Para o usuário, quer dizer que ele vai pagar por um sistema, que tem baixas expectativas de qualidade. Lentidões para executar processos simples, carregamentos demorados, e insegurança com seus dados.
+
+### IA
+
+Aqui entramos num ponto mais complicado atualmente com o avanço das IAs, as vezes sinto que a concorrencia agora não é mais os humanos e sim a IA em si, hoje trabalhos simples de programação e até intermediarios podem se resolvidos apenas com um prompt, então como um dev que nem atualiza suas dependencias nem busca melhorar seu codigo pode competir com isso? Por isso se faz ainda mais necessário a capacitação, o entendendimento do sistema, e não apenas resolver o problema sem se questionar como foi feito, pois isso a IA já consegue fazer bem.
+
+---
+
+Talvez outro post aqui:
 
 ### Back vs Front e liderança com vies
 
@@ -52,11 +56,5 @@ Muito se fala sobre: não deveriamos ter "linguagem favorita", e que o que devem
 olhar para um codigo de javascript
 
 O ponto que quero levantar é, se vc acha que está seguro no seu emprego, será mesmo que está ou isso é uma ilusão?
-
-### IA
-
-Com o surgimento da ia isso com certeza pega mais pesado ainda, hoje trabalhos simples de programação e até intermediarios podem se resolvidos apenas com um prompt, então como um dev que nem atualiza suas dependencias nem busca melhorar seu codigo pode competir com isso
-
-
 
 
