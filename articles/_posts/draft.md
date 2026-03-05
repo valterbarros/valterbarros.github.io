@@ -33,9 +33,7 @@ Para o dev quer dizer que ele é suficiente para essa empresa(e talvez apenas is
 
 Para o usuário, quer dizer que ele vai pagar por um sistema, que tem baixas expectativas de qualidade. Lentidões para executar processos simples, carregamentos demorados, e insegurança com seus dados.
 
-### IA
-
-Aqui entramos num ponto mais complicado atualmente com o avanço das IAs, as vezes sinto que a concorrencia agora não é mais os humanos e sim a IA em si, hoje trabalhos simples de programação e até intermediarios podem se resolvidos apenas com um prompt, então como um dev que nem atualiza suas dependencias nem busca melhorar seu codigo pode competir com isso? Por isso se faz ainda mais necessário a capacitação, o entendendimento do sistema, e não apenas resolver o problema sem se questionar como foi feito, pois isso a IA já consegue fazer bem.
+**O ponto que quero levantar é, se vc acha que está seguro no seu emprego, será mesmo que está ou isso é uma ilusão?**
 
 ---
 
@@ -55,6 +53,10 @@ Um exemplo seria trabalhar para melhorar a performance no lado de backend, porem
 Muito se fala sobre: não deveriamos ter "linguagem favorita", e que o que devemos focar é na logica de programação, e entender o negocio, porem na pratica eu vejo uma dificuldade de um backend pelo menos
 olhar para um codigo de javascript
 
-O ponto que quero levantar é, se vc acha que está seguro no seu emprego, será mesmo que está ou isso é uma ilusão?
+---
 
+Talvez outro post
 
+### IA
+
+Aqui entramos num ponto mais complicado atualmente com o avanço das IAs, as vezes sinto que a concorrencia agora não é mais os humanos e sim a IA em si, hoje trabalhos simples de programação e até intermediarios podem se resolvidos apenas com um prompt, então como um dev que nem atualiza suas dependencias nem busca melhorar seu codigo pode competir com isso? Por isso se faz ainda mais necessário a capacitação, o entendendimento do sistema, e não apenas resolver o problema sem se questionar como foi feito, pois isso a IA já consegue fazer bem.
