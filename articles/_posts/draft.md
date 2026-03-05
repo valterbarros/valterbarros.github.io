@@ -15,9 +15,9 @@ Ideias:
 ## O ambiente modificavel da area de tecnologia
 
 Quando comecei minha carreira eu trabalhava com, jquery, js, ruby on rails, me lembro que na epoca eu precisava tocar numa serie de tecnologias e linguagens diferentes
-como sql, css, scss, cofeescript. E sempre era dificil manter o nivel de qualidade em todas elas. Acredito que esse seja o cenario normal para qualquer dev. Desde então novas tecnologias surgiram e outras morreram, atualmente eu trabalho com vue.js, ruby on rails, e nossa a coisa mudou muito de cenario, praticamente tive que reaprender tudo
+como sql, css, scss, cofeescript. E sempre era dificil manter o nivel de qualidade em todas elas. Acredito que esse seja o cenario normal para qualquer dev. Desde então novas tecnologias surgiram e outras morreram, muita coisa que eu fazia nessa epoca mudou algumas até radicalmente.
 
-Com certeza se eu me mantivesse nessa mesma stack de anos atrás eu teria muita dificuldade em encontrar emprego e me manter em algum, sem me atualizar apenas me mantendo na mesma, existe emprego hoje para jquery? provavelmente não muitos.
+Com certeza se eu me mantivesse nessa mesma stack de anos atrás eu teria muita dificuldade em encontrar emprego e me manter em algum, sem me atualizar apenas me mantendo na mesma, existe emprego hoje para jquery? não muitos.
 
 Em alguns momentos essa mudança constante é muito complicada e desgastante pois, como seres humanos vamos sempre buscar algum conforto, o que é chamado hoje de "zona de conforto", para os coachs isso é algo que uma pessoa deve ter aversão e sempre procurar estar desconfortavel se desafiando e encontrando novos limites ainda não cruzados. Não concordo com essa ideia inclusive a psicologia moderna também não, e talvez essa ideia possa ser a causa de muito burnout que vemos hoje em dia. Acredito que devemos nos desafiar porem respeitando os limites
 
