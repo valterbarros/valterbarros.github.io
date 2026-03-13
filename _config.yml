@@ -3,6 +3,7 @@ theme: minima
 baseurl: "" # Mantenha vazio se estiver no seu-usuario.github.io
 permalink: /articles/:title/
 remote_theme: pages-themes/hacker@v0.2.0
+author: "Valter Barros"
 
 # Isso garante que o Jekyll ignore pastas que não interessam
 exclude:
