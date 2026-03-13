@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: O perigo invisível dos projetos legados
 ---
 
@@ -37,7 +37,7 @@ Para a organização isso quer dizer que novos usuários vão ter dificuldade pa
 Quer dizer que ele é suficiente para essa empresa(e talvez apenas isso mesmo) e em alguns casos ele acaba sendo indispensável, mas será que ele consegue se realocar em outra empresa caso precise? Será que ele consegue passar em uma entrevista apenas com esses conhecimentos "legados".
 </p>
 
-**3.Para o usuário**
+**3. Para o usuário**
 
 <p align="justify">
 Para o usuário quer dizer que ele vai pagar por um sistema, que tem baixas expectativas de qualidade. Lentidão para executar processos simples, carregamentos demorados, e insegurança com seus dados.
