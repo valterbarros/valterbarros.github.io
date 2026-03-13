@@ -32,12 +32,17 @@ Para o usuário quer dizer que ele vai pagar por um sistema, que tem baixas expe
 ### O que fazer?
 
 Mas aí vem a pergunta de um milhão: como se manter atualizado sem virar refém de cada nova biblioteca que aparece?
+
 O segredo está em filtrar o que é puro hype do que realmente resolve problemas. Antes de sair trocando tudo, vale parar e fazer um 'check-up' de realidade:
-Fôlego a longo prazo: Essas melhorias vão se sustentar daqui a dois ou três anos, ou são só a moda do momento?
-Custo de oportunidade: Realmente vale o esforço de mexer em algo que já entrega valor hoje? O ganho justifica o risco?
-Saúde do ecossistema: Tem gente de verdade usando e mantendo isso? Se a comunidade não for engajada, você corre o risco de herdar um novo legado (e dessa vez, um que ninguém mais conhece) em pouco tempo."
+
+- Fôlego a longo prazo: Essas melhorias vão se sustentar daqui a dois ou três anos, ou são só a moda do momento?
+- Custo de oportunidade: Realmente vale o esforço de mexer em algo que já entrega valor hoje? O ganho justifica o risco?
+- Saúde do ecossistema: Tem gente de verdade usando e mantendo isso? Se a comunidade não for engajada, você corre o risco de herdar um novo legado (e dessa vez, um que ninguém mais conhece) em pouco tempo."
+
 Como eu havia citado anteriormente, não precisamos ficar a todo momento mudando a forma como as coisas são feitas apenas por ego ou para deixar o código mais "pop". Porém, por outro lado, também não podemos largar o projeto às traças e deixar de fazer o básico, como: atualizar dependências, fazer refatorações e levantamentos de débito técnico.
+
 Mudar é difícil. Novas iniciativas dentro da empresa parecem desconfortáveis e às vezes parece não valer a pena mudar a forma como o código é feito, além do medo que falei sobre quebrar algo que está estável para os clientes de longo prazo.
+
 Mas, como indivíduos, precisamos pensar em nossas carreiras. Afinal, o que seria melhor: modernizar a forma como faço meu trabalho ou ser um dev apenas de legado e me manter desatualizado?
 
 
