@@ -3,6 +3,7 @@ layout: post
 title: O perigo invisível dos projetos legados
 ---
 
+<div style="text-align: justify">
 ### Introdução
 
 No começo da minha carreira eu trabalhava como fullstack, me lembro que na época eu precisava lidar numa série de tecnologias e linguagens diferentes como sql, css, scss, coffeescript, jquery, js, ruby on rails, etc. Acredito que esse seja um cenário "comum" para muitos devs. Desde então novas tecnologias surgiram e outras morreram, muita coisa que eu fazia nessa época mudou e algumas até radicalmente.
@@ -44,5 +45,4 @@ Não precisamos ficar a todo momento mudando a forma como as coisas são feitas 
 Mudar é difícil. Novas iniciativas dentro da empresa parecem desconfortáveis e às vezes parece não valer a pena mudar a forma como o código é feito, além do medo de quebrar algo que está estável para os clientes de longo prazo.
 
 Mas, como indivíduos, precisamos pensar em nossas carreiras. Afinal, o que seria melhor: modernizar a forma como faço meu trabalho ou ser um dev apenas de legado e me manter desatualizado?
-
-
+</div>
