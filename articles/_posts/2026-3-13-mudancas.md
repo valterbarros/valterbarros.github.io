@@ -21,7 +21,7 @@ Essa mudança constante pode ser difícil e desgastante pois, como seres humanos
 Na área de tecnologia isso pega um pouco mais pois, novas tecnologias surgem muito mais rápido do que podemos nos atualizar, e mesmo as que já existem continuam diariamente evoluindo, isso nos força a uma corrida constante. Mas o perigo real surge quando paramos: os projetos legados. Muitas vezes o projeto roda, os clientes estão acostumados, tem bugs mas são ignorados "se ninguém reclama deixa quieto ai", vulnerabilidades também são ignoradas "se ninguém invadiu até hoje ninguém vai mais", bibliotecas a anos sem atualização muitas vezes por falta de confiança da equipe de mexer e quebrar algo que já está estável rodando em produção. E dessa forma vão utilizando versões antigas e com sintaxe completamente deprecated e afundando cada vez mais esse projeto e criando uma dissonância em relação ao que é praticado no mercado fora daquela empresa.
 </p>
 
-> Porém não sou o cara do hype, se uma determinada biblioteca atende bem o sistema e consegue resolver os problemas, não vejo necessidade de trocar, até porque existe toda mudança possui um custo, como correr o risco de quebrar algo em produção.
+> Porém não sou o cara do hype, se uma determinada biblioteca atende bem o sistema e consegue resolver os problemas, não vejo necessidade de trocar, até porque toda mudança possui um custo, como correr o risco de quebrar algo em produção.
 
 Temos 3 sujeitos que são afetados de formas diferentes pelos projetos legados:
 
