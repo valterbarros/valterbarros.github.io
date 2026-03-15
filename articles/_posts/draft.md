@@ -7,10 +7,10 @@ Seria mais como uma maneira de falar aquelas coisas que n posso falar com colega
 Ideias:
 
 - Falar sobre saido do javascript e como ta sendo a jornada
-- [ ] Falar sobre questão de devs com mente fechada, e acomodados.
-  - [ ] E como isso pode acabar atrapalhando a carreia do dev
+- [x] Falar sobre questão de devs com mente fechada, e acomodados.
+  - [x] E como isso pode acabar atrapalhando a carreia do dev
 - Falar sobre ia também e minha visão atual
-- [ ] Falar sobre sistemas legados, com vulnerabilidades
+- [x] Falar sobre sistemas legados, com vulnerabilidades
 - [ ] Talvez poster sobre pr review e trabalho em equipa
 
 O ambiente modificável da área de tecnologia
