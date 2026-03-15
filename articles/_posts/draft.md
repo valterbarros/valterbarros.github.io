@@ -2,16 +2,16 @@ Pontos:
 
 Quero mesmo crisr o blog e pode escrever minhas criticas la
 Mesmo que ninguém leia ou poucos a questão é mais conseguir por pra fora man
-Seria mais como uma maneira de falar aquelas coisas que n posso falar com colegas de trabalho pois eles se doem
+Seria mais como uma maneira de falar aquelas coisas que n posso falar com colegas de trabalho
 
 Ideias:
 
 - Falar sobre saido do javascript e como ta sendo a jornada
-- [] Falar sobre questão de devs com mente fechada, e acomodados.
-  - [] E como isso pode acabar atrapalhando a carreia do dev
+- [ ] Falar sobre questão de devs com mente fechada, e acomodados.
+  - [ ] E como isso pode acabar atrapalhando a carreia do dev
 - Falar sobre ia também e minha visão atual
-- [] Falar sobre sistemas legados, com vulnerabilidades
-- [] Talvez poster sobre pr review e trabalho em equipa
+- [ ] Falar sobre sistemas legados, com vulnerabilidades
+- [ ] Talvez poster sobre pr review e trabalho em equipa
 
 O ambiente modificável da área de tecnologia
 
