@@ -1,23 +1,12 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
-    <title>{{ page.title }}</title>
-</head>
-<body>
-    <header>
-        <a href="/articles/">← Voltar para todos os artigos</a>
-    </header>
-    <article>
-        <h1>{{ page.title }}</h1>
-        <time>{{ page.date | date: "%d/%m/%Y" }}</time>
-        <hr>
-        {{ content }}
-    </article>
 
-    <div class="giscus"></div>
-</body>
-</html>
+<small>{{ page.date | date: "%-d %B %Y" }}</small>
+<h1>{{ page.title }}</h1>
+
+<p class="view">by {{ page.author | default: site.author }}</p>
+
+{{content}}
+
+<div class="giscus"></div>
