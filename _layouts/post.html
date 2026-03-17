@@ -24,3 +24,22 @@ layout: default
   data-page-title="{{ page.title }}"
   data-theme="dark"
 ></div>
+
+<script>
+const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+        if (mutation.addedNodes.length == 0) return;
+        const iframe = mutation.addedNodes[0];
+        if (iframe.tagName !== 'IFRAME') return;
+
+        const additionalStyles = `
+        .dark {
+            background: transparent;
+        }
+        `;
+        
+        iframe.srcdoc = iframe.srcdoc.replace('</style>', additionalStyles + '</style>');
+    });
+});
+observer.observe(document.getElementById("cusdis_thread"), { childList: true, subtree: true });
+</script>
