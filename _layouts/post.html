@@ -2,21 +2,7 @@
 layout: default
 ---
 
-<script src="https://giscus.app/client.js"
-        data-repo="valterbarros/valterbarros.github.io"
-        data-repo-id="MDEwOlJlcG9zaXRvcnk4NTM1MDAxNQ=="
-        data-category="Announcements"
-        data-category-id="DIC_kwDOBRZWf84C4iWC"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="pt"
-        crossorigin="anonymous"
-        async>
-</script>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
 <h1>{{ page.title }}</h1>
@@ -25,4 +11,10 @@ layout: default
 
 {{content}}
 
-<div class="giscus"></div>
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="57781c84-d1e2-4244-88ea-e05983bcf223"
+  data-page-id="{{ page.id }}"
+  data-page-url="{{ site.url }}{{ page.baseurl }}{{ page.url }}"
+  data-page-title="{{ page.title }}"
+></div>
