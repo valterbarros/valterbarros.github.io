@@ -54,10 +54,4 @@ Alem disso otimização prematura, uma função usada em apenas um local e o com
 
 São cenarios que percebo n ser necessário executar 
 
----
-
-### Plano de carreira
-
-Adicionar post sobre plano de carreira e organização de rh na empresa e como isso ajuda na motivação da equipe
-
 Fala sobre prazo e que isso atrapalha, pq a galera quer mandar o pr nas carreiras
