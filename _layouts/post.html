@@ -16,6 +16,8 @@ layout: default
 
 {{content}}
 
+<hr>
+
 <div id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="57781c84-d1e2-4244-88ea-e05983bcf223"
@@ -34,8 +36,11 @@ const observer = new MutationObserver((mutations) => {
 
         const additionalStyles = `
         .dark {
-            background: #1b1b1b;
-            padding: 20px;
+          background: #1b1b1b;
+          padding: 20px;
+        }
+        html {
+          background: #1b1b1b;
         }
         `;
         
