@@ -37,3 +37,21 @@ Talvez outro post
 ### IA
 
 Aqui entramos num ponto mais complicado atualmente com o avanço das IAs, as vezes sinto que a concorrencia agora não é mais os humanos e sim a IA em si, hoje trabalhos simples de programação e até intermediarios podem se resolvidos apenas com um prompt, então como um dev que nem atualiza suas dependencias nem busca melhorar seu codigo pode competir com isso? Por isso se faz ainda mais necessário a capacitação, o entendendimento do sistema, e não apenas resolver o problema sem se questionar como foi feito, pois isso a IA já consegue fazer bem.
+
+---
+
+### pr review 
+
+Em muitos empregos o trabalho em equipe é importante e ajuda, como seres humanos podemos deixar detalhes passar que podem ser identificados por outros humanos ou hoje em dia com o uso da ia.
+
+Para algumas pessoas pode ser mal visto em alguns momentos ter alguém dando opinião spbre seu trabalho, principalmente quando se leva para o pessoal e quando criamos um vínculo pessoal com o trabalho que foi feito
+
+Como eu havia dito é importante ter uma segunda visão e opinião no nosso trabalho, pessoalmente não posso dizer que amo feebbakcs e comentários eu meus pull requestes, porem ai entramos num outro ponto: é trabalho e não tem como gostar de tudo que é relacionado a ele vamos sim ter coisas desconfortáveis porem precisamos fazer para conseguir evoluir como profissionais 
+
+Acrdito que também ninguém é obrigado a aceitar uma sugestão, e em alguns momentos essas sugestões não fazem sentido mesmo. Geralmente coisas que n fazem sentido que vejo é perfeccionismo uma variável que ja descreve bem para que serve porem a pessoa ainda quer um nome mais descritivo
+
+Alem disso otimização prematura, uma função usada em apenas um local e o commenter pede para separar a mesma num arquivo 
+
+São cenarios que percebo n ser necessário executar 
+
+Fala sobre prazo e que isso atrapalha, pq a galera quer mandar o pr nas carreiras
