@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Meu Blog
+lang: pt-BR
 ---
 
 # Artigos

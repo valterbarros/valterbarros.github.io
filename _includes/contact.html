@@ -1,27 +1,35 @@
 <style>
-	.section-informations {
+  .section-informations {
     max-width: 533px;
-    margin: 0 auto;
+    margin: 2.5rem auto 0;
     text-align: center;
   }
-  .icons li{
+  .section-informations h2,
+  .section-informations h5 {
+    color: #b5e853;
+  }
+  .section-informations .description {
+    color: #eaeaea;
+    font-weight: normal;
+  }
+  .section-informations .description a {
+    color: #63c0f5;
+  }
+  .icons li {
     display: inline-block;
-    font-size:2.0em;
+    font-size: 2em;
   }
-
-  .icons{
-    margin-top:20px; 
+  .icons {
+    margin-top: 20px;
   }
-
-  ul li a.social-btn{
-    color: var(--black);
+  ul li a.social-btn {
+    color: #eaeaea;
     text-decoration: none;
-    margin:10px;
+    margin: 10px;
   }
-
-  ul li a.social-btn:hover{
-    color: #d8c7a0;
-    transition: all 0.2s linear;
+  ul li a.social-btn:hover {
+    color: #b5e853;
+    transition: color 0.2s linear;
     text-decoration: none !important;
   }
 </style>
@@ -33,16 +41,16 @@
 	</h5>
 	<ul class="icons text-center">
 		<li>
-		<a href="https://twitter.com/bluevalter" target="_blank" class="social-btn icon fa fa-twitter"></a>
+		<a href="https://twitter.com/bluevalter" target="_blank" rel="noopener noreferrer" class="social-btn icon fa fa-twitter" aria-label="Twitter"></a>
 		</li>
 		<li>
-		<a href="https://www.facebook.com/valterbarrosjunior" target="_blank" class="social-btn icon fa fa-facebook-square"></a>
+		<a href="https://www.facebook.com/valterbarrosjunior" target="_blank" rel="noopener noreferrer" class="social-btn icon fa fa-facebook-square" aria-label="Facebook"></a>
 		</li>
 		<li>
-		<a href="https://github.com/valterbarros" target="_blank" class="social-btn icon fa fa-github"></a>
+		<a href="https://github.com/valterbarros" target="_blank" rel="noopener noreferrer" class="social-btn icon fa fa-github" aria-label="GitHub"></a>
 		</li>
 		<li>
-		<a href="https://www.linkedin.com/in/valter-barros-827079128?trk=nav_responsive_tab_profile" target="_blank" class="social-btn icon fa fa-linkedin"></a>
+		<a href="https://www.linkedin.com/in/valter-barros-827079128?trk=nav_responsive_tab_profile" target="_blank" rel="noopener noreferrer" class="social-btn icon fa fa-linkedin" aria-label="LinkedIn"></a>
 		</li>
 	</ul>
 </section>

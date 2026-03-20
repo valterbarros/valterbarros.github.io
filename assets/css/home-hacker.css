@@ -1,0 +1,223 @@
+/* Portfolio home — aligns with pages-themes/hacker (terminal / green accent) */
+
+.home-portfolio {
+  position: relative;
+}
+
+.home-portfolio .lang-switch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.home-portfolio .lang-switch a {
+  color: #63c0f5;
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(104, 182, 255, 0.35);
+}
+
+.home-portfolio .lang-switch a:hover {
+  text-decoration: underline;
+}
+
+.home-portfolio .lang-switch__active {
+  color: #b5e853;
+  font-weight: bold;
+  text-shadow: 0 0 6px rgba(181, 232, 83, 0.35);
+}
+
+.home-hero {
+  padding-top: 2rem;
+  padding-right: 5rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .home-hero {
+    padding-right: 0;
+  }
+  .home-portfolio .lang-switch {
+    position: static;
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+}
+
+.home-hero__main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .home-hero__main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.home-hero__img {
+  border-radius: 50%;
+  border: 2px dashed #b5e853;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 12px rgba(181, 232, 83, 0.15);
+}
+
+.home-hero__text {
+  flex: 1;
+  min-width: 16rem;
+}
+
+.home-portfolio #header-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.35em;
+}
+
+.home-portfolio #subtitle {
+  font-size: 1.25rem;
+  color: #aaa;
+  font-weight: normal;
+  margin: 0 0 1rem;
+  text-shadow: none;
+}
+
+.home-intro {
+  color: #eaeaea;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.home-intro a {
+  color: #63c0f5;
+}
+
+.home-rule {
+  margin: 2.5rem 0;
+}
+
+.home-section h2.text-center {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.home-section h4 {
+  color: #b5e853;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.home-timeline {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.home-card {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border-left: 1px dashed #666;
+}
+
+.home-card__title {
+  color: #eaeaea;
+  font-size: 1rem;
+}
+
+.home-card__meta {
+  color: #888;
+  font-weight: 600;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.home-card p {
+  color: #eaeaea;
+  margin: 0.5rem 0 0;
+}
+
+.home-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 767px) {
+  .home-skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-skill-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  color: #eaeaea;
+}
+
+.home-stars {
+  color: #b5e853;
+  white-space: nowrap;
+}
+
+.home-stars .fa {
+  margin-left: 2px;
+}
+
+.home-skill-icons {
+  line-height: 0;
+}
+
+.home-skill-icons .skill-icon {
+  margin: 0 6px 8px 0;
+  background-image: url(../images/spritesheet_skill-icon.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
+}
+
+.home-skill-icons .skill-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.home-skill-icons .skill-icon.rails { width: 50px; background-position: 0 0; }
+.home-skill-icons .skill-icon.ruby { width: 50px; background-position: -99999999px 0; }
+.home-skill-icons .skill-icon.angular { width: 50px; background-position: -509px 0; }
+.home-skill-icons .skill-icon.javascript { width: 50px; background-position: -130px 0; }
+.home-skill-icons .skill-icon.jquery { width: 50px; background-position: -99999999px 0; }
+.home-skill-icons .skill-icon.html5 { width: 50px; background-position: -192px 0; }
+.home-skill-icons .skill-icon.css3 { width: 50px; background-position: -250px 0; }
+.home-skill-icons .skill-icon.github { width: 50px; background-position: -315px 0; }
+.home-skill-icons .skill-icon.trello { width: 50px; background-position: -380px 0; }
+.home-skill-icons .skill-icon.vue { width: 50px; background-position: -99999px 0; }
+.home-skill-icons .skill-icon.ionic { width: 50px; background-position: -99999px 0; }
+
+.home-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed #b5e853;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+.home-footer p {
+  margin: 0.35rem 0;
+}
+
+.home-footer__phone .fa {
+  margin-right: 0.35rem;
+  color: #b5e853;
+}

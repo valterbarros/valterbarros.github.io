@@ -1,5 +1,6 @@
 title: "Valter Barros"
-theme: minima
+description: "Desenvolvedor web — portfólio e artigos"
+lang: pt-BR
 baseurl: "" # Mantenha vazio se estiver no seu-usuario.github.io
 permalink: /articles/:title/
 remote_theme: pages-themes/hacker@v0.2.0

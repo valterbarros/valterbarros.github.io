@@ -1,4 +1,4 @@
-# Strings da página inicial (index + /pt/). Use page.locale: en | pt
+# Strings da home: / = pt, /en/ = en. page.locale: pt | en
 en:
   html_lang: en
   photo_alt: "It's me."
