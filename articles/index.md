@@ -15,3 +15,7 @@ Aqui está a lista de posts:
     </li>
   {% endfor %}
 </ul>
+
+<hr>
+
+{% include contact.html is_pt=true %}
