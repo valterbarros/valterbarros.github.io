@@ -32,6 +32,12 @@
     transition: color 0.2s linear;
     text-decoration: none !important;
   }
+  a.social-btn--x .social-btn__svg {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: -0.15em;
+  }
 </style>
 <section class="section-informations">
 	<h2 class="text-center">{% if include.locale == "pt" or locale == "pt" %}Contato{% else %}Contact{% endif %}</h2>
@@ -41,7 +47,9 @@
 	</h5>
 	<ul class="icons text-center">
 		<li>
-		<a href="https://twitter.com/bluevalter" target="_blank" rel="noopener noreferrer" class="social-btn icon fa fa-twitter" aria-label="Twitter"></a>
+		<a href="https://x.com/bluevalter" target="_blank" rel="noopener noreferrer" class="social-btn social-btn--x" aria-label="X">
+			<svg class="social-btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+		</a>
 		</li>
 		<li>
 		<a href="https://www.facebook.com/valterbarrosjunior" target="_blank" rel="noopener noreferrer" class="social-btn icon fa fa-facebook-square" aria-label="Facebook"></a>
