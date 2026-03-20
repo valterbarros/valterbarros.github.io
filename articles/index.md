@@ -18,4 +18,4 @@ Aqui está a lista de posts:
 
 <hr>
 
-{% include contact.html is_pt=true %}
+{% include contact.html locale="pt" %}
