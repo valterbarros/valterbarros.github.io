@@ -55,6 +55,7 @@ h2{
 }
 
 .box-intro{
+  position: relative;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -62,6 +63,27 @@ h2{
   background-size: cover;
   width:100%;
   height: calc(100vh - 40em);
+}
+
+.lang-switch {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 14px;
+  z-index: 3;
+}
+
+.lang-switch a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.lang-switch a:hover {
+  text-decoration: underline;
+}
+
+.lang-switch__active {
+  font-weight: 800;
 }
 
 .main-section{

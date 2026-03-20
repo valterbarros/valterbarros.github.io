@@ -1,0 +1,72 @@
+# Strings da página inicial (index + /pt/). Use page.locale: en | pt
+en:
+  html_lang: en
+  photo_alt: "It's me."
+  lang_label_en: EN
+  lang_label_pt: PT
+  role: Web Developer
+  intro_before: "Graduated from system analysis, improving every day in programming, English, and communication. Currently working at "
+  intro_mid: " as a frontend developer. You can read more here: "
+  section_work: Work History
+  section_education: Education
+  section_skills: Skills
+  skills_languages: "Languages:"
+  skills_knowledge: "Knowledge:"
+  skill_pt: Portuguese
+  skill_en_speak: English, speaking
+  skill_en_read: English, reading
+  footer_credit: made by valter barros
+  jobs:
+    - title: Frontend Developer
+      subtitle: Clicksign / Remote / April 2022 – Present
+      body: Vue.js development, unit tests, and architecture.
+    - title: Frontend Developer
+      subtitle: Tidy / Remote / August 2019 – 2021
+      body: Angular and Ionic to build mobile apps for cleaning services and booking.
+    - title: Fullstack Developer
+      subtitle: Stant / Maceió, Alagoas / 2017 – 2019
+      body: Ruby on Rails, JavaScript, Vue, CSS, and HTML — solving different problems daily and supporting the team.
+    - title: Academic
+      subtitle: FAT-AL / Maceió, Alagoas / 2016 – 2017
+      body: |
+        This is where I met Ruby and then Rails. I studied hard to build [ClassGame](https://github.com/classgame/classgame), a course platform.
+  education:
+    - title: Systems Analysis
+      subtitle: FAT-AL / Maceió, Alagoas / 2014 – 2017
+      body: In this course I started programming and fell in love with it. I learned fundamentals — algorithms, math, logic, databases, networks, entrepreneurship — and I have kept learning ever since.
+
+pt:
+  html_lang: pt-BR
+  photo_alt: Sou eu.
+  lang_label_en: EN
+  lang_label_pt: PT
+  role: Desenvolvedor web
+  intro_before: "Formado em análise de sistemas, evoluindo todos os dias em programação, inglês e comunicação. Trabalho na "
+  intro_mid: " como desenvolvedor frontend. Veja mais em "
+  section_work: Experiência
+  section_education: Formação
+  section_skills: Habilidades
+  skills_languages: "Idiomas:"
+  skills_knowledge: "Conhecimento:"
+  skill_pt: Português
+  skill_en_speak: Inglês, conversação
+  skill_en_read: Inglês, leitura
+  footer_credit: feito por valter barros
+  jobs:
+    - title: Desenvolvedor frontend
+      subtitle: Clicksign / Remoto / abril 2022 – atual
+      body: Desenvolvimento em Vue.js, testes unitários e arquitetura.
+    - title: Desenvolvedor frontend
+      subtitle: Tidy / Remoto / agosto 2019 – 2021
+      body: Angular e Ionic para apps mobile de serviços de limpeza e agendamento.
+    - title: Desenvolvedor fullstack
+      subtitle: Stant / Maceió, AL / 2017 – 2019
+      body: Ruby on Rails, JavaScript, Vue, CSS e HTML — problemas variados no dia a dia e apoio ao time.
+    - title: Acadêmico
+      subtitle: FAT-AL / Maceió, AL / 2016 – 2017
+      body: |
+        Foi onde conheci Ruby e depois Rails. Estudei bastante para criar o [ClassGame](https://github.com/classgame/classgame), uma plataforma de cursos.
+  education:
+    - title: Análise de sistemas
+      subtitle: FAT-AL / Maceió, AL / 2014 – 2017
+      body: Foi onde comecei a programar e me apaixonei pela área. Base sólida em algoritmos, matemática, lógica, banco de dados, redes e empreendedorismo — e sigo aprendendo desde então.
