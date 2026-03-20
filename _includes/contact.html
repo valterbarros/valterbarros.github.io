@@ -1,5 +1,32 @@
+<style>
+	.section-informations {
+    max-width: 533px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .icons li{
+    display: inline-block;
+    font-size:2.0em;
+  }
+
+  .icons{
+    margin-top:20px; 
+  }
+
+  ul li a.social-btn{
+    color: var(--black);
+    text-decoration: none;
+    margin:10px;
+  }
+
+  ul li a.social-btn:hover{
+    color: #d8c7a0;
+    transition: all 0.2s linear;
+    text-decoration: none !important;
+  }
+</style>
 <section class="section-informations">
-	<h2>{% if include.locale == "pt" or locale == "pt" %}Contato{% else %}Contact{% endif %}</h2>
+	<h2 class="text-center">{% if include.locale == "pt" or locale == "pt" %}Contato{% else %}Contact{% endif %}</h2>
 	<h5 class="text-center description">
 		{% if include.locale == "pt" or locale == "pt" %}Envie um e-mail, ficarei feliz em falar sobre projetos e ideias.{% else %}Send an e-mail I'll be glad to talk about projects and ideas.{% endif %}
 		<a href="mailto:valterinside@gmail.com">valterinside@gmail.com</a>
