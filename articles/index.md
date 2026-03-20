@@ -18,4 +18,14 @@ Aqui está a lista de posts:
 
 <hr>
 
+<style>
+  .section-informations {
+    position: fixed;
+
+    bottom: 0;
+    translate: -50%;
+    left: 50%;
+  }
+</style>
+
 {% include contact.html locale="pt" %}
