@@ -22,8 +22,6 @@ Aqui está a lista de posts:
 <style>
   .section-informations {
     position: fixed;
-
-    bottom: 0;
     translate: -50%;
     left: 50%;
   }
