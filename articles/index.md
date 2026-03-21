@@ -24,7 +24,6 @@ Aqui está a lista de posts:
     position: absolute;
     translate: -50%;
     left: 50%;
-    bottom: 0;
   }
 </style>
 
