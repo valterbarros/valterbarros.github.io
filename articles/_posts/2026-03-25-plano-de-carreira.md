@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Plano de Carreira\: Por que a falta de perspectiva cria times estagnados?
+title: Plano de Carreira; Por que a falta de perspectiva cria times estagnados?
 ---
 
 ### Plano de carreira
