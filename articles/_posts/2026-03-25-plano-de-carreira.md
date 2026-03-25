@@ -1,6 +1,6 @@
 ---
 layout: post
-title: O custo oculto de não valorizar o desenvolvedor.
+title: Plano de Carreira: Por que a falta de perspectiva cria times estagnados?
 ---
 
 ### Plano de carreira
