@@ -12,9 +12,6 @@ Tentei ser o mais neutro possivel, e trazer pontos de vista diferentes e tentar 
 
 ### Assuntos mais atuais
 
-Attekita - [Apagão de devs 21/05/2026](https://www.youtube.com/watch?v=BlqXUNQMsAo)
-- Com toda a propaganda negativa em relação a ser dev, que não devemos mais estudar programação principalmente pelo CEO da nvidia Jensen Huang, muitos devs estão desistindo da área e procurando outro emprego, porém existe um marketing muito pesado nisso no real valor da IA e no que vai da para fazer, dessa forma acaba inflacionando, porém quando essa falsa verdade cair os devs já vão ter saído da área.
-
 [Agusto galego - Se você ama escrever código… tenho más notícias - 04/02/2026](https://www.youtube.com/watch?v=rRnSFVIV9Lk)
 - Basicamente ele fala que o dev vai ser como um executivo de código, que faz os julgamentos de algo que a ia faz, pq usar tal arquitetura ou outra? Mas ainda é importante entender o codigo porem não será necessário fazer isso sempre
 - Falou dessas ias
@@ -78,7 +75,8 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
 
 ### Ia vai tomar os trabalhos?
 
-- TODO adicionar um de 2026
+- Attekita - [Apagão de devs 21/05/2026](https://www.youtube.com/watch?v=BlqXUNQMsAo)
+  - Com toda a propaganda negativa em relação a ser dev, que não devemos mais estudar programação principalmente pelo CEO da nvidia Jensen Huang, muitos devs estão desistindo da área e procurando outro emprego, porém existe um marketing muito pesado nisso no real valor da IA e no que vai da para fazer, dessa forma acaba inflacionando, porém quando essa falsa verdade cair os devs já vão ter saído da área.
 
 - [90% of code will be written by ai 3 months - 17/03/2025](https://youtu.be/cMApO0UhqEs?si=8uzPYzU8LUTFPAZv)
   - Ele compara com surgimento do c na época do assembly, onde muita gente achou que ia ficar muito fácil programar e isso ia quebrar a área de programação.
