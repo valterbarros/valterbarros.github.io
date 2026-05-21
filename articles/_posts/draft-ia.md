@@ -15,7 +15,7 @@ Tentei ser o mais neutro possivel, e trazer pontos de vista diferentes e tentar 
 Attekita - [Apagão de devs 21/05/2026](https://www.youtube.com/watch?v=BlqXUNQMsAo)
 - Com toda a propaganda negativa em relação a ser dev, que não devemos mais estudar programação principalmente pelo CEO da nvidia Jensen Huang, muitos devs estão desistindo da área e procurando outro emprego, porém existe um marketing muito pesado nisso no real valor da IA e no que vai da para fazer, dessa forma acaba inflacionando, porém quando essa falsa verdade cair os devs já vão ter saído da área.
 
-Agusto galego - Se você ama escrever código… tenho más notícias - 04/02/2026
+[Agusto galego - Se você ama escrever código… tenho más notícias - 04/02/2026](https://www.youtube.com/watch?v=rRnSFVIV9Lk)
 - Basicamente ele fala que o dev vai ser como um executivo de código, que faz os julgamentos de algo que a ia faz, pq usar tal arquitetura ou outra? Mas ainda é importante entender o codigo porem não será necessário fazer isso sempre
 - Falou dessas ias
   - Opencode
@@ -43,8 +43,10 @@ Thiago Ramos - [Ia não vai substituir programadores - 17/01/2026](https://www.y
 Attekita - [A IA n ta roubando emprego ela ta roubando outra coisa 19/01/2026](https://youtu.be/dL_4P2I-yrg?si=yjH2N4xpxzq4PKUK)
   
   - A IA está deixando o mercado de programação tecnologia menos envolvido com código, e mais ligado a regra de negócio, ou negócios em si. Isso afeta programadores pois gostamos das partes difíceis de programar, resolver problemas e etc. Hoje com a ia ficou fácil quase não se fica mais bloqueado a ia consegui responder e resolver
+
 Unknow
-Rezar para que para pequenas empresa não valha a pena usar ia por conta do preço
+
+- Rezar para que para pequenas empresa não valha a pena usar ia por conta do preço
 
 Ryan dahl(criador do node) - 01/01/2026
 
@@ -66,6 +68,8 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
 [Deepseek 29/01/2025](https://www.bbc.com/portuguese/articles/c07km12v18do)
 
 <img width="674" height="626" alt="Screenshot from 2026-05-21 18-40-22" src="https://github.com/user-attachments/assets/8efd4df3-4d45-4551-944e-8e9e72153a1c" />
+
+- Fala sobre todo o marketing que tem sido feitos nos ultimos anos, inclusive pelo mesmo, em relação as Ias tomarem os empregos dos humanos e como isso impacta negativamente a popularidade em torna das IAs
 
 ### Ia vai tomar os trabalhos?
 
