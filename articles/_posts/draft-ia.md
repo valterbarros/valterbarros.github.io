@@ -61,6 +61,11 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
 
 - Vai ser mais cara pagar a ia do que pagar o dev?
 
+[DeepSeek to Be Banned in USA?](https://www.youtube.com/watch?v=KPdAw-iv4eU)
+
+- Talvez por medo da evolução do deepseek os EUA foi atrás de barrar a evolução e popularidade dele dentro do territorio americano
+- TODO
+
 [The mind-boggling valuations of AI companies](https://www.theguardian.com/global/2025/nov/04/the-mind-boggling-valuations-of-ai-companies)
 
 - Acordos Multibilionários e Circularidade: A OpenAI (que estuda abrir capital com uma valoração de US$ 1 trilhão) firmou uma série de contratos massivos com parceiros de nuvem e hardware, incluindo US$ 100 bilhões com a Nvidia, US$ 250 bilhões com a Microsoft e US$ 300  bilhões com a Oracle. Essa rede de transações cruzadas gera preocupações sobre o risco de uma bolha financeira, onde a falha de uma empresa poderia desestabilizar todo o ecossistema.
@@ -73,11 +78,11 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
 
 ### Ia vai tomar os trabalhos?
 
+- TODO adicionar um de 2026
+
 - [90% of code will be written by ai 3 months - 17/03/2025](https://youtu.be/cMApO0UhqEs?si=8uzPYzU8LUTFPAZv)
   - Ele compara com surgimento do c na época do assembly, onde muita gente achou que ia ficar muito fácil programar e isso ia quebrar a área de programação.
 
-- [Crise - Augusto galego - 08/04/2025](https://youtu.be/7TYbSf0pTpA?si=gIgBUfVqrUzI5oK1)
-  - Um pouco sobre o status da ia, produtividade com ia e onde a ia precisa evoluir para substituir os devs
 - [LLMs bring new nature of abstraction - Martin fowler 24/06/2025](https://martinfowler.com/articles/2025-nature-abstraction.html)
   - as ias estão mudando a área e algumas coisas que gostamos vai deixar de ser feita porém outras que nem sabemos vão começar
 
