@@ -1,4 +1,12 @@
-Fala pessoal, a lista de artigos e videos, eu venho compilando desde que a IA começou a ter bastante notoriedade, hoje eu tenho uma dificuldade que acredito muitos devs também tenham, que é abrir um feed de linkedin ou youtube,e ver uma serie de youtubers, postando sobre IA, sobre o fim dos programadores, e talvez alguns falando contra a IA, pra mim é realmente um caos, por isso eu comecei a unir esses links e principalmente ao longo tempo, para poder fazer comparações entre periodos e por a prova se as estimativas estão certas ou se são na verdade exageiros, que é o que vemos com alguns CEOs de empresas que se beneficiam da venda de IA como openIA ou nvidea.
+<p class="justify">
+Fala pessoal, essa é uma lista de artigos e videos que eu venho compilando desde que a IA começou a ter bastante notoriedade, atualmente eu tenho uma dificuldade que acredito muitos devs também tenham, que é abrir um feed de linkedin ou youtube, e ver uma serie de produtores de conteudo, postando sobre IA, sobre o fim dos programadores, e talvez alguns falando contra a IA, pra mim é realmente um caos, por isso eu comecei a unir esses links e principalmente ao longo tempo, para poder fazer comparações entre periodos e por a prova se as estimativas estão certas ou se são na verdade exageiros, que é o que vemos em alguns casos.
+
+Abaixo de cada link, eu tentei colocar alguns comentários que os donos do conteudo fizeram, alguns resumos para ajudar no enriquecimento.
+
+Então da pra tomar como um lista segura na medida do possivel claro, muitas suposições podem ainda estar infladas e o conteudo é de inteira responsabilidade do criador de cada conteudo.
+
+Qualquer sugestão, link quebrado ou adição de link pode falar comigo estou aberto a sugestões.  
+</p>  
 
 ### Assuntos mais atuais
 
