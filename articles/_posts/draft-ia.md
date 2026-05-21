@@ -57,6 +57,10 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
 
 - Vai ser mais cara pagar a ia do que pagar o dev?
 
+[The mind-boggling valuations of AI companies](https://www.theguardian.com/global/2025/nov/04/the-mind-boggling-valuations-of-ai-companies)
+
+- Faz considerações sobre IA, e economia circular onde, a nvidea investe na openIA e a openIA compra GPU da nvidea
+
 [Deepseek 29/01/2025](https://www.bbc.com/portuguese/articles/c07km12v18do)
 
 <img width="674" height="626" alt="Screenshot from 2026-05-21 18-40-22" src="https://github.com/user-attachments/assets/8efd4df3-4d45-4551-944e-8e9e72153a1c" />
