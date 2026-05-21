@@ -79,6 +79,7 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
 
 - [Linus torvalds - sobre ia - 09/07/2024](https://youtu.be/4WCTGycBceg?si=EhzYC4vUcHttMbhq)
   - Hoje na indústria estamos sofrendo de um hype exagerado, e muito marketing onde 90% é mentira e 10% é verdade
+  - (anos mais tarde o mesmo tem sido mais positivo em relação ao uso da IA para programar)
 
 - [A ia é uma ameaça - 31/03/2024](https://youtu.be/fuz1oz9rKVU?si=Yg7Kl__bBcALETZ2)
   - Possiveis mudanças, e agora precisamos nos atualizar e saber como vai ser daqui pra frente
