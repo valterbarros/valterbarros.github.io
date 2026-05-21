@@ -5,7 +5,9 @@ Abaixo de cada link, eu tentei colocar alguns comentários que os donos do conte
 
 Então da pra tomar como um lista segura na medida do possivel claro, muitas suposições podem ainda estar infladas e o conteudo é de inteira responsabilidade do criador de cada conteudo.
 
-Qualquer sugestão, link quebrado ou adição de link pode falar comigo estou aberto a sugestões.  
+Qualquer sugestão, link quebrado ou adição de link pode falar comigo estou aberto a sugestões.
+
+Tentei ser o mais neutro possivel, e trazer pontos de vista diferentes e tentar enviesar menos
 </p>  
 
 ### Assuntos mais atuais
@@ -79,13 +81,19 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
   - Hoje na indústria estamos sofrendo de um hype exagerado, e muito marketing onde 90% é mentira e 10% é verdade
 
 - [A ia é uma ameaça - 31/03/2024](https://youtu.be/fuz1oz9rKVU?si=Yg7Kl__bBcALETZ2)
+  - Possiveis mudanças, e agora precisamos nos atualizar e saber como vai ser daqui pra frente
 - [Porque DEVs não precisam se preocupar com IA. - 12/07/2024](https://www.youtube.com/watch?v=GRncLmx-gfs)
+  - Para a IA chegar a substituir os humanos totalmente em programação provavelmente todas as outras areas já vão ter sido substituidas
+  - Fala sobre possiveis cenarios para o futuro das IAs
 - [NÃO PRECISAMOS MAIS APRENDER A PROGRAMAR? - 05/03/2024](https://www.youtube.com/watch?v=JNKtm-IdNWE)
   - Jensen Huang fale que não vamos precisar mais aprender programação, o mesmo que esse ano fez uma retratação sobre o tema
 - [o fim dos programadores está próximo - 06/09/2024](https://youtu.be/31hHRJbCEp4?si=kSEJ8J2yE2krczV)
-- [Will Devin AI Replace Coders? - 14/03/2024](https://www.youtube.com/watch?v=HXH4yu227EQ&ab_channel=ProgrammingwithMosh)
+  - Comentários sobre a afirmação do CEO da stability AI bem catastroficos prevendo o fim dos programadores num futuro próximo
+  - Comentários sobre a AWS que já foi e voltou na decisão de tirar mão de obra humana alguns vezes recentemente
 - [Nao a ia não vai tomar seu trabalho - 11/05/2023](https://youtu.be/wAzsB15_ZmY?si=qwmNKgXbqbpb094p)
+  - Fala sobre o medo dos desenvolvedores de perder o emprego e sobre a limitação da epoca do chatGpt e copilot
 - [Quando o chatgpt acabara com os programadores - 17/04/2023](https://youtu.be/QfVA3VeetsU?si=149JYO3hl5KE0A30)
+  - Sobre chatGpt explicações mais introdutorias
 
 ### Minhas impressões atuais
 
