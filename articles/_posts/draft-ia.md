@@ -14,6 +14,7 @@ Augusto galego - [Engenharia de software acabou de mudar pra SEMPRE.](https://ww
 
 - Artigo: [The Software Engineering Identity Crisis](https://annievella.com/posts/the-software-engineering-identity-crisis/)
 - Analise de se redução de quadro está ligado a IA
+- TODO
 
 Attekita - [O mercado de TI entrou em colapso? (meu conselho mais sincero) - 05/02/2026`](https://www.youtube.com/watch?v=qWunnuyzdiM)
 
@@ -70,3 +71,44 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
 - [Nao a ia não vai tomar seu trabalho - 11/05/2023](https://youtu.be/wAzsB15_ZmY?si=qwmNKgXbqbpb094p)
 - [Quando o chatgpt acabara com os programadores - 17/04/2023](https://youtu.be/QfVA3VeetsU?si=149JYO3hl5KE0A30)
 
+### Minhas impressões atuais
+
+Atualmente eu acredito que a ia não consegue substituir os devs, mas concordo com o comentário de algumas pessoas de que o emprego do dev como era antes vai deixar de existir aos poucos, talvez fique um pouco mais como supervisor das ias, e menos como escritor de sintaxe e código, isso é ruim para quem gosta de programar porém abre novas possibilidades, agora se essas possibilidades porém realocar todas as pessoas que possivelmente podem perder o emprego já algo mais difícil de dizer
+
+É impossível negar também o tremendo auxílio que a ida trás hoje, ajuda muito, principalmente quando temos um problema que ficamos preso ali, geralmente a ia possui uma saída para resolver, algumas vezes não claro.
+
+### Comments
+
+Jan 15 2026
+
+  - Ia pirâmide? Nvidia invest na open ia e a open ia comprar chips da nvidia para rodar ia
+
+<img width="490" height="466" alt="image" src="https://github.com/user-attachments/assets/bd02acf5-dfdd-4b49-8e96-2aa0978faf4c" />
+
+<img width="490" height="466" alt="image" src="https://github.com/user-attachments/assets/2e254967-18dc-49ea-bbef-e1f27d98ae17" />
+
+Jan 14 2026
+
+Racionalmente até dá pra saber que a ia não é esses milagres todo porém com esse tanto de pessoas endossando cto ceo, empresas etc fica difícil questionar
+
+Apr 18 2025
+
+Frases sobre ia:
+
+Apesar de vários layoffs a área ainda está inflada e talvez essas pessoas percam emprego o que faz parecer que é para a ia
+Além de que pode ser um bom motivo para falar da produtividade da ia e vender ia
+
+- Lucas Montano
+
+Mar 19 2025
+
+Frases sobre ia:
+
+O valor do código está mudando e o apego ao mesmo também
+lucas montano
+
+A quantidade de código produzida vai aumentar muito, muito código vai ser produzido
+theo
+
+Num cenário extremo da ia substituindo os humanos o que acontece com ferramentas como copilot?
+Lucas Montano
