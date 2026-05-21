@@ -1,3 +1,5 @@
+Fala pessoal, a lista de artigos e videos, eu venho compilando desde que a IA começou a ter bastante notoriedade, hoje eu tenho uma dificuldade que acredito muitos devs também tenham, que é abrir um feed de linkedin ou youtube,e ver uma serie de youtubers, postando sobre IA, sobre o fim dos programadores, e talvez alguns falando contra a IA, pra mim é realmente um caos, por isso eu comecei a unir esses links e principalmente ao longo tempo, para poder fazer comparações entre periodos e por a prova se as estimativas estão certas ou se são na verdade exageiros, que é o que vemos com alguns CEOs de empresas que se beneficiam da venda de IA como openIA ou nvidea.
+
 ### Assuntos mais atuais
 
 Attekita - [Apagão de devs 21/05/2026](https://www.youtube.com/watch?v=BlqXUNQMsAo)
@@ -13,8 +15,10 @@ Agusto galego - Se você ama escrever código… tenho más notícias - 04/02/20
 Augusto galego - [Engenharia de software acabou de mudar pra SEMPRE.](https://www.youtube.com/watch?v=7TYbSf0pTpA)
 
 - Artigo: [The Software Engineering Identity Crisis](https://annievella.com/posts/the-software-engineering-identity-crisis/)
+  - Artigo sobre os impactos da IA na engenharia de software, como codigo duplicado.
 - Analise de se redução de quadro está ligado a IA
-- TODO
+- Foca um pouco no que falta para a IA tomar os empregos dos devs, e em alguns pontos que a IA não consegue fazer, como levantamento de requisitos, entender o cliente, alem da capacidade de resolver problemas complexos
+- Fala sobre um futuro termos muitos debitos tecnicos inseridos pela IA
 
 Attekita - [O mercado de TI entrou em colapso? (meu conselho mais sincero) - 05/02/2026`](https://www.youtube.com/watch?v=qWunnuyzdiM)
 
