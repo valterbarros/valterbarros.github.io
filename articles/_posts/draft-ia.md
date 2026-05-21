@@ -59,7 +59,7 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
 
 [The mind-boggling valuations of AI companies](https://www.theguardian.com/global/2025/nov/04/the-mind-boggling-valuations-of-ai-companies)
 
-- Faz considerações sobre IA, e economia circular onde, a nvidea investe na openIA e a openIA compra GPU da nvidea
+- Acordos Multibilionários e Circularidade: A OpenAI (que estuda abrir capital com uma valoração de US$ 1 trilhão) firmou uma série de contratos massivos com parceiros de nuvem e hardware, incluindo US$ 100 bilhões com a Nvidia, US$ 250 bilhões com a Microsoft e US$ 300  bilhões com a Oracle. Essa rede de transações cruzadas gera preocupações sobre o risco de uma bolha financeira, onde a falha de uma empresa poderia desestabilizar todo o ecossistema.
 
 [Deepseek 29/01/2025](https://www.bbc.com/portuguese/articles/c07km12v18do)
 
