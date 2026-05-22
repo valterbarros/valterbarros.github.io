@@ -24,7 +24,7 @@ Augusto galego - [Engenharia de software acabou de mudar pra SEMPRE.](https://ww
 
 - Artigo: [The Software Engineering Identity Crisis](https://annievella.com/posts/the-software-engineering-identity-crisis/)
   - Artigo sobre os impactos da IA na engenharia de software, como codigo duplicado.
-- Analise de se redução de quadro está ligado a IA
+- Analise de se redução de quadro está ligado a IAf
 - Foca um pouco no que falta para a IA tomar os empregos dos devs, e em alguns pontos que a IA não consegue fazer, como levantamento de requisitos, entender o cliente, alem da capacidade de resolver problemas complexos
 - Fala sobre um futuro termos muitos debitos tecnicos inseridos pela IA
 
@@ -55,6 +55,8 @@ Jensen Huang 01/01/2026: https://tecnoblog.net/noticias/jensen-huang-critica-neg
 
 <img width="1069" height="253" alt="Screenshot from 2026-05-21 17-51-47" src="https://github.com/user-attachments/assets/eaa69f00-8616-4ae6-8248-100aa003162d" />
 
+- Fala sobre todo o marketing que tem sido feitos nos ultimos anos, inclusive pelo mesmo, em relação as Ias tomarem os empregos dos humanos e como isso impacta negativamente a popularidade em torna das IAs
+
 Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/04/2026
 
 - Vai ser mais cara pagar a ia do que pagar o dev?
@@ -62,7 +64,6 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
 [DeepSeek to Be Banned in USA?](https://www.youtube.com/watch?v=KPdAw-iv4eU)
 
 - Talvez por medo da evolução do deepseek os EUA foi atrás de barrar a evolução e popularidade dele dentro do territorio americano
-- TODO
 
 [The mind-boggling valuations of AI companies](https://www.theguardian.com/global/2025/nov/04/the-mind-boggling-valuations-of-ai-companies)
 
@@ -72,18 +73,17 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
 
 <img width="674" height="626" alt="Screenshot from 2026-05-21 18-40-22" src="https://github.com/user-attachments/assets/8efd4df3-4d45-4551-944e-8e9e72153a1c" />
 
-- Fala sobre todo o marketing que tem sido feitos nos ultimos anos, inclusive pelo mesmo, em relação as Ias tomarem os empregos dos humanos e como isso impacta negativamente a popularidade em torna das IAs
-
 ### Ia vai tomar os trabalhos?
 
 - Attekita - [Apagão de devs 21/05/2026](https://www.youtube.com/watch?v=BlqXUNQMsAo)
-  - Com toda a propaganda negativa em relação a ser dev, que não devemos mais estudar programação principalmente pelo CEO da nvidia Jensen Huang, muitos devs estão desistindo da área e procurando outro emprego, porém existe um marketing muito pesado nisso no real valor da IA e no que vai da para fazer, dessa forma acaba inflacionando, porém quando essa falsa verdade cair os devs já vão ter saído da área.
-
-- [90% of code will be written by ai 3 months - 17/03/2025](https://youtu.be/cMApO0UhqEs?si=8uzPYzU8LUTFPAZv)
-  - Ele compara com surgimento do c na época do assembly, onde muita gente achou que ia ficar muito fácil programar e isso ia quebrar a área de programação.
+  - Com toda a propaganda negativa em relação a ser dev, que não devemos mais estudar programação principalmente pelo CEO da nvidia Jensen Huang, muitos devs estão desistindo da área e procurando outro emprego ou mesmo virando empreendedor na area tech. Fala sobre passo atrás dado pelo CEO da nvidea admitindo que o marketing agressivo sobre o avanço das IAs e fim do programadores e de outras profissões também
+  - Falou sobre as pessoas que lucram com o marketing do medo, e por isso muitos CEOs mantem esse discurso.
 
 - [LLMs bring new nature of abstraction - Martin fowler 24/06/2025](https://martinfowler.com/articles/2025-nature-abstraction.html)
-  - as ias estão mudando a área e algumas coisas que gostamos vai deixar de ser feita porém outras que nem sabemos vão começar
+  - as IAs estão mudando a área e algumas coisas que gostamos vai deixar de ser feita porém outras que nem sabemos vão começar
+ 
+- [90% of code will be written by ai 3 months - 17/03/2025](https://youtu.be/cMApO0UhqEs?si=8uzPYzU8LUTFPAZv)
+  - Ele compara com surgimento da linguagem **C** na época do **Assembly**, onde muita gente achou que ficaria muito fácil programar e isso ia quebrar a área de programação.
 
 - [Linus torvalds - sobre ia - 09/07/2024](https://youtu.be/4WCTGycBceg?si=EhzYC4vUcHttMbhq)
   - Hoje na indústria estamos sofrendo de um hype exagerado, e muito marketing onde 90% é mentira e 10% é verdade
@@ -91,30 +91,37 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
 
 - [A ia é uma ameaça - 31/03/2024](https://youtu.be/fuz1oz9rKVU?si=Yg7Kl__bBcALETZ2)
   - Possiveis mudanças, e agora precisamos nos atualizar e saber como vai ser daqui pra frente
+
 - [Porque DEVs não precisam se preocupar com IA. - 12/07/2024](https://www.youtube.com/watch?v=GRncLmx-gfs)
   - Para a IA chegar a substituir os humanos totalmente em programação provavelmente todas as outras areas já vão ter sido substituidas
   - Fala sobre possiveis cenarios para o futuro das IAs
+
 - [NÃO PRECISAMOS MAIS APRENDER A PROGRAMAR? - 05/03/2024](https://www.youtube.com/watch?v=JNKtm-IdNWE)
   - Jensen Huang fale que não vamos precisar mais aprender programação, o mesmo que esse ano fez uma retratação sobre o tema
+
 - [o fim dos programadores está próximo - 06/09/2024](https://youtu.be/31hHRJbCEp4?si=kSEJ8J2yE2krczV)
   - Comentários sobre a afirmação do CEO da stability AI bem catastroficos prevendo o fim dos programadores num futuro próximo
   - Comentários sobre a AWS que já foi e voltou na decisão de tirar mão de obra humana alguns vezes recentemente
+
 - [Nao a ia não vai tomar seu trabalho - 11/05/2023](https://youtu.be/wAzsB15_ZmY?si=qwmNKgXbqbpb094p)
-  - Fala sobre o medo dos desenvolvedores de perder o emprego e sobre a limitação da epoca do chatGpt e copilot como perda de contexto toda hora e dificuldade para executar tarefas do inicio ao fim sem vários auxilios por parte do desenvolvedor. 
+  - Fala sobre o medo dos desenvolvedores de perder o emprego e sobre a limitação da epoca do chatGpt e copilot como perda de contexto toda hora e dificuldade para executar tarefas do inicio ao fim sem vários auxilios por parte do desenvolvedor.
+
 - [Quando o chatgpt acabara com os programadores - 17/04/2023](https://youtu.be/QfVA3VeetsU?si=149JYO3hl5KE0A30)
   - Sobre chatGpt explicações mais introdutorias
 
 ### Minhas impressões atuais
 
-Atualmente eu acredito que a ia não consegue substituir os devs, mas concordo com o comentário de algumas pessoas de que o emprego do dev como era antes vai deixar de existir aos poucos, talvez fique um pouco mais como supervisor das ias, e menos como escritor de sintaxe e código, isso é ruim para quem gosta de programar porém abre novas possibilidades, agora se essas possibilidades porém realocar todas as pessoas que possivelmente podem perder o emprego já algo mais difícil de dizer
+Atualmente eu acredito que a IA não consegue substituir os devs, mas concordo com o comentário de algumas pessoas de que o emprego do dev como era antes vai deixar de existir aos poucos, talvez fique um pouco mais como supervisor das ias, e menos como escritor de sintaxe e código, isso é ruim para quem gosta de programar porém abre novas possibilidades, agora se essas possibilidades podem realocar todas as pessoas que possivelmente podem perder o emprego já algo mais difícil de dizer
 
-É impossível negar também o tremendo auxílio que a ida trás hoje, ajuda muito, principalmente quando temos um problema que ficamos preso ali, geralmente a ia possui uma saída para resolver, algumas vezes não claro.
+É impossível negar também o tremendo auxílio que a IA trás hoje, ajuda muito, principalmente quando temos um problema que ficamos preso ali, geralmente a ia possui uma saída para resolver, algumas vezes não claro.
+
+Algo a se notar é o input que a IA recebe hoje, ele é basicamente a media de todo software principalmente open source feito, e alguns codigos um pouco mais avançados geralmente não estão nesses repos então talvez saber de topicos mais especiais e complexos possa manter a necessidade de desenvolvedores, um exemplo seria performance no frontend que é um tema bem menosprezado e esquecido, geralmente o codigo é feito apenas para rodar e seguir alguns padrões de arquitetura, porem ao executar esse codigo no navegador podem existir algumas problemas de performance que podem ser resolvidos com alguns topicos mais avançados que talvez não existam em grande quantidade nos dados de input passados para as IAs
 
 ### Comments
 
 Jan 15 2026
 
-  - Ia pirâmide? Nvidia invest na open ia e a open ia comprar chips da nvidia para rodar ia
+  - Ia é negocio de pirâmide? Nvidia invest na open ia e a open ia comprar chips da nvidia para rodar ia
 
 <img width="490" height="466" alt="image" src="https://github.com/user-attachments/assets/bd02acf5-dfdd-4b49-8e96-2aa0978faf4c" />
 
