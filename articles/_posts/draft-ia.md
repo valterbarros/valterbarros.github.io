@@ -99,7 +99,7 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
   - Comentários sobre a afirmação do CEO da stability AI bem catastroficos prevendo o fim dos programadores num futuro próximo
   - Comentários sobre a AWS que já foi e voltou na decisão de tirar mão de obra humana alguns vezes recentemente
 - [Nao a ia não vai tomar seu trabalho - 11/05/2023](https://youtu.be/wAzsB15_ZmY?si=qwmNKgXbqbpb094p)
-  - Fala sobre o medo dos desenvolvedores de perder o emprego e sobre a limitação da epoca do chatGpt e copilot
+  - Fala sobre o medo dos desenvolvedores de perder o emprego e sobre a limitação da epoca do chatGpt e copilot como perda de contexto toda hora e dificuldade para executar tarefas do inicio ao fim sem vários auxilios por parte do desenvolvedor. 
 - [Quando o chatgpt acabara com os programadores - 17/04/2023](https://youtu.be/QfVA3VeetsU?si=149JYO3hl5KE0A30)
   - Sobre chatGpt explicações mais introdutorias
 
