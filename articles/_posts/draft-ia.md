@@ -20,14 +20,6 @@ Tentei ser o mais neutro possivel, e trazer pontos de vista diferentes e tentar 
   - Claude opus 4.5
   - Claude code
 
-Augusto galego - [Engenharia de software acabou de mudar pra SEMPRE.](https://www.youtube.com/watch?v=7TYbSf0pTpA)
-
-- Artigo: [The Software Engineering Identity Crisis](https://annievella.com/posts/the-software-engineering-identity-crisis/)
-  - Artigo sobre os impactos da IA na engenharia de software, como codigo duplicado.
-- Analise de se redução de quadro está ligado a IAf
-- Foca um pouco no que falta para a IA tomar os empregos dos devs, e em alguns pontos que a IA não consegue fazer, como levantamento de requisitos, entender o cliente, alem da capacidade de resolver problemas complexos
-- Fala sobre um futuro termos muitos debitos tecnicos inseridos pela IA
-
 Attekita - [O mercado de TI entrou em colapso? (meu conselho mais sincero) - 05/02/2026`](https://www.youtube.com/watch?v=qWunnuyzdiM)
 
 - O mercado de tecnologia está muito especulativo, comparou com investimento de trade. E falou que alguém ganha com essa especulação
@@ -61,11 +53,19 @@ Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/0
 
 - Vai ser mais cara pagar a ia do que pagar o dev?
 
-[DeepSeek to Be Banned in USA?](https://www.youtube.com/watch?v=KPdAw-iv4eU)
+[DeepSeek to Be Banned in USA? 27/04/2026](https://www.youtube.com/watch?v=KPdAw-iv4eU)
 
 - Talvez por medo da evolução do deepseek os EUA foi atrás de barrar a evolução e popularidade dele dentro do territorio americano
 
-[The mind-boggling valuations of AI companies](https://www.theguardian.com/global/2025/nov/04/the-mind-boggling-valuations-of-ai-companies)
+Augusto galego - [Engenharia de software acabou de mudar pra SEMPRE. - 08/04/2025](https://www.youtube.com/watch?v=7TYbSf0pTpA)
+
+- Artigo: [The Software Engineering Identity Crisis](https://annievella.com/posts/the-software-engineering-identity-crisis/)
+  - Artigo sobre os impactos da IA na engenharia de software, como codigo duplicado.
+- Analise de se redução de quadro está ligado a IAf
+- Foca um pouco no que falta para a IA tomar os empregos dos devs, e em alguns pontos que a IA não consegue fazer, como levantamento de requisitos, entender o cliente, alem da capacidade de resolver problemas complexos
+- Fala sobre um futuro termos muitos debitos tecnicos inseridos pela IA
+
+[The mind-boggling valuations of AI companies 04/11/2025](https://www.theguardian.com/global/2025/nov/04/the-mind-boggling-valuations-of-ai-companies)
 
 - Acordos Multibilionários e Circularidade: A OpenAI (que estuda abrir capital com uma valoração de US$ 1 trilhão) firmou uma série de contratos massivos com parceiros de nuvem e hardware, incluindo US$ 100 bilhões com a Nvidia, US$ 250 bilhões com a Microsoft e US$ 300  bilhões com a Oracle. Essa rede de transações cruzadas gera preocupações sobre o risco de uma bolha financeira, onde a falha de uma empresa poderia desestabilizar todo o ecossistema.
 
