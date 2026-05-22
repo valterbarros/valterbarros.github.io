@@ -13,6 +13,7 @@ Tentei ser o mais neutro possivel, e trazer pontos de vista diferentes e tentar 
 ### Assuntos mais atuais
 
 [Agusto galego - Se você ama escrever código… tenho más notícias - 04/02/2026](https://www.youtube.com/watch?v=rRnSFVIV9Lk)
+- Fala sobre a perde de interesse pela area de programação pelos devs, pois geralmente gostam muito da parte tecnica e de escrever codigo porem com a IA essa tarefa passa a ser menos necessária com o passar do tempo.
 - Basicamente ele fala que o dev vai ser como um executivo de código, que faz os julgamentos de algo que a ia faz, pq usar tal arquitetura ou outra? Mas ainda é importante entender o codigo porem não será necessário fazer isso sempre
 - Falou dessas ias
   - Opencode
