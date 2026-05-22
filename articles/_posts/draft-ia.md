@@ -12,6 +12,14 @@ Tentei ser o mais neutro possivel, e trazer pontos de vista diferentes e tentar 
 
 ### Assuntos mais atuais
 
+Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/04/2026
+
+- Vai ser mais cara pagar a ia do que pagar o dev?
+
+[DeepSeek to Be Banned in USA? 27/04/2026](https://www.youtube.com/watch?v=KPdAw-iv4eU)
+
+- Talvez por medo da evolução do deepseek os EUA foi atrás de barrar a evolução e popularidade dele dentro do territorio americano
+
 [Agusto galego - Se você ama escrever código… tenho más notícias - 04/02/2026](https://www.youtube.com/watch?v=rRnSFVIV9Lk)
 - Fala sobre a perde de interesse pela area de programação pelos devs, pois geralmente gostam muito da parte tecnica e de escrever codigo porem com a IA essa tarefa passa a ser menos necessária com o passar do tempo.
 - Basicamente ele fala que o dev vai ser como um executivo de código, que faz os julgamentos de algo que a ia faz, pq usar tal arquitetura ou outra? Mas ainda é importante entender o codigo porem não será necessário fazer isso sempre
@@ -20,7 +28,7 @@ Tentei ser o mais neutro possivel, e trazer pontos de vista diferentes e tentar 
   - Claude opus 4.5
   - Claude code
 
-Attekita - [O mercado de TI entrou em colapso? (meu conselho mais sincero) - 05/02/2026`](https://www.youtube.com/watch?v=qWunnuyzdiM)
+Attekita - [O mercado de TI entrou em colapso? (meu conselho mais sincero) - 05/02/2026](https://www.youtube.com/watch?v=qWunnuyzdiM)
 
 - O mercado de tecnologia está muito especulativo, comparou com investimento de trade. E falou que alguém ganha com essa especulação
 - Deixou um pouco a ideia de que se pra ti ta assim com certeza para as outras areas o impacto também será grandez
@@ -48,14 +56,6 @@ Jensen Huang 01/01/2026: https://tecnoblog.net/noticias/jensen-huang-critica-neg
 <img width="1069" height="253" alt="Screenshot from 2026-05-21 17-51-47" src="https://github.com/user-attachments/assets/eaa69f00-8616-4ae6-8248-100aa003162d" />
 
 - Fala sobre todo o marketing que tem sido feitos nos ultimos anos, inclusive pelo mesmo, em relação as Ias tomarem os empregos dos humanos e como isso impacta negativamente a popularidade em torna das IAs
-
-Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/04/2026
-
-- Vai ser mais cara pagar a ia do que pagar o dev?
-
-[DeepSeek to Be Banned in USA? 27/04/2026](https://www.youtube.com/watch?v=KPdAw-iv4eU)
-
-- Talvez por medo da evolução do deepseek os EUA foi atrás de barrar a evolução e popularidade dele dentro do territorio americano
 
 Augusto galego - [Engenharia de software acabou de mudar pra SEMPRE. - 08/04/2025](https://www.youtube.com/watch?v=7TYbSf0pTpA)
 
