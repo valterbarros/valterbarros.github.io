@@ -52,8 +52,6 @@ Resumo: A Era dos humanos escrevendo código está acabando. A area passara a se
 
 Resumo: Fala sobre todo o marketing que tem sido feitos nos ultimos anos, inclusive pelo mesmo, em relação as Ias tomarem os empregos dos humanos e como isso impacta negativamente a popularidade em torna das IAs
 
-Choque de realidade: muito foi dito nos ultimos anos sobre ia inclusive esse post que fala não existiram mais programadores: https://finance.yahoo.com/news/stability-ai-ceo-no-human-193413248.html
-
 #### [Attekita - IA não ta roubando emprego ela ta roubando outra coisa Janeiro/2026](https://youtu.be/dL_4P2I-yrg?si=yjH2N4xpxzq4PKUK)
   
 Resumo: A IA está deixando o mercado de programação tecnologia menos envolvido com código, e mais ligado a regra de negócio, ou negócios em si. Isso afeta programadores pois gostamos das partes difíceis de programar, resolver problemas e etc. Hoje com a ia ficou fácil quase não se fica mais bloqueado a ia consegui responder e resolver
