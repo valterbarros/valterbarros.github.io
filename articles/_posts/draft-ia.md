@@ -10,23 +10,30 @@ Qualquer sugestão, link quebrado ou adição de link pode falar comigo estou ab
 
 ### Assuntos mais atuais
 
-Lucas montano: [Apagão dev](https://www.youtube.com/watch?v=T9V7EyB_B9w) - 21/04/2026
+[Lucas montano: Apagão dev - 21/04/2026](https://www.youtube.com/watch?v=T9V7EyB_B9w)
 
-- Vai ser mais cara pagar a ia do que pagar o dev?
+Resumo: Debate se no futuro vai ser mais caro pagar a infraestrutura e os tokens da IA do que pagar o salário do próprio desenvolvedor.
+
+O Choque de Realidade: Em 2023, achávamos que a IA seria um recurso infinitamente barato que cortaria custos imediatamente. Em 2026, a realidade bateu na porta das empresas: processar trilhões de tokens em modelos de fronteira custa uma fortuna. A sustentabilidade financeira virou a verdadeira métrica.
 
 [Agusto galego - Se você ama escrever código… tenho más notícias - 04/02/2026](https://www.youtube.com/watch?v=rRnSFVIV9Lk)
-- Fala sobre a perde de interesse pela area de programação pelos devs, pois geralmente gostam muito da parte tecnica e de escrever codigo porem com a IA essa tarefa passa a ser menos necessária com o passar do tempo.
-- Basicamente ele fala que o dev vai ser como um executivo de código, que faz os julgamentos de algo que a ia faz, pq usar tal arquitetura ou outra? Mas ainda é importante entender o codigo porem não será necessário fazer isso sempre
-- Falou dessas ias
-  - Opencode
-  - Claude opus 4.5
-  - Claude code
+
+Resumo: Fala sobre a perda de interesse pela area de programação pelos devs, pois geralmente gostam muito da parte tecnica e de escrever codigo porem com a IA essa tarefa passa a ser menos necessária com o passar do tempo. O dev vai se tornar um executivo de código, que faz os julgamentos de algo que a ia faz, pq usar tal arquitetura ou outra? Mas ainda é importante entender o codigo porem não será necessário fazer isso sempre
+
+Choque de realidade: A professia de que "não existiriam mais programadores" falhou. O que mudou foi o escopo do trabalho o dev não subiu; foi promovido a arquiteto ou revisor.
 
 Attekita - [O mercado de TI entrou em colapso? (meu conselho mais sincero) - 05/02/2026](https://www.youtube.com/watch?v=qWunnuyzdiM)
 
-- O mercado de tecnologia está muito especulativo, comparou com investimento de trade. E falou que alguém ganha com essa especulação
-- Deixou um pouco a ideia de que se pra ti ta assim com certeza para as outras areas o impacto também será grandez
+Resumo:
+O mercado de tecnologia está altamente especulativo, comparou com o mercado de trade. Deixou um pouco a ideia de que se pra ti ta assim com certeza para as outras areas o impacto também será grandez
+
+Ponto crucial: 
+
 - **Não existe rollback**, mesmo que a bolha estoure a ia veio pra ficar e o Mercado vai continuar usando
+
+Choque de realidade:
+
+Muitas promessas feitas em 2023 se mostram hoje como infladas em relação ao real valor, porem o ganho de produtividade estrutural é real e irreverssivel
 
 [Cadeia pra quem usar DeepSeek 07/02/2026](https://www.youtube.com/watch?v=eU_UtqbOeDE)
 - Fala sobre proibição do deepseek no US, e tornou crime. Motivado pelos prejuizos na nvidea e openia logo após o surgimento do deepseek
