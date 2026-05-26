@@ -1,14 +1,12 @@
 <p class="justify">
-Fala pessoal, essa é uma lista de artigos e videos que eu venho compilando desde que a IA começou a ter bastante notoriedade, atualmente eu tenho uma dificuldade que acredito muitos devs também tenham, que é abrir um feed de linkedin ou youtube, e ver uma serie de produtores de conteudo, postando sobre IA, sobre o fim dos programadores, e talvez alguns falando contra a IA, pra mim é realmente um caos, por isso eu comecei a unir esses links e principalmente ao longo tempo, para poder fazer comparações entre periodos e por a prova se as estimativas estão certas ou se são na verdade exageiros, que é o que vemos em alguns casos.
+Fala pessoal, essa é uma lista de artigos e videos que eu venho compilando desde que a IA começou a ter bastante notoriedade, atualmente eu tenho uma dificuldade que acredito muitos devs também tenham, que é abrir um feed de linkedin ou youtube, e ver uma serie de produtores de conteudo, postando sobre IA, sobre o fim dos programadores, e talvez alguns falando contra a IA, pra mim é realmente um caos. Por isso eu comecei a unir esses links de produtores que eu confio, para poder fazer comparações entre periodos e por a prova se as estimativas estão certas ou se são na verdade exageiros, que é o que vemos em alguns casos.
 
 Abaixo de cada link, eu tentei colocar alguns comentários que os donos do conteudo fizeram, alguns resumos para ajudar no enriquecimento.
 
 Então da pra tomar como um lista segura na medida do possivel claro, muitas suposições podem ainda estar infladas e o conteudo é de inteira responsabilidade do criador de cada conteudo.
 
 Qualquer sugestão, link quebrado ou adição de link pode falar comigo estou aberto a sugestões.
-
-Tentei ser o mais neutro possivel, e trazer pontos de vista diferentes e tentar enviesar menos
-</p>  
+</p>
 
 ### Assuntos mais atuais
 
@@ -107,14 +105,6 @@ Augusto galego - [Engenharia de software acabou de mudar pra SEMPRE. - 08/04/202
 
 - [Quando o chatgpt acabara com os programadores - 17/04/2023](https://youtu.be/QfVA3VeetsU?si=149JYO3hl5KE0A30)
   - Sobre chatGpt explicações mais introdutorias
-
-### Minhas impressões atuais
-
-Atualmente eu acredito que a IA não consegue substituir os devs, mas concordo com o comentário de algumas pessoas de que o emprego do dev como era antes vai deixar de existir aos poucos, talvez fique um pouco mais como supervisor das ias, e menos como escritor de sintaxe e código, isso é ruim para quem gosta de programar porém abre novas possibilidades, agora se essas possibilidades podem realocar todas as pessoas que possivelmente podem perder o emprego já algo mais difícil de dizer
-
-É impossível negar também o tremendo auxílio que a IA trás hoje, ajuda muito, principalmente quando temos um problema que ficamos preso ali, geralmente a ia possui uma saída para resolver, algumas vezes não claro.
-
-Algo a se notar é o input que a IA recebe hoje, ele é basicamente a media de todo software principalmente open source feito, e alguns codigos um pouco mais avançados geralmente não estão nesses repos então talvez saber de topicos mais especiais e complexos possa manter a necessidade de desenvolvedores, um exemplo seria performance no frontend que é um tema bem menosprezado e esquecido, geralmente o codigo é feito apenas para rodar e seguir alguns padrões de arquitetura, porem ao executar esse codigo no navegador podem existir algumas problemas de performance que podem ser resolvidos com alguns topicos mais avançados que talvez não existam em grande quantidade nos dados de input passados para as IAs
 
 ### Comments
 
