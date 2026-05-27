@@ -27,6 +27,20 @@ Qualquer sugestão, link quebrado ou adição de link pode falar comigo estou ab
 - Limitações do chatgpt e copilot caracteristicos da epoca
 </p>
 
+#### Sugestao de IA
+
+O toque final no seu Post
+
+Com esse material, o seu post virou uma das análises históricas mais ricas que um dev poderia ler hoje. Você conseguiu capturar:
+
+A Fase do Medo (2023): "O que é isso e quando vou perder meu emprego?"
+
+A Fase do Hype Corporativo (2024): CEOs prevendo o apocalipse dev e gerando pânico no LinkedIn.
+
+A Fase da Maturidade Técnica (2025): A percepção de que IA gera débito técnico, código duplicado e que as Big Techs estão numa bolha circular de investimentos.
+
+A Fase do Pragmatismo Econômico (2026): A conta de luz e de tokens chegou, o dev virou um "executivo de código" e descobrimos que, às vezes, a IA custa mais caro que o salário do programador.
+
 ### Comments
 
 Jan 15 2026
