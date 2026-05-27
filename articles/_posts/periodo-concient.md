@@ -20,7 +20,7 @@ Choque de realidade: A professia de que "não existiriam mais programadores" fal
 
 #### [Attekita - O mercado de TI entrou em colapso? (meu conselho mais sincero) - Fevereiro/2026](https://www.youtube.com/watch?v=qWunnuyzdiM)
 
-Resumo: O mercado de tecnologia está altamente especulativo, comparou com o mercado de trade. Deixou um pouco a ideia de que se pra ti ta assim com certeza para as outras areas o impacto também será grandez
+Resumo: O mercado de tecnologia está altamente especulativo, comparou com o mercado de trade. Deixou um pouco a ideia de que se pra TI ta assim com certeza para as outras areas o impacto também será grandez
 
 Ponto crucial: **Não existe rollback**, mesmo que a bolha estoure a ia veio pra ficar e o Mercado vai continuar usando
 
@@ -32,13 +32,17 @@ Muitas promessas feitas em 2023 se mostram hoje como infladas em relação ao re
 
 Resumo: Fala sobre proibição do deepseek no US, e tornou crime. Motivado pelos prejuizos na nvidea e openia logo após o surgimento do deepseek
 
-Choque de realidade: Talvez para manter o marketing positivo em torno da IA e ofuscar os trilhoes perdidos por conta da criação do deepseek os EUA utilizou essa estrategia.
+Choque de realidade: Talvez para manter o marketing positivo em torno da IA e ofuscar os trilhões perdidos por conta da criação do deepseek os EUA utilizou essa estrategia.
+
+#### [Downloading DeepSeek could land you a 20-year prison sentence, $1M fine under proposed US bill](https://www.livenowfox.com/news/deepseek-ban-senate-bill)
+
+Resumo: Baixar o deepseek nos estados unidos pode te dar até 20 anos de prisão, e multa de até 1 milhão de dolares, os EUA argumenta que com a avanço da IA chinesa a china poderia aumentar sua capacidade militar.
 
 #### [Thiago Ramos - Ia não vai substituir programadores - Janeiro/2026](https://www.youtube.com/watch?v=Bo6Pw_JV-Rs)
 
-Resumo: A ia como é hoje LLM não consegue criar, a não ser que seja criado outra tecnologia
+Resumo: A ia como é hoje LLM não consegue criar, a não ser que seja criado outra tecnologia, e não existe bala de prata no software uma tecnologia que vai conseguir resolver toda a complexidade do software do dia para a noite.
 
-Choque de realidade: Apesar de ser uma tecnologia muito avançada e com muitos pontos importantes, as IAs não conseguem ainda pensar
+Choque de realidade: Apesar de ser uma tecnologia muito avançada e com muitos pontos importantes, as IAs não conseguem ainda pensar, e programar não é apenas escrever codigo e também entender regras de negocio, requisitos etc.
 
 #### Ryan dahl(criador do node) - Janeiro/2026
 
@@ -54,4 +58,19 @@ Resumo: Fala sobre todo o marketing que tem sido feitos nos ultimos anos, inclus
 
 #### [Attekita - IA não ta roubando emprego ela ta roubando outra coisa Janeiro/2026](https://youtu.be/dL_4P2I-yrg?si=yjH2N4xpxzq4PKUK)
   
-Resumo: A IA está deixando o mercado de programação tecnologia menos envolvido com código, e mais ligado a regra de negócio, ou negócios em si. Isso afeta programadores pois gostamos das partes difíceis de programar, resolver problemas e etc. Hoje com a ia ficou fácil quase não se fica mais bloqueado a ia consegui responder e resolver
+Resumo: A IA está deixando o mercado de programação tecnologia menos envolvido com código, e mais ligado a regra de negócio, ou negócios em si. Isso afeta programadores pois gostamos das partes difíceis de programar, resolver problemas e etc. Hoje com a ia ficou fácil quase não se fica mais bloqueado a ia consegui responder e resolver.
+
+Choque de realidade: Aprender a programar e aprender sobre codigo ainda é importante e necessario.
+
+#### [The grief when AI writes most of the code Janeiro/2026](https://blog.pragmaticengineer.com/the-grief-when-ai-writes-most-of-the-code/)
+
+Resumo: Fala sobre a sensação de perda com a fato das IAs estarem escrevendo quase todo o codigo feito.
+
+#### [Linus Torvalds testa vibe coding e aprova experiência Janeiro/2026](https://tecnoblog.net/noticias/linus-torvalds-testa-vibe-coding-e-aprova-experiencia/)
+
+Resumo: Fala um pouco sobre a experiencia de vibe coding pelo linus torvalds, mergeando até um pull request feito por ia em um projeto pessoal.
+
+#### [Google engineer says Claude Code built in 1 hour what it took Google 1 year to do - Janeiro/2026](https://www.hindustantimes.com/trending/google-engineer-says-claude-code-built-in-1-hour-what-it-took-google-1-year-to-do-101767504506763.html)
+
+Resumo: Como o proprio titulo tenta passar, o claude demorou 1 hora para desenvolver algo que internamente eles passaram um ano, porem a engenheira(Jaana dogan) deixa claro que o maior trabalho não foi apenas escrever o codigo foi toda a pesquisa e aprendizado feito por trás para chegar nesse resultado.
+

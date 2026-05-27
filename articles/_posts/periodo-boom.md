@@ -13,7 +13,7 @@ Aug 20, 2024 isso ira acontecer, (faltam apenas alguns meses inclusive).
 
 Resumo: Hoje na indústria estamos sofrendo de um hype exagerado, e muito marketing onde 90% é mentira e 10% é verdade.
 
-Choque de realidade: Aqui o mesmo já percebia os efeitos do hype da industria, porem atualmente pelas suas declarações acredito que esses 10% que ele atribuiu seja um numero baixo. Como demostrado [aqui](https://www.reddit.com/r/singularity/comments/1qahb6n/linus_torvalds_linux_creator_praises_vibe_coding/?tl=pt-br)
+Choque de realidade: Aqui o mesmo já percebia os efeitos do hype da industria, porem atualmente pelas suas declarações acredito que esses 10% que ele atribuiu seja um numero baixo.
 
 #### [Eu não me preocupo com IA. (sendo dev) . - Julho/2024](https://www.youtube.com/watch?v=GRncLmx-gfs)
 
