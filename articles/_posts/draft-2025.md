@@ -20,9 +20,15 @@ O Choque de Realidade: O mercado vive um ciclo de retroinvestimento. Gigantes co
 
 #### [90% of code will be written by ai 3 months - Março/2025](https://youtu.be/cMApO0UhqEs?si=8uzPYzU8LUTFPAZv)
 
-Resumo: Ele compara com surgimento da linguagem **C** na época do **Assembly**, onde muita gente achou que ficaria muito fácil programar e isso ia quebrar a área de programação.
+Resumo: Ele compara com surgimento da linguagem **C** na época do **Assembly**, onde muita gente achou que ficaria muito fácil programar e isso ia quebrar a área de programação, porem o que de fato aconteceu foi que a quantidade de software criado aumentou muito, com mais pessoas entrando na area, criando assim novas oportunidades.
 
 O Choque de Realidade: A história não se repete, mas rima. Assim como a linguagem C (e depois o Java, as IDEs e os frameworks) não destruíram os programadores — apenas permitiram que construíssemos sistemas infinitamente maiores e mais complexos —, a IA está fazendo o mesmo. Escrever linhas de código ficou mais rápido, mas a Engenharia de Software continua tão vital quanto antes.
+
+#### [The Future of U.S. AI Leadership with CEO of Anthropic Dario Amodei ](https://www.youtube.com/watch?v=esCSpbDPJik)
+
+Resumo: Segundo o CEO da Anthropic Dario Amodei em apenas 3 meses (contando de março de 2025) 90% do código será escrito por IA.
+
+Choque de realidade: Passamos bastante dessa deadline e isso não aconteceu.
 
 #### [Deepseek Janeiro/2025](https://www.bbc.com/portuguese/articles/c07km12v18do)
 
