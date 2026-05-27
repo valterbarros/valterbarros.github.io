@@ -18,6 +18,7 @@ Qualquer sugestão, link quebrado ou adição de link pode falar comigo estou ab
 - por hora isso de não aprenda a programar ou não existirao mais programadores continua sendo algo irreal
 - Jenssen huang CEO da nvidea - e discussos exagerados
 - IA é treinada com a media de codigo disponivel
+  - Problemas complexos
 
 #### 2025
 
