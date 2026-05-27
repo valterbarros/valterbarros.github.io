@@ -12,7 +12,7 @@ Resumo: Debate se no futuro vai ser mais caro pagar a infraestrutura e os tokens
 
 O Choque de Realidade: Em 2023, achávamos que a IA seria um recurso infinitamente barato que cortaria custos imediatamente. Em 2026, a realidade bateu na porta das empresas: processar trilhões de tokens em modelos de fronteira custa uma fortuna. A sustentabilidade financeira virou a verdadeira métrica.
 
-#### [Agusto galego - Se você ama escrever código… tenho más notícias - Fevereiro/2026](https://www.youtube.com/watch?v=rRnSFVIV9Lk)
+#### [Agusto galego - Se você ama escrever código… tenho más notícias - Fevereiro/2026](https://www.youtube.com/watch?v=rRnSFVIV9Lk) 
 
 Resumo: Fala sobre a perda de interesse pela area de programação pelos devs, pois geralmente gostam muito da parte tecnica e de escrever codigo porem com a IA essa tarefa passa a ser menos necessária com o passar do tempo. O dev vai se tornar um executivo de código, que faz os julgamentos de algo que a ia faz, pq usar tal arquitetura ou outra? Mas ainda é importante entender o codigo porem não será necessário fazer isso sempre.
 
@@ -20,13 +20,11 @@ Choque de realidade: A professia de que "não existiriam mais programadores" fal
 
 #### [Attekita - O mercado de TI entrou em colapso? (meu conselho mais sincero) - Fevereiro/2026](https://www.youtube.com/watch?v=qWunnuyzdiM)
 
-Resumo: O mercado de tecnologia está altamente especulativo, comparou com o mercado de trade. Deixou um pouco a ideia de que se pra TI ta assim com certeza para as outras areas o impacto também será grandez
+Resumo: O mercado de tecnologia está altamente especulativo, comparou com o mercado de trade. Deixou um pouco a ideia de que se pra TI ta assim com certeza para as outras areas o impacto também será grande. Fala sobre a dificuldade para quem está começando na area e sobre o que fazer.
 
 Ponto crucial: **Não existe rollback**, mesmo que a bolha estoure a ia veio pra ficar e o Mercado vai continuar usando
 
-Choque de realidade:
-
-Muitas promessas feitas em 2023 se mostram hoje como infladas em relação ao real valor, porem o ganho de produtividade estrutural é real e irreverssivel
+Choque de realidade: Algumas empresas podem estar demitindo funcionarios e colocando a culpa nas IAs para passar uma ideia de empresa mais eficiente e enxuta principalmente para alegrar os investidores.
 
 #### [Cadeia pra quem usar DeepSeek - Fevereiro/2026](https://www.youtube.com/watch?v=eU_UtqbOeDE)
 
@@ -74,3 +72,6 @@ Resumo: Fala um pouco sobre a experiencia de vibe coding pelo linus torvalds, me
 
 Resumo: Como o proprio titulo tenta passar, o claude demorou 1 hora para desenvolver algo que internamente eles passaram um ano, porem a engenheira(Jaana dogan) deixa claro que o maior trabalho não foi apenas escrever o codigo foi toda a pesquisa e aprendizado feito por trás para chegar nesse resultado.
 
+#### [Promoting AI agents - Janeiro/2026](https://world.hey.com/dhh/promoting-ai-agents-3ee04945)
+
+Resumo: Basicamente o criador do rails David Heinemeier falando sobre IA e como os agentes inteligentes tem o ajudado no desenvolvimento.

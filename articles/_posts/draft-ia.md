@@ -11,10 +11,13 @@ Qualquer sugestão, link quebrado ou adição de link pode falar comigo estou ab
 
 #### 2026
 
-- Marketing do medo, mudança crucial na area(dev se torna um executivo e revisor de codigo) e perda de interesse pelos devs
+- Marketing do medo
+- Mudança crucial na area(dev se torna um executivo e revisor de codigo) e perda de interesse pelos devs
+  - Isso foi um consenso entre todo o material que listei
 - não existe rollback a ia veio pra ficar mesmo com possiveis problemas financeiros e tal
 - por hora isso de não aprenda a programar ou não existirao mais programadores continua sendo algo irreal
 - Jenssen huang CEO da nvidea - e discussos exagerados
+- IA é treinada com a media de codigo disponivel
 
 #### 2025
 

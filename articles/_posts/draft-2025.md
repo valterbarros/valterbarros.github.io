@@ -24,7 +24,7 @@ Resumo: Ele compara com surgimento da linguagem **C** na época do **Assembly**,
 
 O Choque de Realidade: A história não se repete, mas rima. Assim como a linguagem C (e depois o Java, as IDEs e os frameworks) não destruíram os programadores — apenas permitiram que construíssemos sistemas infinitamente maiores e mais complexos —, a IA está fazendo o mesmo. Escrever linhas de código ficou mais rápido, mas a Engenharia de Software continua tão vital quanto antes.
 
-#### [The Future of U.S. AI Leadership with CEO of Anthropic Dario Amodei ](https://www.youtube.com/watch?v=esCSpbDPJik)
+#### [The Future of U.S. AI Leadership with CEO of Anthropic Dario Amodei Março/2025](https://www.youtube.com/watch?v=esCSpbDPJik)
 
 Resumo: Segundo o CEO da Anthropic Dario Amodei em apenas 3 meses (contando de março de 2025) 90% do código será escrito por IA.
 
@@ -35,3 +35,7 @@ Choque de realidade: Passamos bastante dessa deadline e isso não aconteceu.
 <img width="674" height="626" alt="Screenshot from 2026-05-21 18-40-22" src="https://github.com/user-attachments/assets/8efd4df3-4d45-4551-944e-8e9e72153a1c" />
 
 Resumo: surgimento do deepseek e quem está por trás do software.
+
+#### [Coding should be a vibe! Janeiro/2025](https://world.hey.com/dhh/coding-should-be-a-vibe-50908f49)
+
+Resumo: TODO
