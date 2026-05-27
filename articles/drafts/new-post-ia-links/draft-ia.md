@@ -29,6 +29,7 @@ Qualquer sugestão, link quebrado ou adição de link pode falar comigo estou ab
 
 - outras areas alem de programação estão ameaçadas
 - Limitações do chatgpt e copilot caracteristicos da epoca
+- dificuldade na adoção de ia por parte dos devs
 </p>
 
 #### Sugestao de IA
