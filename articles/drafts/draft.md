@@ -55,3 +55,22 @@ Alem disso otimização prematura, uma função usada em apenas um local e o com
 São cenarios que percebo n ser necessário executar 
 
 Fala sobre prazo e que isso atrapalha, pq a galera quer mandar o pr nas carreiras
+
+---
+
+### Breve historia sobre web
+
+Topicos:
+
+- Pegar alguns pontos aqui desse trello: https://trello.com/c/0DjycGdF/1127-porque-a-web-js-%C3%A9-o-que-%C3%A9-hoje
+- Falar sobre mosaic e netscape
+- A web foi criada para um proposito totalmente diferente do que temos hoje
+- Primeiramente tinhamos uma linguagem baseada apenas em SSR, e dai foi necessario criar o js para adicionar interatividaed, porem foi feito em poucos dias e nas coxas
+- Problemas de compatibilidade, e grande vilão IE, surgimento a partir disso do JQuery
+- Ecmascript, w3c
+- Adicionar uma linha do tempo com esses e outros acontecimentos importantes
+- estado atual das coisas, linguagem evoluindo
+- web components vs frameworks
+- marketing dos framework e intusiamos em fazer coisas do zero
+- A cultura da linaguagem e de seus desenvolvedores
+  - o fato de não buscarem se aprofundar na linguagem
