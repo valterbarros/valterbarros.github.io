@@ -45,6 +45,6 @@ Resumo: Sobre chatGpt explicações mais introdutorias como funciona e etc. Leva
 
 Choque de realidade: A evolução das LLMs do chatGpt, claude se demostra hoje bem avançada porem como visto em videos mais recentes os humanos continuam sendo necessarios.
 
-[Sam Altman: AI Will Not Only Replace Experts But Create New Knowledge - Fevereiro/2023](https://medium.datadriveninvestor.com/sam-altman-ai-will-not-only-replace-experts-but-create-new-knowledge-6d0726d8ef6e)
+#### [Sam Altman: AI Will Not Only Replace Experts But Create New Knowledge - Fevereiro/2023](https://medium.datadriveninvestor.com/sam-altman-ai-will-not-only-replace-experts-but-create-new-knowledge-6d0726d8ef6e)
 
 Resumo: faz algumas predições para os proximos 10 anos, onde experts serão substituidos como medicos e outras profissões.
