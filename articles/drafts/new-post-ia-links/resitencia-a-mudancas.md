@@ -1,0 +1,7 @@
+Existem alguns perfis de pessoas ao adotar novas tecnologias que pode ser melhor explicado com a roger curve que fala sobre os diferentes tipos de usuário e como alguns podem ser early adopter e provavelmente serão os mais assíduos com a IA e novas tecnologias lançadas, que geralmente não tem receios em testar novas tecnologias assim que são lançadas, as vezes até mesmo antes de atingirem uma versão estável.
+
+Por outro lado seguindo a ideia da roger curve também temos aqueles que possuem maior dificuldade em testar novas tecnologias e as integrar em seu dia a dia, em alguns momentos esses podem se sentir incomodado com mudanças, e atualmente com certeza a IA representa muita mudança em nosso dia a dia, de alguma forma isso pode gerar uma não aceitação em alguns.
+
+A adaptação a mudanças pra mim é uma das habilidades principais de um programador, todos os dias novas tecnologias são lançadas, requisitos mudam, a maneira de trabalhar muda, um conhecimento que era relevante hoje pode cair no esquecimento amanhã, a IA veio para revolucionar o nosso trabalho.
+
+Devemos apoiar o questionamento porém fazer uma propaganda contra a IA dentro da empresa realmente não vai ajudar nem o programador e nem mesmo a empresa em si, e esse tipo de comportamento pode realmente ser recebido como algo negativo, pois a empresa está investindo em IA e tentando divulgar e disponibilizar isso para que todos os programadores usem e ganhe produtividade.
