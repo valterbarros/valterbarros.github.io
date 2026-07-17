@@ -3,3 +3,6 @@ node_modules
 dist
 .cache
 .DS_store
+tmp
+.jekyll-cache
+_site

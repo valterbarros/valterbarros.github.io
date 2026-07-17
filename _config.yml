@@ -3,8 +3,11 @@ description: "Desenvolvedor web — portfólio e artigos"
 lang: pt-BR
 baseurl: "" # Mantenha vazio se estiver no seu-usuario.github.io
 permalink: /articles/:title/
-remote_theme: pages-themes/hacker@v0.2.0
+# remote_theme: pages-themes/hacker@v0.2.0
 author: "Valter Barros"
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
 
 # Isso garante que o Jekyll ignore pastas que não interessam
 exclude:
