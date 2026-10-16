@@ -5,7 +5,7 @@ en:
   lang_label_en: EN
   lang_label_pt: PT
   role: Web Developer
-  intro_before: "Graduated from system analysis, improving every day in programming, English, and communication. Currently working at "
+  intro_before: "Graduated from system analysis, improving every day in programming."
   intro_mid: " as a frontend developer. You can read more here: "
   section_work: Work History
   section_education: Education
@@ -18,7 +18,7 @@ en:
   footer_credit: made by valter barros
   jobs:
     - title: Frontend Developer
-      subtitle: Clicksign / Remote / April 2022 – Present
+      subtitle: Clicksign / Remote / Setember 2026
       body: Vue.js development, unit tests, and architecture.
     - title: Frontend Developer
       subtitle: Tidy / Remote / August 2019 – 2021
@@ -41,7 +41,7 @@ pt:
   lang_label_en: EN
   lang_label_pt: PT
   role: Desenvolvedor web
-  intro_before: "Formado em análise de sistemas, evoluindo todos os dias em programação, inglês e comunicação. Trabalho na "
+  intro_before: "Formado em análise de sistemas, evoluindo todos os dias em programação."
   intro_mid: " como desenvolvedor frontend. Veja mais em "
   section_work: Experiência
   section_education: Formação
@@ -54,7 +54,7 @@ pt:
   footer_credit: feito por valter barros
   jobs:
     - title: Desenvolvedor frontend
-      subtitle: Clicksign / Remoto / abril 2022 – atual
+      subtitle: Clicksign / Remoto / Setembro 2026
       body: Desenvolvimento em Vue.js, testes unitários e arquitetura.
     - title: Desenvolvedor frontend
       subtitle: Tidy / Remoto / agosto 2019 – 2021
