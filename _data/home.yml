@@ -4,7 +4,7 @@ en:
   photo_alt: "It's me."
   lang_label_en: EN
   lang_label_pt: PT
-  role: Web Developer
+  role: Frontend Developer
   intro_before: "Graduated from system analysis, improving every day in programming."
   intro_mid: "I work as a frontend developer. You can read my tech articles em: "
   section_work: Work History
@@ -40,7 +40,7 @@ pt:
   photo_alt: Sou eu.
   lang_label_en: EN
   lang_label_pt: PT
-  role: Desenvolvedor web
+  role: Desenvolvedor frontend
   intro_before: "Formado em análise de sistemas, evoluindo todos os dias em programação."
   intro_mid: "Trabalho como desenvolvedor frontend. Veja meus artigos em: "
   section_work: Experiência
