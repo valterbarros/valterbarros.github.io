@@ -6,7 +6,7 @@ en:
   lang_label_pt: PT
   role: Web Developer
   intro_before: "Graduated from system analysis, improving every day in programming."
-  intro_mid: " as a frontend developer. You can read more here: "
+  intro_mid: "I work as a frontend developer. You can read my tech articles em: "
   section_work: Work History
   section_education: Education
   section_skills: Skills
@@ -42,7 +42,7 @@ pt:
   lang_label_pt: PT
   role: Desenvolvedor web
   intro_before: "Formado em análise de sistemas, evoluindo todos os dias em programação."
-  intro_mid: " como desenvolvedor frontend. Veja mais em "
+  intro_mid: "Trabalho como desenvolvedor frontend. Veja meus artigos em: "
   section_work: Experiência
   section_education: Formação
   section_skills: Habilidades
