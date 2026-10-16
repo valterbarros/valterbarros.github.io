@@ -26,10 +26,10 @@ en:
     - title: Fullstack Developer
       subtitle: Stant / Maceió, Alagoas / 2017 – 2019
       body: Ruby on Rails, JavaScript, Vue, CSS, and HTML — solving different problems daily and supporting the team.
-    - title: Academic
-      subtitle: FAT-AL / Maceió, Alagoas / 2016 – 2017
-      body: |
-        This is where I met Ruby and then Rails. I studied hard to build [ClassGame](https://github.com/classgame/classgame), a course platform.
+    # - title: Academic
+    #   subtitle: FAT-AL / Maceió, Alagoas / 2016 – 2017
+    #   body: |
+    #     This is where I met Ruby and then Rails. I studied hard to build [ClassGame](https://github.com/classgame/classgame), a course platform.
   education:
     - title: Systems Analysis
       subtitle: FAT-AL / Maceió, Alagoas / 2014 – 2017
@@ -62,10 +62,10 @@ pt:
     - title: Desenvolvedor fullstack
       subtitle: Stant / Maceió, AL / 2017 – 2019
       body: Ruby on Rails, JavaScript, Vue, CSS e HTML — problemas variados no dia a dia e apoio ao time.
-    - title: Acadêmico
-      subtitle: FAT-AL / Maceió, AL / 2016 – 2017
-      body: |
-        Foi onde conheci Ruby e depois Rails. Estudei bastante para criar o [ClassGame](https://github.com/classgame/classgame), uma plataforma de cursos.
+    # - title: Acadêmico
+    #   subtitle: FAT-AL / Maceió, AL / 2016 – 2017
+    #   body: |
+    #     Foi onde conheci Ruby e depois Rails. Estudei bastante para criar o [ClassGame](https://github.com/classgame/classgame), uma plataforma de cursos.
   education:
     - title: Análise de sistemas
       subtitle: FAT-AL / Maceió, AL / 2014 – 2017
