@@ -6,3 +6,4 @@ dist
 tmp
 .jekyll-cache
 _site
+.env
