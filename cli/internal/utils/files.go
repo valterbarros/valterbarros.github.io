@@ -8,7 +8,6 @@ import (
 	"strings"
 )
 
-// Move to utils
 func ListFiles(path string) ([]string, error) {
 	files, err := os.ReadDir(path)
 
@@ -41,8 +40,8 @@ func GetFromRoot(path string) (string, error) {
 	return filepath.Join(base, repoName, path), nil
 }
 
-func SaveFile(file, data string) {
-	os.WriteFile(file, []byte(data), 0644)
+func SaveFile(file, data string) error {
+	return os.WriteFile(file, []byte(data), 0644)
 }
 
 func ResetFile(file string) {
