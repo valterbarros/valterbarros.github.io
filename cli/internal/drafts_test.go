@@ -8,7 +8,7 @@ import (
 )
 
 func TestCreateDraft(t *testing.T) {
-	CreateNewDraft()
+	CreateNewDraft("")
 
 	path, _ := utils.GetFromRoot(draftsFolder)
 	_, err := os.ReadFile(path + "/new-draft.md")

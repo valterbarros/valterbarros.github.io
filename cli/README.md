@@ -9,6 +9,7 @@ Existe um workflow hoje que eu preciso fazer manualmente e ele seria:
 - [] "publicar" um novo post basicamente fazer o commit e push seguindo as regras para um novo post, passar layout title etc no metadata alem de colocar a data no nome do post
 - [x] listar todos os drafts
 - [x] listar todos os posts
+- [x] Abrir um post ou draft diretamente no vscode sem estar com ele aberto
 
 Seria interessante:
 - Um liveview para ver o markdown do post enquanto digito poderia ser no navegador

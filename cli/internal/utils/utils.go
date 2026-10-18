@@ -2,12 +2,33 @@ package utils
 
 import (
 	"encoding/json"
+	"fmt"
 	"io"
 	"log"
 	"os"
+	"os/exec"
 	"strings"
 	"time"
 )
+
+func GetChanges() string {
+	cmd := exec.Command("git", "status", "--short")
+	path, _ := GetFromRoot(".")
+	cmd.Dir = path
+
+	output, _ := cmd.CombinedOutput()
+
+	return string(output)
+}
+
+func CommitChanges() {
+	path, _ := GetFromRoot("articles")
+	err := exec.Command("git", "add", path).Run()
+	if err != nil {
+		fmt.Println(err)
+	}
+	// exec.Command("git", "commit", "-sm", "[cli] blog update").Run()
+}
 
 func SetEnvFromFile() {
 	env, _ := GetFromRoot(".env")

@@ -15,8 +15,6 @@ func ListFiles(path string) ([]string, error) {
 		return []string{}, err
 	}
 
-	fmt.Println(files)
-
 	names := []string{}
 
 	for _, f := range files {

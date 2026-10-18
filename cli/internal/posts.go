@@ -4,26 +4,35 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strings"
 	"valterbarros/blog-tools/internal/utils"
 )
 
 var postsFolder = "articles/_posts"
 
-func ListPosts() {
-	path, _ := utils.GetFromRoot(postsFolder)
-	files, _ := utils.ListFiles(path)
+func ListPosts() (string, error) {
+	path, err := utils.GetFromRoot(postsFolder)
+	files, err := utils.ListFiles(path)
 
-	fmt.Println("posts: ", files)
+	if err != nil {
+		return "", err
+	}
+
+	return strings.Join(files, "\n"), nil
 }
 
-func CreateNewPost() {
+func CreateNewPost() error {
 	path, _ := utils.GetFromRoot(postsFolder)
 
 	err := utils.SaveFile(filepath.Join(path, "new-post.md"), "")
 
 	if err != nil {
 		fmt.Println("The file was not created: ", err)
+
+		return err
 	}
+
+	return nil
 }
 
 func ConvertToDraft(name string) error {
