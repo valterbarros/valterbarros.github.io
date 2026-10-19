@@ -27,6 +27,10 @@ func ListFiles(path string) ([]string, error) {
 const repoName = "valterbarros.github.io"
 
 func GetFromRoot(path string) (string, error) {
+	if filepath.IsAbs(path) {
+		return path, nil
+	}
+
 	pwd, _ := os.Getwd()
 
 	if !strings.Contains(pwd, repoName) {
@@ -44,6 +48,10 @@ func SaveFile(file, data string) error {
 
 func RemoveFile(file string) error {
 	return os.Remove(file)
+}
+
+func RenameFile(orig, dest string) error {
+	return os.Rename(orig, dest)
 }
 
 func ResetFile(file string) {

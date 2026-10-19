@@ -8,8 +8,8 @@ Existe um workflow hoje que eu preciso fazer manualmente e ele seria:
 - [x] converter um draft para um post ou vice versa
 - [] "publicar" um novo post
   - [x] fazer o commit e push
-  - [] Alterar nome do post para ter a data
-  - [] adicionar placeholder de metadata no topo do arquivo
+  - [x] Alterar nome do post para ter a data
+  - [x] adicionar placeholder de metadata no topo do arquivo
   - [] colocar tags de justificado em todos os paragrafos
 - [x] listar todos os drafts
 - [x] listar todos os posts

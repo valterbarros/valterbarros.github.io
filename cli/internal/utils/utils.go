@@ -2,6 +2,7 @@ package utils
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
 	"log"
@@ -74,4 +75,25 @@ func EncodeJson(data io.Writer, variable any) error {
 	}
 
 	return nil
+}
+
+func GetDate() string {
+	now := time.Now()
+	before, _, _ := strings.Cut(now.Format(time.RFC3339Nano), "T")
+
+	return before
+}
+
+func FileExist(path string) bool {
+	_, err := os.Stat(path)
+
+	if err == nil {
+		return true
+	}
+
+	if errors.Is(err, os.ErrNotExist) {
+		return false
+	}
+
+	return true
 }

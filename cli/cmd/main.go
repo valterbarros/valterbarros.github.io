@@ -19,7 +19,7 @@ func draftCommands() *cobra.Command {
 
 	listDraftCmd := &cobra.Command{
 		Use:   "drafts",
-		Short: "drafts.",
+		Short: "utils to create/list/delete posts.",
 		Args:  cobra.ArbitraryArgs,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if listDraft {
@@ -72,10 +72,11 @@ func postsCommands() *cobra.Command {
 	var createPost bool
 	var convertPost bool
 	var removePost bool
+	var formatPost bool
 
 	postCmd := &cobra.Command{
 		Use:   "posts",
-		Short: "posts.",
+		Short: "utils to create/list/delete posts.",
 		Args:  cobra.ArbitraryArgs,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if listPost {
@@ -111,6 +112,14 @@ func postsCommands() *cobra.Command {
 				}
 			}
 
+			if formatPost {
+				err := internal.FormatPost(args[0], "")
+
+				if err != nil {
+					return fmt.Errorf("error: %w", err)
+				}
+			}
+
 			return nil
 		},
 	}
@@ -119,6 +128,7 @@ func postsCommands() *cobra.Command {
 	postCmd.Flags().BoolVarP(&createPost, "create", "c", false, "Create a post file")
 	postCmd.Flags().BoolVarP(&removePost, "delete", "r", false, "Remove a post file")
 	postCmd.Flags().BoolVarP(&convertPost, "draft", "d", false, "Convert a post to a draft file")
+	postCmd.Flags().BoolVarP(&formatPost, "format", "f", false, "Format post file to be published")
 
 	return postCmd
 }

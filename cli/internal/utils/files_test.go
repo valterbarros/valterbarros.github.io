@@ -34,4 +34,13 @@ func TestGoFromRoot(t *testing.T) {
 			t.Error("The path is not root project")
 		}
 	})
+
+	t.Run("should return same path when is abs", func(t *testing.T) {
+		path := "/tmp/file1.txt"
+		root, _ := GetFromRoot("/tmp/file1.txt")
+
+		if root != path {
+			t.Error("root shoud be equal")
+		}
+	})
 }
