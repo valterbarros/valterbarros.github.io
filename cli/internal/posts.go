@@ -35,6 +35,19 @@ func CreateNewPost() error {
 	return nil
 }
 
+func DeletePost(name string) error {
+	path, _ := utils.GetFromRoot(postsFolder)
+
+	err := utils.RemoveFile(filepath.Join(path, name))
+
+	if err != nil {
+		fmt.Println("The file was not removed: ", err)
+		return err
+	}
+
+	return nil
+}
+
 func ConvertToDraft(name string) error {
 	path, _ := utils.GetFromRoot(draftsFolder)
 	postsPath, _ := utils.GetFromRoot(postsFolder)

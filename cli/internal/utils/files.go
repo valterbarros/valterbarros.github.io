@@ -42,6 +42,10 @@ func SaveFile(file, data string) error {
 	return os.WriteFile(file, []byte(data), 0644)
 }
 
+func RemoveFile(file string) error {
+	return os.Remove(file)
+}
+
 func ResetFile(file string) {
 	os.WriteFile(file, []byte(""), 0644)
 }

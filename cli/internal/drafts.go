@@ -38,6 +38,19 @@ func CreateNewDraft(name string) error {
 	return nil
 }
 
+func DeleteDraft(name string) error {
+	path, _ := utils.GetFromRoot(draftsFolder)
+
+	err := utils.RemoveFile(filepath.Join(path, name))
+
+	if err != nil {
+		fmt.Println("The file was not removed: ", err)
+		return err
+	}
+
+	return nil
+}
+
 func ConvertToPost(name string) error {
 	path, _ := utils.GetFromRoot(draftsFolder)
 	postsPath, _ := utils.GetFromRoot(postsFolder)

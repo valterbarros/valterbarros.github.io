@@ -6,7 +6,11 @@ Existe um workflow hoje que eu preciso fazer manualmente e ele seria:
 - [x] criar um novo draft para um post, tudo que fica na pasta articles/drafts
 - [x] criar um novo post, tudo que fica na pasta articles/_posts
 - [x] converter um draft para um post ou vice versa
-- [] "publicar" um novo post basicamente fazer o commit e push seguindo as regras para um novo post, passar layout title etc no metadata alem de colocar a data no nome do post
+- [] "publicar" um novo post
+  - [x] fazer o commit e push
+  - [] Alterar nome do post para ter a data
+  - [] adicionar placeholder de metadata no topo do arquivo
+  - [] colocar tags de justificado em todos os paragrafos
 - [x] listar todos os drafts
 - [x] listar todos os posts
 - [x] Abrir um post ou draft diretamente no vscode sem estar com ele aberto

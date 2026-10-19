@@ -18,8 +18,6 @@ func TestSetEnvFromFile(t *testing.T) {
 func TestGetChanges(t *testing.T) {
 	out := GetChanges()
 
-	t.Log(out)
-
 	if out == "" {
 		t.Error("the output is empty")
 	}

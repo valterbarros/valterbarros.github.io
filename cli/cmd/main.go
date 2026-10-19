@@ -15,6 +15,7 @@ func draftCommands() *cobra.Command {
 	var listDraft bool
 	var createDraft bool
 	var convertDraft bool
+	var removeDraft bool
 
 	listDraftCmd := &cobra.Command{
 		Use:   "drafts",
@@ -46,12 +47,21 @@ func draftCommands() *cobra.Command {
 				}
 			}
 
+			if removeDraft {
+				err := internal.DeleteDraft(args[0])
+
+				if err != nil {
+					return fmt.Errorf("error: %w", err)
+				}
+			}
+
 			return nil
 		},
 	}
 
 	listDraftCmd.Flags().BoolVarP(&listDraft, "list", "l", false, "List all drafts files")
 	listDraftCmd.Flags().BoolVarP(&createDraft, "create", "c", false, "Create a draft file")
+	listDraftCmd.Flags().BoolVarP(&removeDraft, "delete", "d", false, "Remove a draft file")
 	listDraftCmd.Flags().BoolVarP(&convertDraft, "ready", "r", false, "Convert a draft to a post file")
 
 	return listDraftCmd
@@ -61,6 +71,7 @@ func postsCommands() *cobra.Command {
 	var listPost bool
 	var createPost bool
 	var convertPost bool
+	var removePost bool
 
 	postCmd := &cobra.Command{
 		Use:   "posts",
@@ -92,24 +103,28 @@ func postsCommands() *cobra.Command {
 				}
 			}
 
+			if removePost {
+				err := internal.DeletePost(args[0])
+
+				if err != nil {
+					return fmt.Errorf("error: %w", err)
+				}
+			}
+
 			return nil
 		},
 	}
 
 	postCmd.Flags().BoolVarP(&listPost, "list", "l", false, "List all posts files")
 	postCmd.Flags().BoolVarP(&createPost, "create", "c", false, "Create a post file")
+	postCmd.Flags().BoolVarP(&removePost, "delete", "r", false, "Remove a post file")
 	postCmd.Flags().BoolVarP(&convertPost, "draft", "d", false, "Convert a post to a draft file")
 
 	return postCmd
 }
 
-func main() {
-	rootCmd := &cobra.Command{
-		Use:   "blogging",
-		Short: "Manage blog CLI.",
-	}
-
-	commitCmd := &cobra.Command{
+func commitCommands() *cobra.Command {
+	return &cobra.Command{
 		Use:   "commit",
 		Short: "commit data.",
 		Args:  cobra.ArbitraryArgs,
@@ -124,13 +139,21 @@ func main() {
 			}
 		},
 	}
+}
+
+func main() {
+	rootCmd := &cobra.Command{
+		Use:   "blogging",
+		Short: "Manage blog CLI.",
+	}
 
 	dC := draftCommands()
-	dP := postsCommands()
+	pC := postsCommands()
+	cC := commitCommands()
 
 	rootCmd.AddCommand(dC)
-	rootCmd.AddCommand(dP)
-	rootCmd.AddCommand(commitCmd)
+	rootCmd.AddCommand(pC)
+	rootCmd.AddCommand(cC)
 
 	if err := rootCmd.Execute(); err != nil {
 		log.Fatal(err)
