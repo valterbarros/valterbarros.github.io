@@ -21,13 +21,16 @@ func GetChanges() string {
 	return string(output)
 }
 
-func CommitChanges() {
-	path, _ := GetFromRoot("articles")
+func CommitChanges(message string, path string) {
 	err := exec.Command("git", "add", path).Run()
 	if err != nil {
 		fmt.Println(err)
 	}
-	// exec.Command("git", "commit", "-sm", "[cli] blog update").Run()
+	_, err2 := exec.Command("git", "commit", "-sm", message).CombinedOutput()
+
+	if err2 != nil {
+		fmt.Println(err2)
+	}
 }
 
 func SetEnvFromFile() {

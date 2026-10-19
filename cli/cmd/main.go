@@ -117,7 +117,10 @@ func main() {
 			changes := utils.GetChanges()
 
 			if strings.Contains(changes, "articles") {
-				utils.CommitChanges()
+				path, _ := utils.GetFromRoot("articles")
+				utils.CommitChanges("[cli blogging] articles updated", path)
+			} else {
+				fmt.Println("not staged articles/**/* folder")
 			}
 		},
 	}
