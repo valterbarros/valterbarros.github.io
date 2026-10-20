@@ -118,15 +118,19 @@ func mountPara(strs []string, left int) string {
 
 	return `
 <p align="justify">
-	` + strs[left+1] + "\n</p>\n"
+` + strs[left+1] + "\n</p>\n"
 }
 
 // TODO: create tests for that
 func validateLine(strs []string, idx int) bool {
 	// first element is a empty character idx + 1
 	newI := idx + 1
+	nextLine := newI + 1
 
-	return len(strings.TrimSpace(strs[newI])) > 100
+	// Is EOF or next line is a \n
+	isNextLineValid := nextLine >= len(strs) || strs[nextLine] == ""
+
+	return len(strings.TrimSpace(strs[newI])) > 100 && isNextLineValid
 }
 
 func isEmpty(s string) bool {

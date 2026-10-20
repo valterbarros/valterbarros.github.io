@@ -33,7 +33,7 @@ func TestConvertToDraft(t *testing.T) {
 
 func TestFormatPost(t *testing.T) {
 	t.Run("should add metadata", func(t *testing.T) {
-		_, dir := createFile(t)
+		_, dir := createFile(t, templateA)
 
 		FormatPost("post-test.md", dir)
 
@@ -48,7 +48,7 @@ func TestFormatPost(t *testing.T) {
 	})
 
 	t.Run("should add justify tags", func(t *testing.T) {
-		_, dir := createFile(t)
+		_, dir := createFile(t, templateA)
 
 		FormatPost("post-test.md", dir)
 
@@ -65,6 +65,21 @@ func TestFormatPost(t *testing.T) {
 			t.Error("More tags than necessary:", ct)
 		}
 	})
+
+	t.Run("should not add justify tags", func(t *testing.T) {
+		_, dir := createFile(t, templateB)
+
+		FormatPost("post-test.md", dir)
+
+		newPath := getRenamed(t, dir)
+		data := utils.GetFileData(newPath)
+
+		ct := strings.Count(data, `<p align="justify">`)
+
+		if ct > 0 {
+			t.Error("Found justify tags:", ct)
+		}
+	})
 }
 
 func getRenamed(t *testing.T, dir string) string {
@@ -77,10 +92,17 @@ func getRenamed(t *testing.T, dir string) string {
 	return newPath
 }
 
-func createFile(t *testing.T) (string, string) {
+func createFile(t *testing.T, template string) (string, string) {
 	t.Helper()
 
-	template := `---
+	dir := t.TempDir()
+	path := filepath.Join(dir, "post-test.md")
+	utils.SaveFile(path, template)
+
+	return path, dir
+}
+
+var templateA = `---
 layout: post
 title: title
 ---
@@ -101,9 +123,8 @@ Também vou trazer alguns pontos que são consenso entre os conteúdos que busqu
 
 É impossível abrir o linkedin ou youtube (sendo programador e os algoritmos sabendo disso) e não ver vários vídeos falando sobre o fim dos programadores e de outras profissões, bem negativo. Isso que estamos vendo, é o que podemos chamar de **marketing do medo** e pode ser explicado por: as empresas de IA dependem bastante de investimentos externos, é fácil ver isso pelos aportes bilionários feitos nos últimos anos, contudo a maneira encontrada para justificar todo esse investimento foi: substituição do quadro de funcionários das empresas por IA.`
 
-	dir := t.TempDir()
-	path := filepath.Join(dir, "post-test.md")
-	utils.SaveFile(path, template)
+var templateB = `Links anteriores sobre pessoas influentes falando sobre o fim dos programadores:
 
-	return path, dir
-}
+* [Sam Altman: AI Will Not Only Replace Experts But Create New Knowledge \- Fevereiro/2023](https://medium.datadriveninvestor.com/sam-altman-ai-will-not-only-replace-experts-but-create-new-knowledge-6d0726d8ef6e)
+* [Stability AI CEO: There Will Be No (Human) Programmers in Five Years](https://finance.yahoo.com/news/stability-ai-ceo-no-human-193413248.html)  
+* [In a leaked recording, Amazon cloud chief tells employees that most developers could stop coding soon as AI takes over \- Agosto/2024](https://www.businessinsider.com/aws-ceo-developers-stop-coding-ai-takes-over-2024-8)`
