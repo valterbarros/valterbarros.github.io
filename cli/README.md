@@ -10,7 +10,7 @@ Existe um workflow hoje que eu preciso fazer manualmente e ele seria:
   - [x] fazer o commit e push
   - [x] Alterar nome do post para ter a data
   - [x] adicionar placeholder de metadata no topo do arquivo
-  - [] colocar tags de justificado em todos os paragrafos
+  - [x] colocar tags de justificado em todos os paragrafos
 - [x] listar todos os drafts
 - [x] listar todos os posts
 - [x] Abrir um post ou draft diretamente no vscode sem estar com ele aberto

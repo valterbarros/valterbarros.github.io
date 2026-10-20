@@ -79,7 +79,7 @@ title: [title]
 
 	data := utils.GetFileData(currentPostFile)
 
-	justified := addJustify(data)
+	justified := addJustifyTag(data)
 	fmt.Println(justified)
 
 	utils.SaveFile(currentPostFile, metadata+"\n"+justified)
@@ -87,11 +87,7 @@ title: [title]
 	return utils.RenameFile(currentPostFile, renamedPostFile)
 }
 
-// isOpen logic dont work when there is two paragraph followed
-// isPara logic dont work when paragraph is not followed like has a title in the middle
-// startPara dont work the start index get outdated
-
-func addJustify(data string) string {
+func addJustifyTag(data string) string {
 	strs := strings.Split(strings.TrimSpace(data), "\n")
 	formmated := ""
 	left := 0
@@ -99,8 +95,9 @@ func addJustify(data string) string {
 	for left < len(strs) {
 		line := strs[left]
 		if isEmpty(line) {
-			formmated += mountPara(strs, left)
+			// increment because current left is a empty character
 			left += 1
+			formmated += mountPara(strs, left)
 		} else {
 			formmated += line + "\n"
 		}
@@ -113,21 +110,20 @@ func addJustify(data string) string {
 
 func mountPara(strs []string, left int) string {
 	if !validateLine(strs, left) {
-		return "\n" + strs[left+1] + "\n"
+		return "\n" + strs[left] + "\n"
 	}
 
 	return `
 <p align="justify">
-` + strs[left+1] + "\n</p>\n"
+` + strs[left] + "\n</p>\n"
 }
 
 // TODO: create tests for that
 func validateLine(strs []string, idx int) bool {
-	// first element is a empty character idx + 1
-	newI := idx + 1
+	newI := idx
 	nextLine := newI + 1
 
-	// Is EOF or next line is a \n
+	// Is end of file or next line is a \n
 	isNextLineValid := nextLine >= len(strs) || strs[nextLine] == ""
 
 	return len(strings.TrimSpace(strs[newI])) > 100 && isNextLineValid
