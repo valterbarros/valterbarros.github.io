@@ -87,31 +87,46 @@ title: [title]
 	return utils.RenameFile(currentPostFile, renamedPostFile)
 }
 
+// isOpen logic dont work when there is two paragraph followed
+// isPara logic dont work when paragraph is not followed like has a title in the middle
+// startPara dont work the start index get outdated
+
 func addJustify(data string) string {
 	strs := strings.Split(strings.TrimSpace(data), "\n")
 	formmated := ""
-	isOpen := false
+	left := 0
 
-	for _, line := range strs {
-		if isOpen && isEmpty(line) {
-			formmated += "</p>\n"
-			formmated += `<p align="justify">`
-			formmated += "\n"
-			isOpen = false
-		} else if isEmpty(line) {
-			isOpen = true
-			formmated += `<p align="justify">`
-			formmated += "\n"
+	for left < len(strs) {
+		line := strs[left]
+		if isEmpty(line) {
+			formmated += mountPara(strs, left)
+			left += 1
 		} else {
 			formmated += line + "\n"
 		}
-	}
 
-	if isOpen {
-		formmated += "</p>\n"
+		left += 1
 	}
 
 	return formmated
+}
+
+func mountPara(strs []string, left int) string {
+	if !validateLine(strs, left) {
+		return "\n" + strs[left+1] + "\n"
+	}
+
+	return `
+<p align="justify">
+	` + strs[left+1] + "\n</p>\n"
+}
+
+// TODO: create tests for that
+func validateLine(strs []string, idx int) bool {
+	// first element is a empty character idx + 1
+	newI := idx + 1
+
+	return len(strings.TrimSpace(strs[newI])) > 100
 }
 
 func isEmpty(s string) bool {

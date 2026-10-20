@@ -55,10 +55,14 @@ func TestFormatPost(t *testing.T) {
 		newPath := getRenamed(t, dir)
 		data := utils.GetFileData(newPath)
 
-		fmt.Println("message", strings.Count(data, `<p align="justify">`))
+		ct := strings.Count(data, `<p align="justify">`)
 
-		if strings.Count(data, `<p align="justify">`) > 3 {
-			t.Error("Not found justify tags")
+		if ct == 0 {
+			t.Error("Not found justify tags:", ct)
+		}
+
+		if ct > 5 {
+			t.Error("More tags than necessary:", ct)
 		}
 	})
 }
@@ -81,22 +85,21 @@ layout: post
 title: title
 ---
 
-lorem ipsum testando .asodkasdaskdas 1trestasdasd
-lorem ipsum testando .asodkasdaskdas 2trestasdasd
-lorem ipsum testando .asodkasdaskdas 3trestasdasd
-lorem ipsum testando .asodkasdaskdas 4trestasdasd
-lorem ipsum testando .asodkasdaskdas 5trestasdasd
-lorem ipsum testando .asodkasdaskdas 6trestasdasd.
+titulo
 
-lorem ipsum testando .asodkasdaskdas 7trestasdasd
-lorem ipsum testando .asodkasdaskdas 8trestasdasd
-lorem ipsum testando .asodkasdaskdas 9trestasdasd
-lorem ipsum testando .asodkasdaskdas 10trestasdasd.
+## Introdução
 
-lorem ipsum testando .asodkasdaskdas 11trestasdasd
-lorem ipsum testando .asodkasdaskdas 12trestasdasd
-lorem ipsum testando .asodkasdaskdas 13trestasdasd.
-`
+Antes de qualquer coisa gostaria de deixar claro que utilizo IA todos os dias no meu trabalho, como por exemplo: claude, cursor, copilot, dentro de IDEs como cursor e vscode, não sou de forma alguma uma pessoa contrária à IA. O meu intuíto é tentar enxergar o todo de forma consciente sem aquele véu de animação/desânimo com tecnologia X ou Y que às vezes pode nos cegar. Inclusive o post atual foi feito com ajuda de IA. 😀
+
+Neste texto quero compartilhar alguns conhecimentos que reuni a partir de diversos vídeos e conteúdos que venho acompanhando de perto nos últimos anos. A ideia aqui é focar menos na parte técnica de como a IA funcionar e olhar mais para como os programadores podem se preparar para as mudanças que vêm acontecendo, além de falar sobre como o marketing usado para promover a Inteligência Artificial foi construído e a forma como essas informações foram transmitidas acabou afetando o psicológico e a carreira de muitas pessoas pelo mundo.
+
+Quero também trazer a importância do questionamento e o fato disso ser um dos pilares da área de programação e os perigos de silenciar isso.
+
+Também vou trazer alguns pontos que são consenso entre os conteúdos que busquei em relação a como a IA está está mudando o papel do programador, que está ficando um pouco mais distante do código e atuando mais como um revisor, trabalhando no levantamento de requisitos, conversando com o cliente, validando requisitos, etc.
+
+## O marketing do medo
+
+É impossível abrir o linkedin ou youtube (sendo programador e os algoritmos sabendo disso) e não ver vários vídeos falando sobre o fim dos programadores e de outras profissões, bem negativo. Isso que estamos vendo, é o que podemos chamar de **marketing do medo** e pode ser explicado por: as empresas de IA dependem bastante de investimentos externos, é fácil ver isso pelos aportes bilionários feitos nos últimos anos, contudo a maneira encontrada para justificar todo esse investimento foi: substituição do quadro de funcionários das empresas por IA.`
 
 	dir := t.TempDir()
 	path := filepath.Join(dir, "post-test.md")
