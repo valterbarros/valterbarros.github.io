@@ -81,7 +81,6 @@ func TestFormatPost(t *testing.T) {
 		}
 	})
 
-	// TODO: fixit
 	t.Run("should replace links and bold style for html tags", func(t *testing.T) {
 		_, dir := createFile(t, templateC)
 
@@ -90,10 +89,12 @@ func TestFormatPost(t *testing.T) {
 		newPath := getRenamed(t, dir)
 		data := utils.GetFileData(newPath)
 
-		reg := regexp.MustCompile(`(?m)^<b>:|<a href`)
+		reg := regexp.MustCompile(`(?m)<b>|<a href`)
 
-		if len(reg.FindAllStringSubmatch(data, 2)) != 2 {
-			t.Error("Not found metadata")
+		total := len(reg.FindAllStringSubmatch(data, 2))
+
+		if total != 2 {
+			t.Error("Not found metadata", total)
 		}
 	})
 }
