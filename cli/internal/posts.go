@@ -3,6 +3,7 @@ package internal
 import (
 	"fmt"
 	"path/filepath"
+	"regexp"
 	"strings"
 	"valterbarros/blog-tools/internal/utils"
 )
@@ -131,4 +132,13 @@ func validateLine(strs []string, idx int) bool {
 
 func isEmpty(s string) bool {
 	return strings.TrimSpace(s) == ""
+}
+
+func addHtmlTags(str string) string {
+	regLink := regexp.MustCompile(`(?m)\[([\s\w]+)\]\(([a-z:\/\/.]+)\)`)
+	regBoldOpen := regexp.MustCompile(`(?m)\*\*([\s\w]+)\*\*`)
+	bolded := regBoldOpen.ReplaceAllString(str, "<b>$1</b>")
+	bolded = regLink.ReplaceAllString(bolded, "<a href=\"$2\">$1</a>")
+
+	return bolded
 }

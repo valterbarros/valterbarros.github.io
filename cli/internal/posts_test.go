@@ -80,6 +80,40 @@ func TestFormatPost(t *testing.T) {
 			t.Error("Found justify tags:", ct)
 		}
 	})
+
+	// TODO: fixit
+	t.Run("should replace links and bold style for html tags", func(t *testing.T) {
+		_, dir := createFile(t, templateC)
+
+		FormatPost("post-test.md", dir)
+
+		newPath := getRenamed(t, dir)
+		data := utils.GetFileData(newPath)
+
+		reg := regexp.MustCompile(`(?m)^<b>:|<a href`)
+
+		if len(reg.FindAllStringSubmatch(data, 2)) < 2 {
+			t.Error("Not found metadata")
+		}
+	})
+}
+
+func TestAddHtmlTags(t *testing.T) {
+	t.Run("should replace links and bold style for html tags", func(t *testing.T) {
+		result := addHtmlTags(templateC)
+		fmt.Println("result", result)
+
+		countB := strings.Count(result, "<b>")
+		countB2 := strings.Count(result, "</b>")
+		countA := strings.Count(result, "<a href")
+		countA2 := strings.Count(result, "</a>")
+		total := []int{countB, countB2, countA, countA2}
+		expected := slices.Compare(total, []int{1, 1, 2, 2})
+
+		if expected != 0 {
+			t.Errorf("Not found tags %v", total)
+		}
+	})
 }
 
 func getRenamed(t *testing.T, dir string) string {
@@ -128,3 +162,7 @@ var templateB = `Links anteriores sobre pessoas influentes falando sobre o fim d
 * [Sam Altman: AI Will Not Only Replace Experts But Create New Knowledge \- Fevereiro/2023](https://medium.datadriveninvestor.com/sam-altman-ai-will-not-only-replace-experts-but-create-new-knowledge-6d0726d8ef6e)
 * [Stability AI CEO: There Will Be No (Human) Programmers in Five Years](https://finance.yahoo.com/news/stability-ai-ceo-no-human-193413248.html)  
 * [In a leaked recording, Amazon cloud chief tells employees that most developers could stop coding soon as AI takes over \- Agosto/2024](https://www.businessinsider.com/aws-ceo-developers-stop-coding-ai-takes-over-2024-8)`
+
+var templateC = `Antes de **qualquer coisa** gostaria de deixar claro que utilizo IA todos os dias no meu trabalho, como por exemplo: claude, cursor, copilot, dentro de IDEs como cursor e vscode, não sou de forma alguma uma pessoa contrária à IA. O meu intuíto é tentar enxergar o todo de forma consciente sem aquele véu de animação/desânimo com tecnologia X ou Y que às vezes [pode nos cegar](https://testao.com). Inclusive o post atual foi feito com ajuda de IA. 😀
+
+Neste texto quero compartilhar alguns conhecimentos que reuni a partir de diversos vídeos e conteúdos que venho acompanhando de perto nos últimos anos. A ideia aqui é focar menos na parte técnica de como a IA funcionar e olhar mais para como [os programadores](https://testando.com) podem se preparar para as mudanças que vêm acontecendo, além de falar sobre como o marketing usado para promover a Inteligência Artificial foi construído e a forma como essas informações foram transmitidas acabou afetando o psicológico e a carreira de muitas pessoas pelo mundo.`
