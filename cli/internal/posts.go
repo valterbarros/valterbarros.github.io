@@ -114,9 +114,11 @@ func mountPara(strs []string, left int) string {
 		return "\n" + strs[left] + "\n"
 	}
 
+	withTags := addHtmlTags(strs[left])
+
 	return `
 <p align="justify">
-` + strs[left] + "\n</p>\n"
+` + withTags + "\n</p>\n"
 }
 
 // TODO: create tests for that
@@ -135,8 +137,8 @@ func isEmpty(s string) bool {
 }
 
 func addHtmlTags(str string) string {
-	regLink := regexp.MustCompile(`(?m)\[([\s\w]+)\]\(([a-z:\/\/.]+)\)`)
-	regBoldOpen := regexp.MustCompile(`(?m)\*\*([\s\w]+)\*\*`)
+	regLink := regexp.MustCompile(`(?mi)\[([^\]]+)\]\(([^\)]+)\)`)
+	regBoldOpen := regexp.MustCompile(`(?mi)\*\*([^\*]+)\*\*`)
 	bolded := regBoldOpen.ReplaceAllString(str, "<b>$1</b>")
 	bolded = regLink.ReplaceAllString(bolded, "<a href=\"$2\">$1</a>")
 
