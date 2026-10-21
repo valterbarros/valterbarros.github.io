@@ -47,6 +47,21 @@ func TestFormatPost(t *testing.T) {
 		}
 	})
 
+	t.Run("should not duplicate metadata", func(t *testing.T) {
+		_, dir := createFile(t, templateD)
+
+		FormatPost("post-test.md", dir)
+
+		newPath := getRenamed(t, dir)
+		data := utils.GetFileData(newPath)
+
+		reg := regexp.MustCompile(`(?m)^title:|layout: post`)
+
+		if len(reg.FindAllStringSubmatch(data, 2)) != 2 {
+			t.Error("Not found metadata")
+		}
+	})
+
 	t.Run("should add justify tags", func(t *testing.T) {
 		_, dir := createFile(t, templateA)
 
@@ -139,11 +154,7 @@ func createFile(t *testing.T, template string) (string, string) {
 	return path, dir
 }
 
-var templateA = `---
-layout: post
-title: title
----
-
+var templateA = `
 titulo
 
 ## Introdução
@@ -167,5 +178,15 @@ var templateB = `Links anteriores sobre pessoas influentes falando sobre o fim d
 * [In a leaked recording, Amazon cloud chief tells employees that most developers could stop coding soon as AI takes over \- Agosto/2024](https://www.businessinsider.com/aws-ceo-developers-stop-coding-ai-takes-over-2024-8)`
 
 var templateC = `**Uma coisa que acho** que movimenta muito e reforça essa ideia e mantém esse medo no ar é o fato de CEOs de grandes empresas como; nvidia, amazon, openIA afirmam que em X meses/anos/dias a IA vai substituir todo mundo, apesar de alguns hoje estarem voltando atrás como é o caso do [Jenssen huang CEO da Nvidia acénto](https://tecnoblog.net/noticias/jensen-huang-critica-negatividade-em-torno-da-ia/?test=2) que falou que para os próximos anos vamos precisar muito de programadores.
+
+*Neste texto quero* compartilhar alguns conhecimentos que reuni a partir de diversos **vídeos e conteúdos** que venho acompanhando de perto nos últimos anos. A ideia aqui é focar menos na parte técnica de como a IA funcionar e olhar mais para como [os programadores](https://testando.com) podem **se preparar para as** mudanças que vêm acontecendo, além de falar sobre como o marketing usado para promover a Inteligência Artificial foi construído e a forma como essas informações foram transmitidas acabou afetando o psicológico e a carreira de muitas *pessoas pelo mundo.*`
+
+var templateD = `
+---
+layout: post
+title: [title]
+---
+
+**Uma coisa que acho** que movimenta muito e reforça essa ideia e mantém esse medo no ar é o fato de CEOs de grandes empresas como; nvidia, amazon, openIA afirmam que em X meses/anos/dias a IA vai substituir todo mundo, apesar de alguns hoje estarem voltando atrás como é o caso do [Jenssen huang CEO da Nvidia acénto](https://tecnoblog.net/noticias/jensen-huang-critica-negatividade-em-torno-da-ia/?test=2) que falou que para os próximos anos vamos precisar muito de programadores.
 
 *Neste texto quero* compartilhar alguns conhecimentos que reuni a partir de diversos **vídeos e conteúdos** que venho acompanhando de perto nos últimos anos. A ideia aqui é focar menos na parte técnica de como a IA funcionar e olhar mais para como [os programadores](https://testando.com) podem **se preparar para as** mudanças que vêm acontecendo, além de falar sobre como o marketing usado para promover a Inteligência Artificial foi construído e a forma como essas informações foram transmitidas acabou afetando o psicológico e a carreira de muitas *pessoas pelo mundo.*`

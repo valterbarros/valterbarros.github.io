@@ -71,28 +71,34 @@ func FormatPost(name string, folder string) error {
 	data := utils.GetFileData(currentPostFile)
 
 	justified := addJustifyTag(data)
-	err := addMetadata(justified, currentPostFile)
+	metadata := addMetadata(justified)
+	err := utils.SaveFile(currentPostFile, metadata+"\n"+justified)
 	if err != nil {
 		fmt.Println("error: ", err)
 	}
 
-	return addDateToName(postsPath, currentPostFile, name)
+	newName := addDateToName(postsPath, name)
+
+	return utils.RenameFile(currentPostFile, newName)
 }
 
-func addMetadata(justified, currentPostFile string) error {
+func addMetadata(justified string) string {
+	if strings.Contains(justified, "layout:") {
+		return ""
+	}
 	metadata := `---
 layout: post
 title: [title]
 ---`
 
-	return utils.SaveFile(currentPostFile, metadata+"\n"+justified)
+	return metadata
 }
 
-func addDateToName(postsPath, currentPostFile, name string) error {
+func addDateToName(postsPath, name string) string {
 	now := utils.GetDate()
 
 	renamedPostFile := filepath.Join(postsPath, now+"-"+name)
-	return utils.RenameFile(currentPostFile, renamedPostFile)
+	return renamedPostFile
 }
 
 func addJustifyTag(data string) string {
@@ -103,7 +109,7 @@ func addJustifyTag(data string) string {
 	for left < len(strs) {
 		line := strs[left]
 		if isEmpty(line) {
-			// increment because current left is a empty character
+			// increment because current left is an empty character
 			left += 1
 			formmated += mountPara(strs, left)
 		} else {
