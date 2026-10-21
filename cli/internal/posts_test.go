@@ -12,7 +12,7 @@ import (
 )
 
 func TestCreatePosts(t *testing.T) {
-	CreateNewPost()
+	CreateNewPost("")
 
 	path, _ := utils.GetFromRoot(postsFolder)
 	_, err := os.ReadFile(path + "/new-post.md")

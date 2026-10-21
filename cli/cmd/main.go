@@ -89,7 +89,7 @@ func postsCommands() *cobra.Command {
 			}
 
 			if createPost {
-				err := internal.CreateNewPost()
+				err := internal.CreateNewPost("")
 
 				if err != nil {
 					return fmt.Errorf("error: %w", err)
