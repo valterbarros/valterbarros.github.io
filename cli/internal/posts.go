@@ -138,9 +138,15 @@ func isEmpty(s string) bool {
 
 func addHtmlTags(str string) string {
 	regLink := regexp.MustCompile(`(?mi)\[([^\]]+)\]\(([^\)]+)\)`)
-	regBoldOpen := regexp.MustCompile(`(?mi)\*\*([^\*]+)\*\*`)
-	bolded := regBoldOpen.ReplaceAllString(str, "<b>$1</b>")
-	bolded = regLink.ReplaceAllString(bolded, "<a href=\"$2\">$1</a>")
+	regAsterisk := regexp.MustCompile(`(?mi)\*{1,2}([^\*]+)\*{1,2}`)
+	repl := regAsterisk.ReplaceAllStringFunc(str, func(s string) string {
+		if strings.Count(s, "*") == 4 {
+			return "<b>" + strings.ReplaceAll(s, "*", "") + "</b>"
+		}
 
-	return bolded
+		return "<i>" + strings.ReplaceAll(s, "*", "") + "</i>"
+	})
+	repl = regLink.ReplaceAllString(repl, "<a href=\"$2\">$1</a>")
+
+	return repl
 }

@@ -108,8 +108,10 @@ func TestAddHtmlTags(t *testing.T) {
 		countB2 := strings.Count(result, "</b>")
 		countA := strings.Count(result, "<a href")
 		countA2 := strings.Count(result, "</a>")
-		total := []int{countB, countB2, countA, countA2}
-		expected := slices.Compare(total, []int{3, 3, 2, 2})
+		countI := strings.Count(result, "<i>")
+		countI2 := strings.Count(result, "</i>")
+		total := []int{countB, countB2, countA, countA2, countI, countI2}
+		expected := slices.Compare(total, []int{3, 3, 2, 2, 2, 2})
 
 		if expected != 0 {
 			t.Errorf("Not found tags %v", total)
@@ -166,4 +168,4 @@ var templateB = `Links anteriores sobre pessoas influentes falando sobre o fim d
 
 var templateC = `**Uma coisa que acho** que movimenta muito e reforça essa ideia e mantém esse medo no ar é o fato de CEOs de grandes empresas como; nvidia, amazon, openIA afirmam que em X meses/anos/dias a IA vai substituir todo mundo, apesar de alguns hoje estarem voltando atrás como é o caso do [Jenssen huang CEO da Nvidia acénto](https://tecnoblog.net/noticias/jensen-huang-critica-negatividade-em-torno-da-ia/?test=2) que falou que para os próximos anos vamos precisar muito de programadores.
 
-Neste texto quero compartilhar alguns conhecimentos que reuni a partir de diversos **vídeos e conteúdos** que venho acompanhando de perto nos últimos anos. A ideia aqui é focar menos na parte técnica de como a IA funcionar e olhar mais para como [os programadores](https://testando.com) podem **se preparar para as** mudanças que vêm acontecendo, além de falar sobre como o marketing usado para promover a Inteligência Artificial foi construído e a forma como essas informações foram transmitidas acabou afetando o psicológico e a carreira de muitas pessoas pelo mundo.`
+*Neste texto quero* compartilhar alguns conhecimentos que reuni a partir de diversos **vídeos e conteúdos** que venho acompanhando de perto nos últimos anos. A ideia aqui é focar menos na parte técnica de como a IA funcionar e olhar mais para como [os programadores](https://testando.com) podem **se preparar para as** mudanças que vêm acontecendo, além de falar sobre como o marketing usado para promover a Inteligência Artificial foi construído e a forma como essas informações foram transmitidas acabou afetando o psicológico e a carreira de muitas *pessoas pelo mundo.*`
