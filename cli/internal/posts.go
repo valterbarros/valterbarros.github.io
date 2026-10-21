@@ -66,25 +66,32 @@ func FormatPost(name string, folder string) error {
 		folder = postsFolder
 	}
 
-	now := utils.GetDate()
-
 	postsPath, _ := utils.GetFromRoot(folder)
-
 	currentPostFile := filepath.Join(postsPath, name)
-	renamedPostFile := filepath.Join(postsPath, now+"-"+name)
+	data := utils.GetFileData(currentPostFile)
 
+	justified := addJustifyTag(data)
+	err := addMetadata(justified, currentPostFile)
+	if err != nil {
+		fmt.Println("error: ", err)
+	}
+
+	return addDateToName(postsPath, currentPostFile, name)
+}
+
+func addMetadata(justified, currentPostFile string) error {
 	metadata := `---
 layout: post
 title: [title]
 ---`
 
-	data := utils.GetFileData(currentPostFile)
+	return utils.SaveFile(currentPostFile, metadata+"\n"+justified)
+}
 
-	justified := addJustifyTag(data)
-	fmt.Println(justified)
+func addDateToName(postsPath, currentPostFile, name string) error {
+	now := utils.GetDate()
 
-	utils.SaveFile(currentPostFile, metadata+"\n"+justified)
-
+	renamedPostFile := filepath.Join(postsPath, now+"-"+name)
 	return utils.RenameFile(currentPostFile, renamedPostFile)
 }
 
@@ -114,6 +121,7 @@ func mountPara(strs []string, left int) string {
 		return "\n" + strs[left] + "\n"
 	}
 
+	// inside p tag the markdown don't work
 	withTags := addHtmlTags(strs[left])
 
 	return `

@@ -6,15 +6,20 @@ Existe um workflow hoje que eu preciso fazer manualmente e ele seria:
 - [x] criar um novo draft para um post, tudo que fica na pasta articles/drafts
 - [x] criar um novo post, tudo que fica na pasta articles/_posts
 - [x] converter um draft para um post ou vice versa
-- [] "publicar" um novo post
+- [x] "publicar" um novo post
   - [x] fazer o commit e push
   - [x] Alterar nome do post para ter a data
   - [x] adicionar placeholder de metadata no topo do arquivo
   - [x] colocar tags de justificado em todos os paragrafos
-  - [] substituir tags de markdown como ** []() não funciona dentro do <p> é preciso substituir por tags html
+  - [x] substituir tags de markdown como ** []() não funciona dentro do <p> é preciso substituir por tags html
 - [x] listar todos os drafts
 - [x] listar todos os posts
 - [x] Abrir um post ou draft diretamente no vscode sem estar com ele aberto
+
+Refatorações
+
+- [] Alguns metodos são iguais entre post e draft tentar generalizar eles 
+- [] Talvez mover para outro package a logic de parser dos markdown
 
 Seria interessante:
 - Um liveview para ver o markdown do post enquanto digito poderia ser no navegador
