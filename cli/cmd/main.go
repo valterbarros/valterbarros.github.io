@@ -5,6 +5,7 @@ import (
 	"log"
 	"strings"
 	"valterbarros/blog-tools/internal/content"
+	"valterbarros/blog-tools/internal/editor"
 	"valterbarros/blog-tools/internal/utils"
 
 	"github.com/spf13/cobra"
@@ -72,6 +73,7 @@ func postsCommands() *cobra.Command {
 	var convertPost bool
 	var removePost bool
 	var formatPost bool
+	var editPost bool
 
 	postCmd := &cobra.Command{
 		Use:   "posts",
@@ -119,6 +121,14 @@ func postsCommands() *cobra.Command {
 				}
 			}
 
+			if editPost {
+				err := editor.RunServer()
+
+				if err != nil {
+					return fmt.Errorf("error: %w", err)
+				}
+			}
+
 			return nil
 		},
 	}
@@ -128,6 +138,7 @@ func postsCommands() *cobra.Command {
 	postCmd.Flags().BoolVarP(&removePost, "delete", "r", false, "Remove a post file")
 	postCmd.Flags().BoolVarP(&convertPost, "draft", "d", false, "Convert a post to a draft file")
 	postCmd.Flags().BoolVarP(&formatPost, "format", "f", false, "Format post file to be published")
+	postCmd.Flags().BoolVarP(&editPost, "editor", "e", false, "Edit a post file")
 
 	return postCmd
 }
