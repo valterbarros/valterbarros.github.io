@@ -23,9 +23,26 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const easymde = new EasyMDE({
     element: document.getElementById('js-my-text-area'),
+    toolbar: [
+      'bold', 'italic', 'heading', '|',
+      'quote', 'unordered-list', 'ordered-list', '|',
+      'link', 'image', '|',
+      'preview', 'side-by-side', 'fullscreen', '|',
+      {
+        name: 'save',
+        action: function customFunction(editor) {
+          const value = editor.value();
+          ws.send(JSON.stringify({ type: 'update', value }));
+        },
+        className: 'fa fa-floppy-o',
+        title: 'Save',
+      }
+    ]
   });
 
-  const send = debounceFn((value) => ws.send(value), 100);
+  const send = debounceFn((value) => ws.send(JSON.stringify({ type: 'change', value })), 100);
+
+  send(easymde.value());
 
   easymde.codemirror.on('change', () => {
     const value = easymde.value();

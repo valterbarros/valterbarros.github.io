@@ -1,23 +1,41 @@
 package editor
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
 	"valterbarros/blog-tools/internal/markdown"
+	"valterbarros/blog-tools/internal/utils"
 
 	"github.com/gorilla/websocket"
 )
 
-// Upgrader converte a requisição HTTP normal em um WebSocket persistente
+// DTO
+type Action struct {
+	Type  string `json:"type"`
+	Value string `json:"value"`
+}
+
+func (a *Action) toGo(msg []byte) {
+	if err := json.Unmarshal(msg, a); err != nil {
+		log.Println("Erro ao ler JSON:", err)
+	}
+}
+
+func NewAction() *Action {
+	return &Action{}
+}
+
+// DTO
+
 var upgrader = websocket.Upgrader{
 	CheckOrigin: func(r *http.Request) bool {
-		return true // Permite conexões de qualquer origem (ideal para dev local)
+		return true
 	},
 }
 
 func handleWebSocket(w http.ResponseWriter, r *http.Request) {
-	// 1. Faz o upgrade da conexão HTTP para WebSocket
 	conn, err := upgrader.Upgrade(w, r, nil)
 	if err != nil {
 		log.Printf("Erro ao fazer upgrade: %v\n", err)
@@ -27,21 +45,30 @@ func handleWebSocket(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Println("Cliente conectado via WebSocket!")
 
-	// 2. Loop para escutar mensagens do cliente indefinidamente
 	for {
-		// Lê a mensagem enviada pelo cliente
 		messageType, msg, err := conn.ReadMessage()
 		if err != nil {
 			log.Printf("Erro ao ler mensagem (cliente desconectou?): %v\n", err)
 			break
 		}
 
-		fmt.Printf("Mensagem recebida: %s\n", string(msg))
+		// fmt.Printf("Mensagem recebida: %s\n", string(msg))
 
-		result := markdown.MarkToHTML(msg)
+		ac := NewAction()
+		ac.toGo(msg)
 
-		// send markdown in html
-		err = conn.WriteMessage(messageType, []byte(result))
+		switch ac.Type {
+		case "change":
+			result := markdown.MarkToHTML([]byte(ac.Value))
+			// send markdown in html
+			err = conn.WriteMessage(messageType, []byte(result))
+		case "update":
+			path, _ := utils.GetFromRoot("articles/_posts/2026-3-13-mudancas.md")
+			utils.SaveFile(path, ac.Value)
+		}
+
+		fmt.Printf("action %#v", ac.Type)
+
 		if err != nil {
 			log.Printf("Erro ao escrever mensagem: %v\n", err)
 			break
