@@ -7,13 +7,9 @@ title: O perigo invisível dos projetos legados
   
 ### Introdução
 
-<p align="justify">
 No começo da minha carreira eu trabalhava como fullstack, me lembro que na época eu precisava lidar com várias tecnologias e linguagens diferentes como sql, css, scss, coffeescript, jquery, js, ruby on rails, etc. Acredito que esse seja um cenário "comum" para muitos devs. Desde então novas tecnologias surgiram e outras morreram, muita coisa que eu fazia nessa época mudou e algumas até radicalmente.
-</p>
 
-<p align="justify">
 Essa mudança constante pode ser difícil e desgastante pois, como seres humanos é normal buscar conforto, o que é chamado hoje de "zona de conforto", para os coachs isso é algo que uma pessoa deve ter aversão e sempre procurar estar desconfortável. Não concordo com essa ideia, inclusive a psicologia moderna também não, e talvez essa ideia possa ser a causa de muito burnout que vemos hoje em dia. Acredito que devemos nos desafiar porém respeitando os limites.
-</p>
 
 ### Projeto Legado
 
