@@ -1,4 +1,4 @@
-package internal
+package content
 
 var draftsFolder = "articles/drafts"
 

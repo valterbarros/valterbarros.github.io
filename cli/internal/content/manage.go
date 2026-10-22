@@ -1,4 +1,4 @@
-package internal
+package content
 
 import (
 	"fmt"
@@ -19,8 +19,6 @@ func NewManage(folder string) *Manage {
 func (m Manage) ListSome() (string, error) {
 	path, err := utils.GetFromRoot(m.folder)
 	files, err := utils.ListFiles(path)
-
-	fmt.Println("f: ", path)
 
 	if err != nil {
 		return "", err

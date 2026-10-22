@@ -18,7 +18,7 @@ Existe um workflow hoje que eu preciso fazer manualmente e ele seria:
 
 Refatorações
 
-- [] Alguns metodos são iguais entre post e draft tentar generalizar eles 
+- [x] Alguns metodos são iguais entre post e draft tentar generalizar eles 
 - [] Talvez mover para outro package a logic de parser dos markdown
 
 Seria interessante:

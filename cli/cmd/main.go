@@ -4,8 +4,7 @@ import (
 	"fmt"
 	"log"
 	"strings"
-
-	"valterbarros/blog-tools/internal"
+	"valterbarros/blog-tools/internal/content"
 	"valterbarros/blog-tools/internal/utils"
 
 	"github.com/spf13/cobra"
@@ -23,7 +22,7 @@ func draftCommands() *cobra.Command {
 		Args:  cobra.ArbitraryArgs,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if listDraft {
-				d, err := internal.ListDrafts()
+				d, err := content.ListDrafts()
 				fmt.Println(d)
 
 				if err != nil {
@@ -32,7 +31,7 @@ func draftCommands() *cobra.Command {
 			}
 
 			if createDraft {
-				err := internal.CreateNewDraft("")
+				err := content.CreateNewDraft("")
 
 				if err != nil {
 					return fmt.Errorf("error: %w", err)
@@ -40,7 +39,7 @@ func draftCommands() *cobra.Command {
 			}
 
 			if convertDraft {
-				err := internal.ConvertToPost(args[0])
+				err := content.ConvertToPost(args[0])
 
 				if err != nil {
 					return fmt.Errorf("error: %w", err)
@@ -48,7 +47,7 @@ func draftCommands() *cobra.Command {
 			}
 
 			if removeDraft {
-				err := internal.DeleteDraft(args[0])
+				err := content.DeleteDraft(args[0])
 
 				if err != nil {
 					return fmt.Errorf("error: %w", err)
@@ -80,7 +79,7 @@ func postsCommands() *cobra.Command {
 		Args:  cobra.ArbitraryArgs,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if listPost {
-				d, err := internal.ListPosts()
+				d, err := content.ListPosts()
 				fmt.Println(d)
 
 				if err != nil {
@@ -89,7 +88,7 @@ func postsCommands() *cobra.Command {
 			}
 
 			if createPost {
-				err := internal.CreateNewPost("")
+				err := content.CreateNewPost("")
 
 				if err != nil {
 					return fmt.Errorf("error: %w", err)
@@ -97,7 +96,7 @@ func postsCommands() *cobra.Command {
 			}
 
 			if convertPost {
-				err := internal.ConvertToDraft(args[0])
+				err := content.ConvertToDraft(args[0])
 
 				if err != nil {
 					return fmt.Errorf("error: %w", err)
@@ -105,7 +104,7 @@ func postsCommands() *cobra.Command {
 			}
 
 			if removePost {
-				err := internal.DeletePost(args[0])
+				err := content.DeletePost(args[0])
 
 				if err != nil {
 					return fmt.Errorf("error: %w", err)
@@ -113,7 +112,7 @@ func postsCommands() *cobra.Command {
 			}
 
 			if formatPost {
-				err := internal.FormatPost(args[0], "")
+				err := content.FormatPost(args[0], "")
 
 				if err != nil {
 					return fmt.Errorf("error: %w", err)
