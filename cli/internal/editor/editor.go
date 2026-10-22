@@ -54,6 +54,8 @@ func RunServer() error {
 		os.Exit(0)
 	}()
 
+	http.HandleFunc("/ws", handleWebSocket)
+
 	p, _ := utils.GetFromRoot("cli/web/assets")
 	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir(p))))
 	http.HandleFunc("/editor", editorHandler)

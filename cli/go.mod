@@ -2,7 +2,11 @@ module valterbarros/blog-tools
 
 go 1.27.1
 
-require github.com/spf13/cobra v1.10.2
+require (
+	github.com/gorilla/websocket v1.5.3
+	github.com/spf13/cobra v1.10.2
+	github.com/yuin/goldmark v1.8.6
+)
 
 require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect

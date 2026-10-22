@@ -10,7 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
-    <script src="/assets/editor.js"></script>
+    <script type="module" src="/assets/editor.js"></script>
   </head>
   <body>
     <div class="container">
@@ -19,9 +19,9 @@
           {{printf "%s" .Body}}
         </textarea>
       </div>
-        <textarea class="preview right" readonly>
-          {{printf "%s" .Body}}
-        </textarea>
+      <div class="right">
+        <div class="preview" id="js-preview"></div>
+      </div>
     </div>
   </body>
 </html>
