@@ -1,7 +1,6 @@
 package editor
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -35,7 +34,7 @@ func editorHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	d := utils.GetFileData(post)
-	fmt.Println(d)
+
 	p := &Page{
 		Title: "Editor",
 		Body:  []byte(d),
