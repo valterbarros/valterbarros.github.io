@@ -17,14 +17,14 @@ type Action struct {
 	Value string `json:"value"`
 }
 
-func (a *Action) toGo(msg []byte) {
-	if err := json.Unmarshal(msg, a); err != nil {
-		log.Println("Erro ao ler JSON:", err)
-	}
-}
+func parseAction(msg []byte) (*Action, error) {
+	var a Action
 
-func NewAction() *Action {
-	return &Action{}
+	if err := json.Unmarshal(msg, &a); err != nil {
+		return nil, err
+	}
+
+	return &a, nil
 }
 
 // DTO
@@ -54,8 +54,7 @@ func handleWebSocket(w http.ResponseWriter, r *http.Request) {
 
 		// fmt.Printf("Mensagem recebida: %s\n", string(msg))
 
-		ac := NewAction()
-		ac.toGo(msg)
+		ac, err := parseAction(msg)
 
 		switch ac.Type {
 		case "change":
