@@ -15,6 +15,7 @@ import (
 type Action struct {
 	Type  string `json:"type"`
 	Value string `json:"value"`
+	File  string `json:"file"`
 }
 
 func parseAction(msg []byte) (*Action, error) {
@@ -43,16 +44,14 @@ func handleWebSocket(w http.ResponseWriter, r *http.Request) {
 	}
 	defer conn.Close()
 
-	fmt.Println("Cliente conectado via WebSocket!")
+	fmt.Println("Connected via websocket!")
 
 	for {
 		messageType, msg, err := conn.ReadMessage()
 		if err != nil {
-			log.Printf("Erro ao ler mensagem (cliente desconectou?): %v\n", err)
+			log.Printf("Erro to read message: %v\n", err)
 			break
 		}
-
-		// fmt.Printf("Mensagem recebida: %s\n", string(msg))
 
 		ac, err := parseAction(msg)
 
@@ -60,16 +59,16 @@ func handleWebSocket(w http.ResponseWriter, r *http.Request) {
 		case "change":
 			result := markdown.MarkToHTML([]byte(ac.Value))
 			// send markdown in html
+			// TODO: remove YAML data "---"
 			err = conn.WriteMessage(messageType, []byte(result))
 		case "update":
-			path, _ := utils.GetFromRoot("articles/_posts/2026-3-13-mudancas.md")
+			// TODO: it is fixed filename
+			path, _ := utils.GetFromRoot("articles/_posts/" + ac.File)
 			utils.SaveFile(path, ac.Value)
 		}
 
-		fmt.Printf("action %#v", ac.Type)
-
 		if err != nil {
-			log.Printf("Erro ao escrever mensagem: %v\n", err)
+			log.Printf("Error to write response: %v\n", err)
 			break
 		}
 	}

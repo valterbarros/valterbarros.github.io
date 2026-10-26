@@ -5,20 +5,23 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"strings"
 	"syscall"
 	"text/template"
+	"valterbarros/blog-tools/internal/content"
 	"valterbarros/blog-tools/internal/utils"
 )
 
 var f, _ = utils.GetFromRoot("cli/web/editor.html")
-var templates = template.Must(template.ParseFiles(f))
+var f2, _ = utils.GetFromRoot("cli/web/index.html")
+var templates = template.Must(template.ParseFiles(f, f2))
 
 type Page struct {
 	Title string
 	Body  []byte
 }
 
-func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
+func renderTemplate[T any](w http.ResponseWriter, tmpl string, p *T) {
 	err := templates.ExecuteTemplate(w, tmpl+".html", p)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -27,19 +30,35 @@ func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
 }
 
 func editorHandler(w http.ResponseWriter, r *http.Request) {
-	post, err := utils.GetFromRoot("articles/_posts/2026-3-13-mudancas.md")
+	name := r.URL.Query().Get("name")
+
+	post, _ := utils.GetFromRoot("articles/_posts/" + name)
+
+	d, err := utils.GetFileData(post)
+
 	if err != nil {
 		http.NotFound(w, r)
 		return
 	}
-
-	d := utils.GetFileData(post)
 
 	p := &Page{
 		Title: "Editor",
 		Body:  []byte(d),
 	}
 	renderTemplate(w, "editor", p)
+}
+
+func listHandler(w http.ResponseWriter, r *http.Request) {
+	ps, err := content.ListPosts()
+
+	if err != nil {
+		http.NotFound(w, r)
+		return
+	}
+
+	list := strings.Split(ps, "\n")
+
+	renderTemplate(w, "index", &list)
 }
 
 func RunServer() error {
@@ -59,6 +78,7 @@ func RunServer() error {
 	p, _ := utils.GetFromRoot("cli/web/assets")
 	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir(p))))
 	http.HandleFunc("/editor", editorHandler)
+	http.HandleFunc("/", listHandler)
 
 	err := http.ListenAndServe(":"+PORT, nil)
 

@@ -1,6 +1,11 @@
 // websocket
 const ws = new WebSocket("ws://localhost:12769/ws");
 
+const getFileFromUrl = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get('name');
+};
+
 const debounceFn = (fn, delay) => {
   let timeoutId;
   return function(...args) {
@@ -32,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
         name: 'save',
         action: function customFunction(editor) {
           const value = editor.value();
-          ws.send(JSON.stringify({ type: 'update', value }));
+          ws.send(JSON.stringify({ type: 'update', value, file: getFileFromUrl() }));
         },
         className: 'fa fa-floppy-o',
         title: 'Save',
@@ -40,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
     ]
   });
 
-  const send = debounceFn((value) => ws.send(JSON.stringify({ type: 'change', value })), 100);
+  const send = debounceFn((value) => ws.send(JSON.stringify({ type: 'change', value, file: getFileFromUrl() })), 100);
 
   send(easymde.value());
 

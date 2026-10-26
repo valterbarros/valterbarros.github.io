@@ -2,7 +2,6 @@ package utils
 
 import (
 	"fmt"
-	"log"
 	"os"
 	"path/filepath"
 	"strings"
@@ -26,6 +25,7 @@ func ListFiles(path string) ([]string, error) {
 
 const repoName = "valterbarros.github.io"
 
+// TODO: add scenarios about use path with ../
 func GetFromRoot(path string) (string, error) {
 	if filepath.IsAbs(path) {
 		return path, nil
@@ -58,11 +58,12 @@ func ResetFile(file string) {
 	os.WriteFile(file, []byte(""), 0644)
 }
 
-func GetFileData(file string) string {
+func GetFileData(file string) (string, error) {
 	data, err := os.ReadFile(file)
+
 	if err != nil {
-		log.Fatal("Error to open file utils.go", err)
+		return "", err
 	}
 
-	return string(data)
+	return string(data), nil
 }

@@ -10,7 +10,6 @@ import (
 func MarkToHTML(mk []byte) string {
 	md := goldmark.New(
 		goldmark.WithRendererOptions(
-			// Habilita o uso de HTML puro dentro do Markdown (desativa a omissão)
 			html.WithUnsafe(),
 		),
 	)
