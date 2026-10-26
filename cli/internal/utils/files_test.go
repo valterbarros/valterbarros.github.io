@@ -5,8 +5,6 @@ import (
 	"testing"
 )
 
-var draftsFolder = "../../articles/_posts"
-
 func TestFiles(t *testing.T) {
 	path, _ := GetFromRoot("articles/_posts")
 	files, _ := ListFiles(path)

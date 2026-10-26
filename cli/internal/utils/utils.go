@@ -36,7 +36,7 @@ func CommitChanges(message string, path string) {
 
 func SetEnvFromFile() {
 	env, _ := GetFromRoot(".env")
-	data := GetFileData(env)
+	data, _ := GetFileData(env)
 	vars := strings.SplitSeq(data, "\n")
 	for variable := range vars {
 		spt := strings.Split(variable, "=")
@@ -46,7 +46,7 @@ func SetEnvFromFile() {
 
 func WriteLog(line string) {
 	file := "/tmp/go-api-log.txt"
-	data := GetFileData(file)
+	data, _ := GetFileData(file)
 	data += time.Now().Format("2006-01-02 15:04:05") + " " + line + "\n"
 	SaveFile(file, data)
 }

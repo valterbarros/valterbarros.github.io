@@ -36,7 +36,7 @@ func FormatPost(name string, folder string) error {
 
 	postsPath, _ := utils.GetFromRoot(folder)
 	currentPostFile := filepath.Join(postsPath, name)
-	data := utils.GetFileData(currentPostFile)
+	data, _ := utils.GetFileData(currentPostFile)
 
 	justified := addJustifyTag(data)
 	metadata := addMetadata(justified)

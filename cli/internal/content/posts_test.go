@@ -11,6 +11,7 @@ import (
 	"valterbarros/blog-tools/internal/utils"
 )
 
+// TODO: fix tests using createFile
 func TestCreatePosts(t *testing.T) {
 	CreateNewPost("")
 
@@ -38,7 +39,7 @@ func TestFormatPost(t *testing.T) {
 		FormatPost("post-test.md", dir)
 
 		newPath := getRenamed(t, dir)
-		data := utils.GetFileData(newPath)
+		data, _ := utils.GetFileData(newPath)
 
 		reg := regexp.MustCompile(`(?m)^title:|layout: post`)
 
@@ -53,7 +54,7 @@ func TestFormatPost(t *testing.T) {
 		FormatPost("post-test.md", dir)
 
 		newPath := getRenamed(t, dir)
-		data := utils.GetFileData(newPath)
+		data, _ := utils.GetFileData(newPath)
 
 		reg := regexp.MustCompile(`(?m)^title:|layout: post`)
 
@@ -68,7 +69,7 @@ func TestFormatPost(t *testing.T) {
 		FormatPost("post-test.md", dir)
 
 		newPath := getRenamed(t, dir)
-		data := utils.GetFileData(newPath)
+		data, _ := utils.GetFileData(newPath)
 
 		ct := strings.Count(data, `<p align="justify">`)
 
@@ -87,7 +88,7 @@ func TestFormatPost(t *testing.T) {
 		FormatPost("post-test.md", dir)
 
 		newPath := getRenamed(t, dir)
-		data := utils.GetFileData(newPath)
+		data, _ := utils.GetFileData(newPath)
 
 		ct := strings.Count(data, `<p align="justify">`)
 
@@ -102,7 +103,7 @@ func TestFormatPost(t *testing.T) {
 		FormatPost("post-test.md", dir)
 
 		newPath := getRenamed(t, dir)
-		data := utils.GetFileData(newPath)
+		data, _ := utils.GetFileData(newPath)
 
 		reg := regexp.MustCompile(`(?m)<b>|<a href`)
 
