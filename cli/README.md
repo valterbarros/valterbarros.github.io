@@ -15,16 +15,15 @@ Existe um workflow hoje que eu preciso fazer manualmente e ele seria:
 - [x] listar todos os drafts
 - [x] listar todos os posts
 - [x] Abrir um post ou draft diretamente no vscode sem estar com ele aberto
-- [] Um liveview para ver o markdown do post enquanto digito poderia ser no navegador
+- [x] Um liveview para ver o markdown do post enquanto digito poderia ser no navegador
   Etapas:
-    - [] Servir pagina html do editor/preview
-    - [] implementar websockets no server
-    - [] fazer parser do markdown 
+    - [x] Servir pagina html do editor/preview
+    - [x] implementar websockets no server
+    - [x] fazer parser do markdown 
 
 Refatorações
 
 - [x] Alguns metodos são iguais entre post e draft tentar generalizar eles 
-- [] Talvez mover para outro package a logic de parser dos markdown
 
 Seria interessante:
 - Hoje eu preciso mandar o post para o google docs quando ele passa a ficar grande e complexo, se tivesse uma maneira barata de fazer isso seria interessante usando o cli claro
