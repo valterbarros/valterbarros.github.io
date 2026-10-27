@@ -45,6 +45,7 @@ func editorHandler(w http.ResponseWriter, r *http.Request) {
 		Title: "Editor",
 		Body:  []byte(d),
 	}
+
 	renderTemplate(w, "editor", p)
 }
 

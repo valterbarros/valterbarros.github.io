@@ -59,10 +59,8 @@ func handleWebSocket(w http.ResponseWriter, r *http.Request) {
 		case "change":
 			result := markdown.MarkToHTML([]byte(ac.Value))
 			// send markdown in html
-			// TODO: remove YAML data "---"
 			err = conn.WriteMessage(messageType, []byte(result))
 		case "update":
-			// TODO: it is fixed filename
 			path, _ := utils.GetFromRoot("articles/_posts/" + ac.File)
 			utils.SaveFile(path, ac.Value)
 		}

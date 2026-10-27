@@ -6,6 +6,8 @@ import { syntaxHighlighting, defaultHighlightStyle } from "https://esm.sh/@codem
 
 const ws = new WebSocket("ws://localhost:12769/ws");
 
+const listener = window.addEventListener.bind(window);
+
 const getFileFromUrl = () => {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get('name');
@@ -24,13 +26,15 @@ const debounceFn = (fn, delay) => {
 function listenUpdatePreview() {
   ws.onmessage = function(event) {
     const preview = document.getElementById('js-preview');
-    preview.innerHTML = event.data.trim();
+    preview.innerHTML = event.data;
   };
 }
 
-window.addEventListener('DOMContentLoaded', async () => {
+const sendChange = debounceFn((value) => ws.send(JSON.stringify({ type: 'change', value: value, file: getFileFromUrl() })), 100);
+let editor;
+
+listener('DOMContentLoaded', async () => {
   listenUpdatePreview();
-  const sendChange = debounceFn((value) => ws.send(JSON.stringify({ type: 'change', value: value, file: getFileFromUrl() })), 100);
 
   const updateList = EditorView.updateListener.of((update) => {
     if (update.docChanged) {
@@ -52,12 +56,13 @@ window.addEventListener('DOMContentLoaded', async () => {
     },
   });
 
-  // TODO: save text
-
   const temp = document.getElementById("js-data-article");
+  function getTextContent(element) {
+    return element.content.textContent
+  }
 
   const startState = EditorState.create({
-    doc: temp.innerHTML,
+    doc: getTextContent(temp),
     extensions: [
       history(),
       keymap.of([...defaultKeymap, ...historyKeymap]),
@@ -75,10 +80,20 @@ window.addEventListener('DOMContentLoaded', async () => {
   });
 
   const parent = document.getElementById("editor-container")
-  new EditorView({
+  editor = new EditorView({
     state: startState,
     parent
   });
 
-  sendChange(temp.innerHTML.trim());
+  sendChange(getTextContent(temp));
+});
+
+listener('keydown', (e) => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+    e.preventDefault()
+    console.log('save');
+
+    const value = editor.state.doc.toString();
+    ws.send(JSON.stringify({ type: 'update', value, file: getFileFromUrl() }));
+  }
 });

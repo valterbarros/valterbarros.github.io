@@ -2,6 +2,8 @@ package markdown
 
 import (
 	"bytes"
+	"regexp"
+	"strings"
 
 	"github.com/yuin/goldmark"
 	"github.com/yuin/goldmark/renderer/html"
@@ -23,4 +25,10 @@ func MarkToHTML(mk []byte) string {
 	}
 
 	return buf.String()
+}
+
+func RemoveMetadata(data string) string {
+	reg := regexp.MustCompile(`(?mi)---[\s\S]+---`)
+
+	return strings.TrimLeft(reg.ReplaceAllString(data, ""), " ")
 }
