@@ -1,4 +1,9 @@
-// websocket
+import { EditorState } from "https://esm.sh/@codemirror/state";
+import { EditorView, keymap, lineNumbers } from "https://esm.sh/@codemirror/view";
+import { markdown } from "https://esm.sh/@codemirror/lang-markdown";
+import { defaultKeymap, history, historyKeymap } from "https://esm.sh/@codemirror/commands";
+import { syntaxHighlighting, defaultHighlightStyle } from "https://esm.sh/@codemirror/language";// websocket
+
 const ws = new WebSocket("ws://localhost:12769/ws");
 
 const getFileFromUrl = () => {
@@ -23,35 +28,45 @@ function listenUpdatePreview() {
   };
 }
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', async () => {
   listenUpdatePreview();
+  const sendChange = debounceFn((value) => ws.send(JSON.stringify({ type: 'change', value: value, file: getFileFromUrl() })), 100);
 
-  const easymde = new EasyMDE({
-    element: document.getElementById('js-my-text-area'),
-    toolbar: [
-      'bold', 'italic', 'heading', '|',
-      'quote', 'unordered-list', 'ordered-list', '|',
-      'link', 'image', '|',
-      'fullscreen', '|',
-      {
-        name: 'save',
-        action: function customFunction(editor) {
-          const value = editor.value();
-          ws.send(JSON.stringify({ type: 'update', value, file: getFileFromUrl() }));
-        },
-        className: 'fa fa-floppy-o',
-        title: 'Save',
-      }
+  const updateList = EditorView.updateListener.of((update) => {
+    if (update.docChanged) {
+      const textoAtual = update.state.doc.toString();
+      
+      sendChange(textoAtual);
+    }
+  });
+
+  // TODO: save text
+
+  const temp = document.getElementById("js-data-article");
+
+  const startState = EditorState.create({
+    doc: temp.innerHTML,
+    extensions: [
+      lineNumbers(),
+      history(),
+      keymap.of([...defaultKeymap, ...historyKeymap]),
+      markdown(),
+      EditorView.lineWrapping,
+      syntaxHighlighting(defaultHighlightStyle),
+
+      EditorView.contentAttributes.of({
+        spellcheck: "true",
+        lang: "pt-BR"
+      }),
+      updateList
     ]
   });
 
-  const send = debounceFn((value) => ws.send(JSON.stringify({ type: 'change', value, file: getFileFromUrl() })), 100);
-
-  send(easymde.value());
-
-  easymde.codemirror.on('change', () => {
-    const value = easymde.value();
-
-    send(value);
+  const parent = document.getElementById("editor-container")
+  new EditorView({
+    state: startState,
+    parent
   });
+
+  sendChange(temp.innerHTML);
 });

@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editor posts</title>
-    <link rel="stylesheet" href="/assets/editor.css">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
-    <script type="module" src="/assets/editor.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="left">
-        <textarea name="" id="js-my-text-area" class="editor">
-          {{printf "%s" .Body}}
-        </textarea>
-      </div>
-      <div class="right">
-        <div class="preview" id="js-preview"></div>
-      </div>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor Markdown Minimalista com Spellcheck</title>
+  <link rel="stylesheet" href="/assets/editor.css">
+  <script type="module" src="/assets/editor.js"></script>
+</head>
+<body>
+  <h2>Editor Markdown com Spellcheck (PT-BR)</h2>
+
+  <div class="container">
+    <div class="left">
+      <template id="js-data-article">
+        {{ printf "%s" .Body }}
+      </template>
+      <div class="editor" id="editor-container"></div>
     </div>
-  </body>
+    <div class="right">
+      <div class="preview" id="js-preview"></div>
+    </div>
+  </div>
+</body>
 </html>
