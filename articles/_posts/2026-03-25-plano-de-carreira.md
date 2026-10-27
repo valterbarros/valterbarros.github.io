@@ -23,7 +23,6 @@ Seria possível focar em uma habilidade por vez? focar em várias habilidades ao
 
 Com o plano de carreira o funcionário pode trabalhar focando em objetivos específicos para conseguir se desenvolver e alcançar novos níveis dentro da empresa, de certa forma isso até é uma gamificação. RH, gestores e funcionários podem ser sinceros uns com os outros, caso não dê pra subir,  o gestor vai poder passar de forma mais clara o porquê daquele funcionário não poder receber determinada promoção no momento, e assim essa relação vai se fortalecendo ainda mais.
 
-
 O objetivo deixa de ser inalcançável e se torna algo mais palpável e tira essa ideia de bater a meta e logo em seguida dobrar a meta, diminuindo a ideia de ‘corrida infinita’ e o sentimento de nunca ser suficiente, o que também pode gerar a síndrome do impostor que é algo bem comum na área de tecnologia.
 
 ### Falsa economia

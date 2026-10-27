@@ -2,8 +2,6 @@
 layout: post
 title: O perigo invisível dos projetos legados
 ---
-
-
   
 ### Introdução
 
