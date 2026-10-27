@@ -100,7 +100,7 @@ async function mountEditor(body) {
 }
 
 function getTextContent(element) {
-  return element.content.textContent.trim()
+  return element.content.textContent
 }
 
 listener('DOMContentLoaded', async () => {
