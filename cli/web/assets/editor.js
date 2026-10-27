@@ -1,5 +1,5 @@
 import { EditorState } from "https://esm.sh/@codemirror/state";
-import { EditorView, keymap, lineNumbers } from "https://esm.sh/@codemirror/view";
+import { EditorView, keymap } from "https://esm.sh/@codemirror/view";
 import { markdown } from "https://esm.sh/@codemirror/lang-markdown";
 import { defaultKeymap, history, historyKeymap } from "https://esm.sh/@codemirror/commands";
 import { syntaxHighlighting, defaultHighlightStyle } from "https://esm.sh/@codemirror/language";// websocket
@@ -24,7 +24,7 @@ const debounceFn = (fn, delay) => {
 function listenUpdatePreview() {
   ws.onmessage = function(event) {
     const preview = document.getElementById('js-preview');
-    preview.innerHTML = event.data;
+    preview.innerHTML = event.data.trim();
   };
 }
 
@@ -40,6 +40,18 @@ window.addEventListener('DOMContentLoaded', async () => {
     }
   });
 
+  const theme = EditorView.theme({
+    "&": {
+        fontSize: "16px"
+    },
+    ".cm-content": {
+        fontFamily: "Arial, sans-serif",
+    },
+    ".cm-line": {
+      textAlign: "justify",
+    },
+  });
+
   // TODO: save text
 
   const temp = document.getElementById("js-data-article");
@@ -47,7 +59,6 @@ window.addEventListener('DOMContentLoaded', async () => {
   const startState = EditorState.create({
     doc: temp.innerHTML,
     extensions: [
-      lineNumbers(),
       history(),
       keymap.of([...defaultKeymap, ...historyKeymap]),
       markdown(),
@@ -58,7 +69,8 @@ window.addEventListener('DOMContentLoaded', async () => {
         spellcheck: "true",
         lang: "pt-BR"
       }),
-      updateList
+      updateList,
+      theme,
     ]
   });
 
@@ -68,5 +80,5 @@ window.addEventListener('DOMContentLoaded', async () => {
     parent
   });
 
-  sendChange(temp.innerHTML);
+  sendChange(temp.innerHTML.trim());
 });
