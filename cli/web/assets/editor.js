@@ -61,6 +61,12 @@ listener('DOMContentLoaded', async () => {
     return element.content.textContent
   }
 
+  (async () => {
+    const titleEl = document.querySelector("#js-title");
+    const title = getTextContent(temp).match(/^title:[\S\s](.+$)/gm)
+    titleEl.textContent = title
+  })()
+
   const startState = EditorState.create({
     doc: getTextContent(temp),
     extensions: [
