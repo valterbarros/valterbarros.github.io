@@ -2,7 +2,7 @@ import { EditorState } from "https://esm.sh/@codemirror/state";
 import { EditorView, keymap } from "https://esm.sh/@codemirror/view";
 import { markdown } from "https://esm.sh/@codemirror/lang-markdown";
 import { defaultKeymap, history, historyKeymap } from "https://esm.sh/@codemirror/commands";
-import { syntaxHighlighting, defaultHighlightStyle } from "https://esm.sh/@codemirror/language";// websocket
+import { syntaxHighlighting, defaultHighlightStyle } from "https://esm.sh/@codemirror/language";
 
 const ws = new WebSocket("ws://localhost:12769/ws");
 
