@@ -33,11 +33,9 @@ function listenUpdatePreview() {
 const sendChange = debounceFn((value) => ws.send(JSON.stringify({ type: 'change', value: value, file: getFileFromUrl() })), 100);
 let editor;
 
-listener('DOMContentLoaded', async () => {
-  listenUpdatePreview();
-
+async function mountEditor(body) {
   const updateList = EditorView.updateListener.of((update) => {
-    if (update.docChanged) {
+  if (update.docChanged) {
       const textoAtual = update.state.doc.toString();
       
       sendChange(textoAtual);
@@ -46,7 +44,10 @@ listener('DOMContentLoaded', async () => {
 
   const theme = EditorView.theme({
     "&": {
-        fontSize: "16px"
+      fontSize: "16px",
+      border: "1px solid #ccc",
+      borderRadius: "6px",
+      backgroundColor: "#f5f5f5",
     },
     ".cm-content": {
         fontFamily: "Arial, sans-serif",
@@ -54,21 +55,26 @@ listener('DOMContentLoaded', async () => {
     ".cm-line": {
       textAlign: "justify",
     },
+    "&.cm-focused": {
+      outline: "2px solid #4c9aff",
+    },
+    ".cm-scroller": {
+      minHeight: "200px",
+    },
+    ".cm-content": {
+      padding: "8px",
+      caretColor: "#000",
+    },
   });
-
-  const temp = document.getElementById("js-data-article");
-  function getTextContent(element) {
-    return element.content.textContent
-  }
 
   (async () => {
     const titleEl = document.querySelector("#js-title");
-    const title = getTextContent(temp).match(/^title:[\S\s](.+$)/gm)
+    const title = body.match(/^title:[\S\s](.+$)/gm)
     titleEl.textContent = title
   })()
 
   const startState = EditorState.create({
-    doc: getTextContent(temp),
+    doc: body,
     extensions: [
       history(),
       keymap.of([...defaultKeymap, ...historyKeymap]),
@@ -90,7 +96,18 @@ listener('DOMContentLoaded', async () => {
     state: startState,
     parent
   });
+  editor.focus();
+}
 
+function getTextContent(element) {
+  return element.content.textContent.trim()
+}
+
+listener('DOMContentLoaded', async () => {
+  const temp = document.getElementById("js-data-article");
+
+  listenUpdatePreview();
+  mountEditor(getTextContent(temp));
   sendChange(getTextContent(temp));
 });
 
