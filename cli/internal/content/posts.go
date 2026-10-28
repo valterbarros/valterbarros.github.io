@@ -38,7 +38,7 @@ func FormatPost(name string, folder string) error {
 	data, _ := utils.GetFileData(currentPostFile)
 
 	metadata := addMetadata(data)
-	err := utils.SaveFile(currentPostFile, metadata)
+	err := utils.SaveFile(currentPostFile, metadata+data)
 	if err != nil {
 		fmt.Println("error: ", err)
 	}
