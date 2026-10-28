@@ -12,133 +12,153 @@ import (
 )
 
 func draftCommands() *cobra.Command {
-	var listDraft bool
-	var createDraft bool
-	var convertDraft bool
-	var removeDraft bool
+	draftsCmd := &cobra.Command{
+		Use:   "drafts",
+		Short: "Manage drafts.",
+		Args:  cobra.NoArgs,
+	}
 
 	listDraftCmd := &cobra.Command{
-		Use:   "drafts",
-		Short: "utils to create/list/delete posts.",
-		Args:  cobra.ArbitraryArgs,
+		Use:   "list",
+		Short: "List drafts",
+		Args:  cobra.NoArgs,
 		RunE: func(cmd *cobra.Command, args []string) error {
-			if listDraft {
-				d, err := content.ListDrafts()
-				fmt.Println(d)
-
-				if err != nil {
-					return fmt.Errorf("error: %w", err)
-				}
+			drafts, err := content.ListDrafts()
+			if err != nil {
+				return fmt.Errorf("list drafts: %w", err)
 			}
-
-			if createDraft {
-				err := content.CreateNewDraft("")
-
-				if err != nil {
-					return fmt.Errorf("error: %w", err)
-				}
-			}
-
-			if convertDraft {
-				err := content.ConvertToPost(args[0])
-
-				if err != nil {
-					return fmt.Errorf("error: %w", err)
-				}
-			}
-
-			if removeDraft {
-				err := content.DeleteDraft(args[0])
-
-				if err != nil {
-					return fmt.Errorf("error: %w", err)
-				}
-			}
-
+			fmt.Println(drafts)
 			return nil
 		},
 	}
 
-	listDraftCmd.Flags().BoolVarP(&listDraft, "list", "l", false, "List all drafts files")
-	listDraftCmd.Flags().BoolVarP(&createDraft, "create", "c", false, "Create a draft file")
-	listDraftCmd.Flags().BoolVarP(&removeDraft, "delete", "d", false, "Remove a draft file")
-	listDraftCmd.Flags().BoolVarP(&convertDraft, "ready", "r", false, "Convert a draft to a post file")
+	deleteDraftCmd := &cobra.Command{
+		Use:   "delete <name>",
+		Short: "Delete a draft",
+		Args:  cobra.ExactArgs(1),
+		RunE: func(cmd *cobra.Command, args []string) error {
+			if err := content.DeleteDraft(args[0]); err != nil {
+				return fmt.Errorf("delete draft: %w", err)
+			}
+			return nil
+		},
+	}
 
-	return listDraftCmd
+	convertDraftCmd := &cobra.Command{
+		Use:   "convert <name>",
+		Short: "Convert a draft to post",
+		Args:  cobra.ExactArgs(1),
+		RunE: func(cmd *cobra.Command, args []string) error {
+			if err := content.ConvertToPost(args[0]); err != nil {
+				return fmt.Errorf("convert draft: %w", err)
+			}
+			return nil
+		},
+	}
+
+	createDraftCmd := &cobra.Command{
+		Use:   "create <name>",
+		Short: "Create a draft",
+		Args:  cobra.ExactArgs(1),
+		RunE: func(cmd *cobra.Command, args []string) error {
+			if err := content.CreateNewDraft(args[0]); err != nil {
+				return fmt.Errorf("create draft: %w", err)
+			}
+			return nil
+		},
+	}
+
+	draftsCmd.AddCommand(listDraftCmd, deleteDraftCmd, convertDraftCmd, createDraftCmd)
+	return draftsCmd
 }
 
 func postsCommands() *cobra.Command {
-	var listPost bool
-	var createPost bool
-	var convertPost bool
-	var removePost bool
-	var formatPost bool
-	var editPost bool
-
 	postCmd := &cobra.Command{
 		Use:   "posts",
 		Short: "utils to create/list/delete posts.",
 		Args:  cobra.ArbitraryArgs,
+	}
+
+	listPostCmd := &cobra.Command{
+		Use:   "list",
+		Short: "List posts",
+		Args:  cobra.NoArgs,
 		RunE: func(cmd *cobra.Command, args []string) error {
-			if listPost {
-				d, err := content.ListPosts()
-				fmt.Println(d)
-
-				if err != nil {
-					return fmt.Errorf("error: %w", err)
-				}
+			posts, err := content.ListPosts()
+			if err != nil {
+				return fmt.Errorf("list posts: %w", err)
 			}
-
-			if createPost {
-				err := content.CreateNewPost("")
-
-				if err != nil {
-					return fmt.Errorf("error: %w", err)
-				}
-			}
-
-			if convertPost {
-				err := content.ConvertToDraft(args[0])
-
-				if err != nil {
-					return fmt.Errorf("error: %w", err)
-				}
-			}
-
-			if removePost {
-				err := content.DeletePost(args[0])
-
-				if err != nil {
-					return fmt.Errorf("error: %w", err)
-				}
-			}
-
-			if formatPost {
-				err := content.FormatPost(args[0], "")
-
-				if err != nil {
-					return fmt.Errorf("error: %w", err)
-				}
-			}
-
-			if editPost {
-				err := editor.RunServer()
-
-				if err != nil {
-					return fmt.Errorf("error: %w", err)
-				}
-			}
-
+			fmt.Println(posts)
 			return nil
 		},
 	}
 
-	postCmd.Flags().BoolVarP(&listPost, "list", "l", false, "List all posts files")
-	postCmd.Flags().BoolVarP(&createPost, "create", "c", false, "Create a post file")
-	postCmd.Flags().BoolVarP(&removePost, "delete", "r", false, "Remove a post file")
-	postCmd.Flags().BoolVarP(&convertPost, "draft", "d", false, "Convert a post to a draft file")
-	postCmd.Flags().BoolVarP(&formatPost, "format", "f", false, "Format post file to be published")
-	postCmd.Flags().BoolVarP(&editPost, "editor", "e", false, "Edit a post file")
+	createPostCmd := &cobra.Command{
+		Use:   "create",
+		Short: "Create post",
+		Args:  cobra.ExactArgs(1),
+		RunE: func(cmd *cobra.Command, args []string) error {
+			err := content.CreateNewPost(args[0])
+			if err != nil {
+				return fmt.Errorf("create posts: %w", err)
+			}
+			return nil
+		},
+	}
+
+	convertPostCmd := &cobra.Command{
+		Use:   "convert",
+		Short: "Convert post to draft",
+		Args:  cobra.ExactArgs(1),
+		RunE: func(cmd *cobra.Command, args []string) error {
+			err := content.ConvertToDraft(args[0])
+			if err != nil {
+				return fmt.Errorf("convert posts: %w", err)
+			}
+			return nil
+		},
+	}
+
+	deletePostCmd := &cobra.Command{
+		Use:   "delete",
+		Short: "Delete a post",
+		Args:  cobra.ExactArgs(1),
+		RunE: func(cmd *cobra.Command, args []string) error {
+			err := content.DeletePost(args[0])
+			if err != nil {
+				return fmt.Errorf("delete post: %w", err)
+			}
+			return nil
+		},
+	}
+
+	formatPostCmd := &cobra.Command{
+		Use:   "format",
+		Short: "Format a post",
+		Args:  cobra.ExactArgs(1),
+		RunE: func(cmd *cobra.Command, args []string) error {
+			err := content.FormatPost(args[0], "")
+			if err != nil {
+				return fmt.Errorf("format post: %w", err)
+			}
+			return nil
+		},
+	}
+
+	editorPostCmd := &cobra.Command{
+		Use:   "edit",
+		Short: "Edit posts",
+		Args:  cobra.NoArgs,
+		RunE: func(cmd *cobra.Command, args []string) error {
+			err := editor.RunServer()
+			if err != nil {
+				return fmt.Errorf("run editor: %w", err)
+			}
+			return nil
+		},
+	}
+
+	postCmd.AddCommand(listPostCmd, createPostCmd, convertPostCmd, deletePostCmd, formatPostCmd, editorPostCmd)
 
 	return postCmd
 }
@@ -167,13 +187,9 @@ func main() {
 		Short: "Manage blog CLI.",
 	}
 
-	dC := draftCommands()
-	pC := postsCommands()
-	cC := commitCommands()
-
-	rootCmd.AddCommand(dC)
-	rootCmd.AddCommand(pC)
-	rootCmd.AddCommand(cC)
+	rootCmd.AddCommand(draftCommands())
+	rootCmd.AddCommand(postsCommands())
+	rootCmd.AddCommand(commitCommands())
 
 	if err := rootCmd.Execute(); err != nil {
 		log.Fatal(err)

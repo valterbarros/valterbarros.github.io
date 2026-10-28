@@ -29,7 +29,7 @@ func (m Manage) ListSome() (string, error) {
 
 func (m Manage) CreateSome(name string) error {
 	if name == "" || filepath.Ext(name) == "" {
-		name = "generic-post.md"
+		name = name + ".md"
 	}
 
 	path, _ := utils.GetFromRoot(m.folder)
@@ -58,6 +58,10 @@ func (m Manage) DeleteSome(name string) error {
 }
 
 func (m Manage) MoveSome(name, newPath string) error {
+	if name == "" || filepath.Ext(name) == "" {
+		name = name + ".md"
+	}
+
 	pathRoot, _ := utils.GetFromRoot(m.folder)
 	newRoot, _ := utils.GetFromRoot(newPath)
 
