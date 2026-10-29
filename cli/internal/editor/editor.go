@@ -89,7 +89,7 @@ func uploadHandler(w http.ResponseWriter, r *http.Request) {
 
 	name := filepath.Base(header.Filename)
 
-	basePath, _ := utils.GetFromRoot("articles/_posts/imgs")
+	basePath, _ := utils.GetFromRoot("articles/imgs")
 	dstPath := strings.ReplaceAll(filepath.Join(basePath, name), " ", "-")
 
 	dst, errS := os.Create(dstPath)
@@ -105,7 +105,8 @@ func uploadHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	encoder := json.NewEncoder(w)
-	encoder.Encode(map[string]string{"url": filepath.Join("articles/imgs", filepath.Base(dstPath))})
+	url := "{{\"" + filepath.Join("articles/imgs", filepath.Base(dstPath)) + "\" | relative_url }}"
+	encoder.Encode(map[string]string{"url": url})
 }
 
 func RunServer() error {
