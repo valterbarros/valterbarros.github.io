@@ -2,7 +2,7 @@
 layout: post
 title: O perigo invisível dos projetos legados
 ---
-![imagem](imgs/Screenshot-de-matematica-aqui.png)
+![imagem](articles/imgs/Screenshot-de-matematica-aqui.png)
 
 ### Introdução
 
