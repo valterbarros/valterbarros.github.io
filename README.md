@@ -7,3 +7,7 @@ builded in html/css bootstrap
 docker build -t valterbarros-jekyll .
 docker run --rm -it -p 4000:4000 -v "$PWD":/srv/jekyll -w /srv/jekyll valterbarros-jekyll
 ```
+
+Compress images
+
+https://www.iloveimg.com/compress-image
