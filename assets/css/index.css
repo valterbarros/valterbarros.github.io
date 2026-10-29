@@ -386,3 +386,7 @@ ul li a.social-btn:hover{
 .recur {
   margin-left: 70px;
 }
+
+#main_content p {
+  text-align: justify;
+}
