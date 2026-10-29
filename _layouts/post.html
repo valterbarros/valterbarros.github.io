@@ -7,6 +7,18 @@ layout: default
   #cusdis_thread iframe {
     height: 370px;
   }
+
+  /* posts styles */
+  .article-post p {
+    text-align: justify;
+  }
+
+  .article-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  /* posts styles */
 </style>
 
 <p><a href="/articles"> &lt;&lt; Ver todos os artigos</a></p>
@@ -21,23 +33,18 @@ layout: default
 
 <hr>
 
-<div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="57781c84-d1e2-4244-88ea-e05983bcf223"
-  data-page-id="{{ page.id }}"
-  data-page-url="{{ site.url }}{{ page.baseurl }}{{ page.url }}"
-  data-page-title="{{ page.title }}"
-  data-theme="dark"
-></div>
+<div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="57781c84-d1e2-4244-88ea-e05983bcf223"
+  data-page-id="{{ page.id }}" data-page-url="{{ site.url }}{{ page.baseurl }}{{ page.url }}"
+  data-page-title="{{ page.title }}" data-theme="dark"></div>
 
 <script>
-const observer = new MutationObserver((mutations) => {
+  const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
-        if (mutation.addedNodes.length == 0) return;
-        const iframe = mutation.addedNodes[0];
-        if (iframe.tagName !== 'IFRAME') return;
+      if (mutation.addedNodes.length == 0) return;
+      const iframe = mutation.addedNodes[0];
+      if (iframe.tagName !== 'IFRAME') return;
 
-        const additionalStyles = `
+      const additionalStyles = `
         .dark {
           background: #1b1b1b;
           padding: 20px;
@@ -46,11 +53,11 @@ const observer = new MutationObserver((mutations) => {
           background: #1b1b1b;
         }
         `;
-        
-        iframe.srcdoc = iframe.srcdoc.replace('</style>', additionalStyles + '</style>');
+
+      iframe.srcdoc = iframe.srcdoc.replace('</style>', additionalStyles + '</style>');
     });
-});
-observer.observe(document.getElementById("cusdis_thread"), { childList: true, subtree: true });
+  });
+  observer.observe(document.getElementById("cusdis_thread"), { childList: true, subtree: true });
 </script>
 
 {% include contact.html locale="pt" %}
