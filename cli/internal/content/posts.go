@@ -49,7 +49,7 @@ func FormatPost(name string, folder string) error {
 }
 
 func addDateToName(postsPath, name string) string {
-	now := utils.GetDate()
+	now, _ := utils.GetDate()
 
 	renamedPostFile := filepath.Join(postsPath, now+"-"+name)
 	return renamedPostFile

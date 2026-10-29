@@ -87,7 +87,8 @@ func uploadHandler(w http.ResponseWriter, r *http.Request) {
 
 	defer file.Close()
 
-	name := filepath.Base(header.Filename)
+	b, af := utils.GetDate()
+	name := filepath.Base(b + af + header.Filename)
 
 	basePath, _ := utils.GetFromRoot("articles/imgs")
 	dstPath := strings.ReplaceAll(filepath.Join(basePath, name), " ", "-")

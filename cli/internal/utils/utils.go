@@ -77,11 +77,11 @@ func EncodeJson(data io.Writer, variable any) error {
 	return nil
 }
 
-func GetDate() string {
+func GetDate() (string, string) {
 	now := time.Now()
-	before, _, _ := strings.Cut(now.Format(time.RFC3339Nano), "T")
+	before, after, _ := strings.Cut(now.Format(time.RFC3339Nano), "T")
 
-	return before
+	return before, after
 }
 
 func FileExist(path string) bool {
