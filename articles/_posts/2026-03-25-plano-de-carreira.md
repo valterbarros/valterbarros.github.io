@@ -3,6 +3,8 @@ layout: post
 title: Plano de Carreira; Por que a falta de perspectiva cria times estagnados?
 ---
 
+![imagem]({{"articles/imgs/2026-10-2920:02:00.566775959-03:00image.png" | relative_url }})
+
 ### Plano de carreira
 
 Dinheiro é importante, não tem como negar, independente dos objetivos de cada um, todos precisamos, seja para ter mais conforto ou para se sentir recompensado.
