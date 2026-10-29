@@ -3,7 +3,7 @@ layout: post
 title: O perigo invisível dos projetos legados
 ---
 
-![imagem](articles/imgs/Screenshot_20261021_161348.png)
+![imagem]({{"articles/imgs/Screenshot_20261006_172644.png" | relative_url }})
 
 ### Introdução
 
