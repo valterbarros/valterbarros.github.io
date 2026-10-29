@@ -20,13 +20,14 @@ Existe um workflow hoje que eu preciso fazer manualmente e ele seria:
     - [x] Servir pagina html do editor/preview
     - [x] implementar websockets no server
     - [x] fazer parser do markdown 
-- [] Fazer envio de imagens ao colar imagens no editor 
+- [x] Fazer envio de imagens ao colar imagens no editor 
   - [x] Servir as imagens do editor pasta estatica
   - [x] Fazer envio no frontend da imagem, e exibir a tag de imagem
   - [x] no preview exibir a imagem renderizada
   - [x] Criar endpoint ou websocket
   - [x] Salvar imagem na pasta articles/_posts/assets quando fier upload
-  - [] Exibir imagem no blog in live
+  - [x] Exibir imagem no blog in live
+  - [] Comprimir imagens 
 
 Refatorações
 
