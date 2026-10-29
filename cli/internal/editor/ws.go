@@ -96,7 +96,8 @@ func handleWebSocket(w http.ResponseWriter, r *http.Request) {
 				continue
 			}
 
-			result := markdown.MarkToHTML([]byte(text))
+			result := markdown.RemoveMetadata(text)
+			result = markdown.MarkToHTML([]byte(result))
 			// send markdown in html
 			err = conn.WriteMessage(messageType, []byte(result))
 		case "update":

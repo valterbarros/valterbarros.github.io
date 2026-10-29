@@ -8,8 +8,6 @@ import (
 func TestRemoveMetadata(t *testing.T) {
 	str := RemoveMetadata(templateA)
 
-	t.Log("result: ", str)
-
 	if strings.Count(str, "---") != 0 {
 		t.Error("It has metadata")
 	}
