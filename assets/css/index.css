@@ -386,11 +386,11 @@ ul li a.social-btn:hover{
 }
 
 /* posts styles */
-#article-post p {
+.article-post p {
   text-align: justify;
 }
 
-#article-post img {
+.article-post img {
   width: 100%;
   height: 200px;
   object-fit: cover;
