@@ -377,8 +377,6 @@ ul li a.social-btn:hover{
   text-align: center;
 }
 
-.copyright li {}
-
 /*Footer end*/
 
 /* aux */
@@ -387,6 +385,14 @@ ul li a.social-btn:hover{
   margin-left: 70px;
 }
 
-#main_content p {
+/* posts styles */
+#article-post p {
   text-align: justify;
 }
+
+#article-post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+/* posts styles */
