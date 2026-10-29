@@ -3,8 +3,7 @@ layout: post
 title: Plano de Carreira; Por que a falta de perspectiva cria times estagnados?
 ---
 
-![imagem]({{"articles/imgs/2026-10-2920_10_37.246597667-03_00image.png" | relative_url }})
-
+![imagem]({{"articles/imgs/2026-10-2920:21:52.981665924-03:002026-10-2920_10_37.246597667-03_00image.png" | relative_url }})
 
 ### Plano de carreira
 
