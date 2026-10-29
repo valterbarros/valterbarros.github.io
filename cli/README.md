@@ -20,6 +20,13 @@ Existe um workflow hoje que eu preciso fazer manualmente e ele seria:
     - [x] Servir pagina html do editor/preview
     - [x] implementar websockets no server
     - [x] fazer parser do markdown 
+- [] Fazer envio de imagens ao colar imagens no editor 
+  - [x] Servir as imagens do editor pasta estatica
+  - [x] Fazer envio no frontend da imagem, e exibir a tag de imagem
+  - [x] no preview exibir a imagem renderizada
+  - [x] Criar endpoint ou websocket
+  - [x] Salvar imagem na pasta articles/_posts/assets quando fier upload
+  - [] Exibir imagem no blog in live
 
 Refatorações
 
@@ -27,7 +34,6 @@ Refatorações
 
 Seria interessante:
 - [x] Hoje eu preciso mandar o post para o google docs quando ele passa a ficar grande e complexo, se tivesse uma maneira barata de fazer isso seria interessante usando o cli claro
-- [] Fazer envio de imagens ao colar imagens no editor 
 - [] Tornar o editor colaborativo onde outras pessoas possam editar junto como no docs
 - [] Talves uma maneira de ir coletando ideias e dai ir colocando para depois ver o que realmente vale a pena e não
 

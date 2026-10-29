@@ -1,10 +1,14 @@
 package editor
 
 import (
+	"encoding/json"
+	"fmt"
+	"io"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
+	"path/filepath"
 	"strings"
 	"syscall"
 	"text/template"
@@ -62,6 +66,48 @@ func listHandler(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "index", &list)
 }
 
+func uploadHandler(w http.ResponseWriter, r *http.Request) {
+	if r.Method != http.MethodPost {
+		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
+		return
+	}
+
+	fmt.Println("sending imagem")
+
+	r.Body = http.MaxBytesReader(w, r.Body, 10<<20)
+	if err := r.ParseMultipartForm(10 << 20); err != nil {
+		http.Error(w, "file is very big", http.StatusBadRequest)
+	}
+
+	file, header, err := r.FormFile("file")
+
+	if err != nil {
+		http.Error(w, "file is ausent", http.StatusBadRequest)
+	}
+
+	defer file.Close()
+
+	name := filepath.Base(header.Filename)
+
+	basePath, _ := utils.GetFromRoot("articles/_posts/imgs")
+	dstPath := strings.ReplaceAll(filepath.Join(basePath, name), " ", "-")
+
+	dst, errS := os.Create(dstPath)
+
+	if errS != nil {
+		http.Error(w, "Error when saving file", http.StatusBadRequest)
+	}
+
+	defer dst.Close()
+
+	if _, err := io.Copy(dst, file); err != nil {
+		http.Error(w, "Error when copying file", http.StatusBadRequest)
+	}
+
+	encoder := json.NewEncoder(w)
+	encoder.Encode(map[string]string{"url": filepath.Join("articles/imgs", filepath.Base(dstPath))})
+}
+
 func RunServer() error {
 	const PORT = "12769"
 
@@ -77,8 +123,11 @@ func RunServer() error {
 	http.HandleFunc("/ws", handleWebSocket)
 
 	p, _ := utils.GetFromRoot("cli/web/assets")
+	imgs, _ := utils.GetFromRoot("articles/imgs")
 	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir(p))))
+	http.Handle("/articles/imgs/", http.StripPrefix("/articles/imgs/", http.FileServer(http.Dir(imgs))))
 	http.HandleFunc("/editor", editorHandler)
+	http.HandleFunc("/upload", uploadHandler)
 	http.HandleFunc("/", listHandler)
 
 	err := http.ListenAndServe(":"+PORT, nil)

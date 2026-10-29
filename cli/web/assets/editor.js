@@ -3,6 +3,7 @@ import { EditorView, keymap } from "https://esm.sh/@codemirror/view";
 import { markdown } from "https://esm.sh/@codemirror/lang-markdown";
 import { defaultKeymap, history, historyKeymap } from "https://esm.sh/@codemirror/commands";
 import { syntaxHighlighting, defaultHighlightStyle } from "https://esm.sh/@codemirror/language";
+import { pasteImagem } from "./image-upload.js";
 
 const ws = new WebSocket("ws://localhost:12769/ws");
 
@@ -88,6 +89,7 @@ async function mountEditor(body) {
       }),
       updateList,
       theme,
+      pasteImagem,
     ]
   });
 
