@@ -3,6 +3,8 @@ layout: post
 title: O perigo invisível dos projetos legados
 ---
 
+![imagem]({{"articles/imgs/2026-10-2920:26:24.43840083-03:00ti.jpg" | relative_url }})
+
 ### Introdução
 
 No começo da minha carreira eu trabalhava como fullstack, me lembro que na época eu precisava lidar com várias tecnologias e linguagens diferentes como sql, css, scss, coffeescript, jquery, js, ruby on rails, etc. Acredito que esse seja um cenário "comum" para muitos devs. Desde então novas tecnologias surgiram e outras morreram, muita coisa que eu fazia nessa época mudou e algumas até radicalmente.
