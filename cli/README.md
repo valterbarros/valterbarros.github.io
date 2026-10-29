@@ -26,8 +26,10 @@ Refatorações
 - [x] Alguns metodos são iguais entre post e draft tentar generalizar eles 
 
 Seria interessante:
-- Hoje eu preciso mandar o post para o google docs quando ele passa a ficar grande e complexo, se tivesse uma maneira barata de fazer isso seria interessante usando o cli claro
-- Talves uma maneira de ir coletando ideias e dai ir colocando para depois ver o que realmente vale a pena e não
+- [x] Hoje eu preciso mandar o post para o google docs quando ele passa a ficar grande e complexo, se tivesse uma maneira barata de fazer isso seria interessante usando o cli claro
+- [] Fazer envio de imagens ao colar imagens no editor 
+- [] Tornar o editor colaborativo onde outras pessoas possam editar junto como no docs
+- [] Talves uma maneira de ir coletando ideias e dai ir colocando para depois ver o que realmente vale a pena e não
 
 Esses pontos poderiam ser resolvidos usando uma ferramente de linha de comando
 
