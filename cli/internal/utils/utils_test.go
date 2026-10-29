@@ -26,7 +26,7 @@ func TestGetChanges(t *testing.T) {
 }
 
 func TestGetDate(t *testing.T) {
-	now := GetDate()
+	now, _ := GetDate()
 	fmt.Println("message", now)
 
 	reg := regexp.MustCompile(`\d{4}-\d{2}-\d{2}$`)
