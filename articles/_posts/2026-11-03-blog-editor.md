@@ -63,4 +63,4 @@ Fiz uso de IA, mas optei por escrever as partes menos repetitivas por conta pró
 
 ### Conclusão
 
-Com esses commandos eu consigo fazer todo esse gerenciamento via terminal, foi uma experiencia bem interessante trabalhar nesse CLI consegui aplicar muita coisa do que eu estava aprendendo em algo que vou utilizar.
+Com esses commandos eu consigo fazer todo esse gerenciamento via terminal, foi uma experiencia bem interessante trabalhar nesse CLI consegui aplicar muita coisa do que eu estava aprendendo em algo que vou utilizar e o código pode ser encontrado [aqui](https://github.com/valterbarros/valterbarros.github.io/tree/master/cli).
