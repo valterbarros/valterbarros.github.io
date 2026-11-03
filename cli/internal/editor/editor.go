@@ -25,7 +25,7 @@ type Page struct {
 	Body  []byte
 }
 
-func renderTemplate[T any](w http.ResponseWriter, tmpl string, p *T) {
+func renderTemplate(w http.ResponseWriter, tmpl string, p any) {
 	err := templates.ExecuteTemplate(w, tmpl+".html", p)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -63,7 +63,7 @@ func listHandler(w http.ResponseWriter, r *http.Request) {
 
 	list := strings.Split(ps, "\n")
 
-	renderTemplate(w, "index", &list)
+	renderTemplate(w, "index", list)
 }
 
 func uploadHandler(w http.ResponseWriter, r *http.Request) {
@@ -93,6 +93,7 @@ func uploadHandler(w http.ResponseWriter, r *http.Request) {
 	basePath, _ := utils.GetFromRoot("articles/imgs")
 	dstPath := strings.ReplaceAll(filepath.Join(basePath, name), " ", "-")
 
+	// TODO: verify if that can be turn into a utils
 	dst, errS := os.Create(dstPath)
 
 	if errS != nil {
@@ -101,6 +102,7 @@ func uploadHandler(w http.ResponseWriter, r *http.Request) {
 
 	defer dst.Close()
 
+	// TODO: verify if that can be turn into a utils
 	if _, err := io.Copy(dst, file); err != nil {
 		http.Error(w, "Error when copying file", http.StatusBadRequest)
 	}

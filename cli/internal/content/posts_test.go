@@ -55,6 +55,7 @@ func getRenamed(t *testing.T, dir string) string {
 	return newPath
 }
 
+// TODO: refactor this fn to return the instance of file maybe using os.Create
 func createFile(t *testing.T, template string) (string, string) {
 	t.Helper()
 

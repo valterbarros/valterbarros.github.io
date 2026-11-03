@@ -68,7 +68,6 @@ func mountPara(strs []string, left int) string {
 ` + withTags + "\n</p>\n"
 }
 
-// TODO: create tests for that
 func validateLine(strs []string, idx int) bool {
 	newI := idx
 	nextLine := newI + 1
