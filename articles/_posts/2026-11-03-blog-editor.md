@@ -7,7 +7,7 @@ title: Go na prática; automatizando o fluxo de posts do meu blog Jekyll
 
 ### Estudando Go
 
-Estou gostando cada vez mais de Go. Venho estudando bastante, lendo a documentação oficial e fazendo o Go Tour, mas todo esse estudo precisa ser colocado em prática. Por isso, parei para pensar em alguma demanda minha que pudesse ser automatizada.
+Para quem não me conhece, sou programador frontend, mas me interessei também pela área de backend e venho estudando Go. Estou gostando cada vez mais da linguagem, do sistema de tipos, da forma como ela estrutura os projetos e de como incentiva uma arquitetura simples. Tenho estudado bastante, lendo a documentação oficial e fazendo o Go Tour, mas todo esse estudo precisa ser colocado em prática. Por isso, parei para pensar em alguma demanda minha que pudesse ser automatizada.
 
 Foi aí que me voltei para o [meu blog](https://valterbarros.github.io/articles/), que hoje é construído com Jekyll. Meu fluxo atual para criar e editar posts é feito direto no VSCode, mas ele tem pontos fracos: o preview de Markdown às vezes não sincroniza com o editor e o scroll fica estranho.
 
