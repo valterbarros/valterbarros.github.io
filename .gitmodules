@@ -1,0 +1,3 @@
+[submodule "blogging"]
+	path = blogging
+	url = git@github.com:valterbarros/blogging.git
